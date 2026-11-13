@@ -1,12 +1,17 @@
 {
-  "name": "Deutsch 练习台",
+  "name": "Deutsch 阅读台",
   "short_name": "Deutsch",
+  "description": "德语阅读册在线正文 + 每册 8 题三选一，7 分算过。",
+  "lang": "de",
   "start_url": "./",
+  "scope": "./",
   "display": "standalone",
+  "orientation": "portrait",
   "background_color": "#F4F2E8",
   "theme_color": "#2C6762",
   "icons": [
     {"src": "icon-180.png", "sizes": "180x180", "type": "image/png", "purpose": "any"},
-    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"}
+    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
   ]
 }
