@@ -1,14 +1,312 @@
-<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Deutsch 练习台</title>
-<style>body{font:16px/1.6 -apple-system,sans-serif;background:#F4F2E8;color:#273331;margin:0;padding:24px}
-h1{font-size:20px;color:#2C6762}button{font-size:17px;padding:12px 16px;margin:6px 0;width:100%;text-align:left;background:#fff;border:1px solid #c9d3cc;border-radius:10px}
-.ok{background:#e3f2e8;border-color:#4a9} .no{background:#f8e4e4;border-color:#c66}</style>
-<h1>练习台 · 试跑</h1>
-<p>Satz: <b>Die Zahl der Pflegebedürftigen ist gestiegen, ___ mehr Menschen älter werden.</b></p>
-<div id=q></div>
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#F4F2E8">
+<title>Deutsch 阅读台</title>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-180.png">
+<style>
+:root{
+  --bg:#F4F2E8; --ink:#273331; --teal:#2C6762; --muted:#7A8783;
+  --rule:#D4D8CF; --card:#FFFDF6; --ok:#2E7D53; --okbg:#E4F1E7;
+  --no:#B0443C; --nobg:#F8E4E2; --warn:#8A6A28; --warnbg:#FAF0DC;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.62 -apple-system,BlinkMacSystemFont,"Helvetica Neue","PingFang SC",Arial,sans-serif;
+  padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom);
+}
+.wrap{max-width:640px;margin:0 auto;padding:16px 18px 48px}
+a{color:var(--teal)}
+h1{font-size:21px;line-height:1.32;margin:0 0 5px;color:var(--teal);font-weight:700;letter-spacing:-.2px}
+h2{font-size:15px;margin:26px 0 10px;color:var(--teal);font-weight:700}
+.sub{color:var(--muted);font-size:13px;margin:0 0 16px}
+.card{background:var(--card);border:1px solid var(--rule);border-radius:12px;
+  padding:13px 15px;margin:0 0 10px;display:block;color:inherit;text-decoration:none}
+.card:active{background:#F0EEE0}
+.card .t{font-weight:700;font-size:15.5px;line-height:1.42;margin:0 0 5px}
+.card .m{font-size:12.5px;color:var(--muted);display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.pill{display:inline-block;font-size:11.5px;padding:1.5px 8px;border-radius:99px;background:#EDEAE0;color:var(--muted)}
+.pill.done{background:var(--okbg);color:var(--ok);font-weight:600}
+.pill.warn{background:var(--warnbg);color:var(--warn)}
+.bar{height:5px;border-radius:99px;background:#E7E4D9;overflow:hidden}
+.bar>i{display:block;height:100%;background:var(--teal);border-radius:99px}
+/* 正文 */
+.rd p{margin:0 0 14px;text-align:left;hyphens:auto}
+.rd .h{font-weight:700;color:var(--teal);margin:24px 0 10px;font-size:16.5px}
+.gl{border-bottom:1.5px dotted #9AA6A1;cursor:pointer}
+.gl.on{border-bottom-color:var(--teal);color:var(--teal);font-weight:600}
+.def{background:var(--warnbg);border-radius:8px;padding:9px 12px;font-size:13.5px;color:#6E5314;margin:0 0 14px}
+.def b{color:var(--warn)}
+.rd .zh{background:#EAE6D8;border-radius:8px;padding:11px 13px;font-size:14px;line-height:1.62;color:#4A5551;margin:0 0 16px}
+.rd .src{font-size:12.5px;color:var(--muted);border-top:1px solid var(--rule);padding-top:12px;margin-top:22px}
+.rd .nxt{font-size:13px;color:var(--teal);margin-top:10px;line-height:1.5}
+/* 题 */
+.qn{font-size:12px;color:var(--muted);letter-spacing:.06em;margin:0 0 8px}
+.qtext{font-size:16.5px;line-height:1.55;margin:0 0 16px;font-weight:600}
+.opt{display:block;width:100%;text-align:left;font:inherit;font-size:15.5px;line-height:1.5;
+  background:var(--card);color:inherit;border:1px solid var(--rule);border-radius:11px;
+  padding:13px 15px;margin:0 0 9px;cursor:pointer}
+.opt:active{transform:scale(.995)}
+.opt.ok{background:var(--okbg);border-color:var(--ok);font-weight:600}
+.opt.no{background:var(--nobg);border-color:var(--no)}
+.opt:disabled{cursor:default}
+.exp{display:none;font-size:13.5px;line-height:1.62;color:#4A5551;background:#F1EEE2;
+  border-radius:9px;padding:12px 14px;margin:11px 0 0}
+.exp.on{display:block}
+.exp b{color:var(--teal)}
+.btn{display:block;width:100%;font:inherit;font-size:16px;font-weight:600;
+  background:var(--teal);color:#fff;border:0;border-radius:11px;padding:15px;margin:18px 0 0;cursor:pointer}
+.btn:active{opacity:.88}
+.btn.ghost{background:transparent;color:var(--teal);border:1px solid var(--teal)}
+.btn.sm{font-size:14px;padding:11px;margin-top:10px}
+.top{display:flex;align-items:center;gap:10px;margin:0 0 16px}
+.back{font-size:14px;color:var(--teal);text-decoration:none;padding:8px 0;flex:0 0 auto}
+.top .ttl{font-size:12.5px;color:var(--muted);flex:1;text-align:right;overflow:hidden;
+  text-overflow:ellipsis;white-space:nowrap}
+.score{font-size:44px;font-weight:700;color:var(--teal);line-height:1;margin:8px 0 4px}
+.score small{font-size:17px;color:var(--muted);font-weight:400}
+.verdict{font-size:15px;line-height:1.62;margin:14px 0 0;padding:14px 16px;border-radius:11px}
+.verdict.pass{background:var(--okbg);color:#1F5B3C}
+.verdict.fail{background:var(--warnbg);color:#6E5314}
+.wrong{border-top:1px solid var(--rule);padding:14px 0 4px;font-size:14px;line-height:1.55}
+.wrong .qq{font-weight:600;color:var(--teal);margin:0 0 7px}
+.wrong .aa{color:var(--no);margin-bottom:3px}
+.wrong .bb{color:var(--ok)}
+.wrong .ww{color:var(--muted);font-size:13px;margin-top:7px;line-height:1.55}
+.empty{color:var(--muted);font-size:14px;text-align:center;padding:44px 20px;line-height:1.7}
+.foot{font-size:12px;color:var(--muted);text-align:center;margin:36px 0 0;line-height:1.7}
+.tag{font-size:11px;color:var(--muted);border:1px solid var(--rule);border-radius:6px;padding:1px 6px}
+</style>
+</head>
+<body>
+<div class="wrap" id="app"><p class="empty">加载中…</p></div>
 <script>
-const opts=[["weil","denn","obwohl"],["weil"]];
-const w=document.getElementById("q");
-opts[0].forEach(o=>{const b=document.createElement("button");b.textContent=o;
- b.onclick=()=>{[...w.children].forEach(x=>x.className="");b.className=(o===opts[1][0])?"ok":"no";};w.append(b);});
+"use strict";
+const KEY = "dq.v1";
+const $ = s => document.querySelector(s);
+const esc = s => String(s == null ? "" : s).replace(/[&<>"]/g,
+  c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const DOM = {A:"国家与制度",B:"社会与民生",C:"经济劳动与企业",D:"身份与人口",E:"法律与日常秩序",
+             F:"环境与基础设施",G:"文化与日常",H:"历史与记忆",I:"科技科学与数字生活"};
+
+let BOOKS = {}, QUIZ = {sets: []}, ST = loadST();
+
+function loadST(){ try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch(e){ return {}; } }
+function saveST(){ try { localStorage.setItem(KEY, JSON.stringify(ST)); } catch(e){} }
+function run(code){ return (ST.runs || {})[code] || null; }
+function qset(code){ return QUIZ.sets.find(s => s.code === code) || null; }
+
+/* ── 路由 ─────────────────────────────────────────── */
+function go(h){ if (location.hash === h) route(); else location.hash = h; }
+window.addEventListener("hashchange", route);
+
+function route(){
+  const p = (location.hash || "#/").slice(1).split("/").filter(Boolean);
+  if (p[0] === "read" && p[1]) return renderRead(p[1]);
+  if (p[0] === "quiz" && p[1]) return renderQuiz(p[1]);
+  if (p[0] === "result" && p[1]) return renderResult(p[1]);
+  return renderHome();
+}
+
+/* ── 首页 ─────────────────────────────────────────── */
+function renderHome(){
+  const codes = Object.keys(BOOKS).sort((a, b) => BOOKS[a].seq - BOOKS[b].seq);
+  const done = codes.filter(c => run(c));
+  const passed = codes.filter(c => run(c) && run(c).score >= 7);
+  const withQuiz = codes.filter(c => qset(c));
+  document.title = "Deutsch 阅读台";
+  const byDom = {};
+  codes.forEach(c => { (byDom[BOOKS[c].domain] = byDom[BOOKS[c].domain] || []).push(c); });
+  $("#app").innerHTML = `
+    <h1>Deutsch 阅读台</h1>
+    <p class="sub">${codes.length} 册在线 · 可做题 ${withQuiz.length} 册 · 已做 ${done.length} · 过 7/8 的 ${passed.length} 册</p>
+    ${Object.keys(byDom).sort().map(d => `
+      <h2>${esc(d.split("_")[0])} · ${esc(DOM[d.split("_")[0]] || d)}</h2>
+      ${byDom[d].map(c => card(c)).join("")}`).join("")}
+    <button class="btn ghost sm" id="exp">导出做题记录（JSON）</button>
+    <p class="foot">正文里带虚线的词，点一下看德语释义。<br>
+      读完点「做题」，8 道三选一，7 分算过。</p>`;
+  $("#exp").onclick = exportJSON;
+}
+
+function card(code){
+  const b = BOOKS[code], r = run(code), q = qset(code);
+  const sc = r ? r.score : null;
+  const pill = sc === null
+    ? (q ? `<span class="pill">未做</span>` : `<span class="pill">暂无题</span>`)
+    : `<span class="pill ${sc >= 7 ? "done" : "warn"}">${sc}/${r.total || 8}</span>`;
+  const pct = sc === null ? 0 : Math.round(sc / (r.total || 8) * 100);
+  return `<a class="card" href="#/read/${code}">
+    <div class="t">${esc(b.title)}</div>
+    <div class="m"><span>${code}</span><span>·</span><span>R${b.round} ${esc(b.rname || "")}</span>${pill}</div>
+    ${sc === null ? "" : `<div class="bar" style="margin-top:9px"><i style="width:${pct}%"></i></div>`}
+  </a>`;
+}
+
+function exportJSON(){
+  const data = {exportedAt: new Date().toISOString(), runs: ST.runs || {}};
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([JSON.stringify(data, null, 1)], {type:"application/json"}));
+  a.download = "deutsch-lesen-" + new Date().toISOString().slice(0, 10) + ".json";
+  a.click();
+  setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+}
+
+/* ── 阅读 ─────────────────────────────────────────── */
+function renderSeg(seg){
+  return seg.map(s => "g" in s
+    ? `<span class="gl" data-d="${esc(s.d)}">${esc(s.g)}</span><span class="def" hidden><b>${esc(s.g)}</b> — ${esc(s.d)}</span>`
+    : esc(s.s)).join("");
+}
+
+function renderRead(code){
+  const b = BOOKS[code];
+  if (!b) return go("#/");
+  document.title = b.title;
+  const body = b.els.map(e => {
+    if (e.k === "h2") return `<div class="h">${esc(e.t)}</div>`;
+    if (e.k === "zh") return `<div class="zh">${esc(e.t)}</div>`;
+    return `<p>${e.seg ? renderSeg(e.seg) : esc(e.t || "")}</p>`;
+  }).join("");
+  const q = qset(code), r = run(code);
+  $("#app").innerHTML = `
+    <div class="top"><a class="back" href="#/">‹ 目录</a>
+      <div class="ttl">${esc(b.meta || code)}</div></div>
+    <h1>${esc(b.title)}</h1>
+    ${b.zh ? `<div class="zh">${esc(b.zh)}</div>` : ""}
+    <div class="rd">${body}
+      ${b.src ? `<div class="src">${esc(b.src)}</div>` : ""}
+      ${b.nxt ? `<div class="nxt">→ ${esc(b.nxt)}</div>` : ""}
+    </div>
+    ${q ? `<button class="btn" id="toq">做题 · ${q.qs.length} 题${r ? `（上次 ${r.score}/${r.total || 8}）` : ""}</button>`
+        : `<p class="foot">这册还没出题。</p>`}
+    <button class="btn ghost sm" id="home">回目录</button>`;
+  const tq = $("#toq"); if (tq) tq.onclick = () => go("#/quiz/" + code);
+  $("#home").onclick = () => go("#/");
+  // 点词看释义：紧跟的 .def 展开/收起
+  $("#app").querySelectorAll(".gl").forEach(el => {
+    el.onclick = ev => {
+      ev.preventDefault();
+      const def = el.nextElementSibling;
+      if (!def || !def.classList.contains("def")) return;
+      const on = def.hasAttribute("hidden");
+      if (on) def.removeAttribute("hidden"); else def.setAttribute("hidden", "");
+      el.classList.toggle("on", on);
+    };
+  });
+  window.scrollTo(0, 0);
+}
+
+/* ── 做题 ─────────────────────────────────────────── */
+let QA = null;
+function renderQuiz(code){
+  const s = qset(code);
+  if (!s) return go("#/");
+  QA = { code, i: 0, detail: [] };
+  document.title = "做题 · " + s.title;
+  askQ();
+}
+
+function askQ(){
+  const s = qset(QA.code), q = s.qs[QA.i], last = QA.i === s.qs.length - 1;
+  const label = q.t === "rw" ? "选出和原句意思相同的那句" : q.t === "gc" ? "填这一空（ABC 选一个）" : "三选一";
+  $("#app").innerHTML = `
+    <div class="top"><a class="back" href="#/read/${QA.code}">‹ 原文</a>
+      <div class="ttl">${esc(QA.code)} · ${QA.i + 1}/${s.qs.length}</div></div>
+    <div class="bar" style="margin:0 0 20px"><i style="width:${QA.i / s.qs.length * 100}%"></i></div>
+    <p class="qn">${label}</p>
+    <p class="qtext">${esc(q.q)}</p>
+    <div id="opts">${q.o.map((o, j) =>
+      `<button class="opt" data-j="${j}">${String.fromCharCode(65 + j)} · ${esc(o)}</button>`).join("")}</div>
+    <div class="exp" id="exp"></div>
+    <button class="btn" id="next" style="display:none">${last ? "看结果" : "下一题"}</button>`;
+  $("#app").querySelectorAll(".opt").forEach(el => el.onclick = () => pick(+el.dataset.j, q, s));
+  window.scrollTo(0, 0);
+}
+
+function pick(j, q, s){
+  const ok = j === q.a;
+  $("#app").querySelectorAll(".opt").forEach((el, k) => {
+    el.disabled = true;
+    if (k === q.a) el.classList.add("ok");
+    else if (k === j) el.classList.add("no");
+  });
+  QA.detail.push({q: q.q, a: q.a, pick: j, ok, w: q.w});
+  const ex = $("#exp");
+  ex.innerHTML = `<b>${ok ? "Richtig." : "Nicht richtig."}</b> ${esc(q.w)}`;
+  ex.classList.add("on");
+  const nx = $("#next");
+  nx.style.display = "block";
+  nx.onclick = () => { if (QA.i === s.qs.length - 1) finish(s); else { QA.i++; askQ(); } };
+  nx.scrollIntoView({behavior:"smooth", block:"nearest"});
+}
+
+function finish(s){
+  const score = QA.detail.filter(x => x.ok).length;
+  ST.runs = ST.runs || {};
+  const prev = ST.runs[s.code];
+  ST.runs[s.code] = {
+    score, total: s.qs.length, at: new Date().toISOString(),
+    best: prev ? Math.max(prev.best || prev.score, score) : score,
+    tries: (prev ? prev.tries : 0) + 1,
+    detail: QA.detail,
+  };
+  saveST();
+  go("#/result/" + s.code);
+}
+
+function renderResult(code){
+  const s = qset(code), r = run(code);
+  if (!r) return go("#/");
+  const total = r.total || 8, pass = r.score >= 7;
+  const wrongs = (r.detail || []).filter(x => !x.ok);
+  document.title = "结果 · " + s.title;
+  $("#app").innerHTML = `
+    <div class="top"><a class="back" href="#/">‹ 目录</a><div class="ttl">${esc(code)}</div></div>
+    <p class="qn">${esc(s.title)}</p>
+    <div class="score">${r.score}<small> / ${total}</small></div>
+    <div class="verdict ${pass ? "pass" : "fail"}">
+      ${pass ? (r.score === total ? "全对。" : "过了。") : `还差 ${7 - r.score} 题到 7/8。`}
+      ${r.tries > 1 ? ` 第 ${r.tries} 次做，最好 ${r.best}/${total}。` : ""}
+    </div>
+    ${wrongs.length ? `<h2>错的 ${wrongs.length} 题</h2>
+      ${wrongs.map((x, i) => `<div class="wrong">
+        <div class="qq">${i + 1}. ${esc(x.q)}</div>
+        <div class="aa">你选 ${String.fromCharCode(65 + x.pick)}</div>
+        <div class="bb">正确 ${String.fromCharCode(65 + x.a)}</div>
+        ${x.w ? `<div class="ww">${esc(x.w)}</div>` : ""}
+      </div>`).join("")}` : ""}
+    <button class="btn" id="again">再做一遍</button>
+    <button class="btn ghost" id="back">回原文</button>`;
+  $("#again").onclick = () => go("#/quiz/" + code);
+  $("#back").onclick = () => go("#/read/" + code);
+  window.scrollTo(0, 0);
+}
+
+/* ── 启动 ─────────────────────────────────────────── */
+(async function(){
+  try {
+    const [books, quiz] = await Promise.all([
+      fetch("data/books.json").then(r => { if (!r.ok) throw new Error("books.json " + r.status); return r.json(); }),
+      fetch("data/quiz.json").then(r => { if (!r.ok) throw new Error("quiz.json " + r.status); return r.json(); }),
+    ]);
+    BOOKS = books; QUIZ = quiz;
+    route();
+  } catch (e) {
+    $("#app").innerHTML = `<p class="empty">数据没加载出来。<br><br>${esc(e.message)}</p>`;
+  }
+})();
+
+if ("serviceWorker" in navigator) {
+  addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+}
 </script>
+</body>
+</html>

@@ -1,0 +1,490 @@
+{
+ "sets": [
+  {
+   "code": "E1-L1-01",
+   "title": "Das eigene Bild gehört einem selbst",
+   "topic": "E_法律与日常秩序",
+   "round": 1,
+   "rname": "Hintergrund",
+   "qs": [
+    {
+     "t": "lv",
+     "q": "Der Text sagt: das Filmen ist meist erlaubt, das Veröffentlichen ist der kritische Punkt. Was folgt daraus?",
+     "o": [
+      "Aufnehmen und Veröffentlichen sind rechtlich gleich zu behandeln.",
+      "Das Aufnehmen ist rechtlich unproblematischer als das Verbreiten.",
+      "Veröffentlichen ist immer verboten."
+     ],
+     "a": 1,
+     "w": "原文：Das Filmen selbst ist meist erlaubt; das Veröffentlichen ist der Punkt, an dem es eng wird. 拍摄≠发布。"
+    },
+    {
+     "t": "lv",
+     "q": "Wann braucht man nach Paragraf 23 keine Einwilligung?",
+     "o": [
+      "Wenn die Person nur zufällig als Beiwerk im Bild ist.",
+      "Wenn die Person den Hauptteil des Bildes ausmacht.",
+      "Wenn die Person im Privatleben fotografiert wird."
+     ],
+     "a": 0,
+     "w": "Beiwerk 是例外之一；主体人物不是 Beiwerk。"
+    },
+    {
+     "t": "lv",
+     "q": "Warum nennt der Text Paragraf 23 Absatz 2 „in der Praxis der wichtigste“?",
+     "o": [
+      "Weil er die Ausnahmen wieder abschafft.",
+      "Weil auch bei erlaubten Bildern die Interessen der Person geschützt bleiben.",
+      "Weil er die Höhe der Strafe festlegt."
+     ],
+     "a": 1,
+     "w": "例外成立≠随便用；第 2 款是实际打官司最常引用的那一句。"
+    },
+    {
+     "t": "lv",
+     "q": "Was gilt nach dem Text für Politiker und bekannte Sportler?",
+     "o": [
+      "Bei öffentlichen Anlässen müssen sie mehr hinnehmen als Privatleute.",
+      "Für sie gilt der Bildnisschutz überhaupt nicht.",
+      "Fotos aus ihrem Privatleben sind erlaubt, weil sie bekannt sind."
+     ],
+     "a": 0,
+     "w": "原文：nur bei öffentlichen Anlässen —— 私人场合仍然不行。"
+    },
+    {
+     "t": "rw",
+     "q": "Welcher Satz sagt dasselbe? „Wer ein Bild ohne Einwilligung verbreitet, kann auf Unterlassung verklagt werden.“",
+     "o": [
+      "Man kann verlangen, dass jemand das Verbreiten unterlässt.",
+      "Man kann verlangen, dass jemand das Bild zurückgibt.",
+      "Man kann verlangen, dass jemand eine Strafe zahlt."
+     ],
+     "a": 0,
+     "w": "Unterlassung = 停止（不再做），不是赔偿也不是归还。"
+    },
+    {
+     "t": "rw",
+     "q": "Welcher Satz sagt dasselbe? „Selbst wenn eine Ausnahme greift, darf die Verbreitung die berechtigten Interessen der Person nicht verletzen.“",
+     "o": [
+      "Eine Ausnahme erlaubt die Verbreitung immer.",
+      "Auch bei einer Ausnahme bleiben die Interessen der Person geschützt.",
+      "Ausnahmen gelten nur mit Zustimmung der Person."
+     ],
+     "a": 1,
+     "w": "greift = 适用；即便适用也有限度。"
+    },
+    {
+     "t": "gc",
+     "q": "Ein Bild darf nur ___ Einwilligung des Abgebildeten verbreitet werden.",
+     "o": [
+      "mit",
+      "ohne",
+      "trotz"
+     ],
+     "a": 0,
+     "w": "nur mit Einwilligung = 只有经过同意。介词固定搭配。"
+    },
+    {
+     "t": "gc",
+     "q": "Bei Minderjährigen braucht man die Einwilligung ___ Eltern.",
+     "o": [
+      "der",
+      "den",
+      "dem"
+     ],
+     "a": 0,
+     "w": "die Einwilligung der Eltern —— 第二格（Genitiv）。"
+    }
+   ]
+  },
+  {
+   "code": "E1-L2-02",
+   "title": "Werbung muss man erkennen können",
+   "topic": "E_法律与日常秩序",
+   "round": 2,
+   "rname": "Aktueller Stand",
+   "qs": [
+    {
+     "t": "lv",
+     "q": "Woran erkennt man laut Text, ob eine Veröffentlichung Werbung ist?",
+     "o": [
+      "Daran, ob Geld fließt.",
+      "Daran, ob sie überwiegend wirtschaftlichen Zwecken dient.",
+      "Daran, ob ein Produkt selbst gekauft wurde."
+     ],
+     "a": 1,
+     "w": "原文：Entscheidend ist nicht, ob Geld fließt, sondern ob … wirtschaftlichen Zwecken dient."
+    },
+    {
+     "t": "lv",
+     "q": "Was unterscheidet eine Rezension von Werbung?",
+     "o": [
+      "Eine Rezension ist bezahlt, Werbung nicht.",
+      "Eine Rezension ist nicht bezahlt.",
+      "Eine Rezension muss nicht gekennzeichnet werden, Werbung auch nicht."
+     ],
+     "a": 1,
+     "w": "原文：Eine Rezension darf positiv oder negativ sein; sie darf nur nicht bezahlt sein."
+    },
+    {
+     "t": "lv",
+     "q": "Wo muss der Hinweis auf Werbung stehen?",
+     "o": [
+      "Am Anfang des Textes.",
+      "Am Ende des Textes.",
+      "In einem Hashtag am Schluss."
+     ],
+     "a": 0,
+     "w": "原文：Der Hinweis muss am Anfang stehen, nicht am Ende. 放末尾等于没标。"
+    },
+    {
+     "t": "lv",
+     "q": "Warum ist das Thema im deutschen Sprachraum so präsent?",
+     "o": [
+      "Weil Behörden hohe Bußgelder verhängen.",
+      "Weil private Wettbewerbsvereine Abmahnungen verschicken, die Geld kosten.",
+      "Weil das Gesetz aus dem Jahr 1907 stammt."
+     ],
+     "a": 1,
+     "w": "原文：Die Durchsetzung ist weitgehend privat … eine Abmahnung kostet Geld."
+    },
+    {
+     "t": "rw",
+     "q": "Welcher Satz sagt dasselbe? „Danach handelt unlauter, wer den werblichen Charakter verschleiert.“",
+     "o": [
+      "Wer Werbung offenlegt, handelt unlauter.",
+      "Wer den Werbecharakter verdeckt, handelt wettbewerbswidrig.",
+      "Wer Werbung macht, muss nichts angeben."
+     ],
+     "a": 1,
+     "w": "verschleiern = 掩盖；unlauter = 不正当竞争。"
+    },
+    {
+     "t": "rw",
+     "q": "Welcher Satz sagt dasselbe? „Der Hinweis muss so deutlich sein wie die Werbung selbst.“",
+     "o": [
+      "Ein kleiner grauer Satz am unteren Rand reicht nicht aus.",
+      "Ein Hashtag am Textende genügt.",
+      "Der Hinweis darf kleiner sein als die Werbung."
+     ],
+     "a": 0,
+     "w": "原文明确否定了小字和末尾标签这两种做法。"
+    },
+    {
+     "t": "gc",
+     "q": "Wer für ein Produkt Geld oder eine Gegenleistung bekommt, muss das ___.",
+     "o": [
+      "kennzeichnen",
+      "kennzeichnet",
+      "gekennzeichnet"
+     ],
+     "a": 0,
+     "w": "muss + 不定式放句末：muss das kennzeichnen。"
+    },
+    {
+     "t": "gc",
+     "q": "Ein Hinweis am Ende des Textes gilt ___ ausreichend.",
+     "o": [
+      "nicht als",
+      "als nicht",
+      "nicht"
+     ],
+     "a": 0,
+     "w": "gelten als + 第一格：gilt nicht als ausreichend。"
+    }
+   ]
+  },
+  {
+   "code": "E3-L1-01",
+   "title": "Kündigung: drei Fristen, die zählen",
+   "topic": "E_法律与日常秩序",
+   "round": 3,
+   "rname": "Planung und Debatte",
+   "qs": [
+    {
+     "t": "lv",
+     "q": "Was braucht eine Kündigung nach Paragraf 623 BGB?",
+     "o": [
+      "Eine E-Mail an den Arbeitgeber.",
+      "Ein unterschriebenes Original in Schriftform.",
+      "Eine telefonische Ankündigung."
+     ],
+     "a": 1,
+     "w": "原文：Die Kündigung muss im Original zugehen, mit Unterschrift."
+    },
+    {
+     "t": "lv",
+     "q": "Wie verhalten sich die Fristen für Arbeitnehmer und Arbeitgeber?",
+     "o": [
+      "Sie sind immer gleich lang.",
+      "Der Arbeitnehmer kann mit vier Wochen kündigen, der Arbeitgeber muss die längere Frist einhalten.",
+      "Der Arbeitgeber kann ohne Frist kündigen."
+     ],
+     "a": 1,
+     "w": "原文：Diese Asymmetrie ist Absicht. —— 不对称是立法故意。"
+    },
+    {
+     "t": "lv",
+     "q": "In welchen Betrieben gilt das Kündigungsschutzgesetz nicht?",
+     "o": [
+      "In Betrieben mit zehn oder weniger Beschäftigten.",
+      "In Betrieben, die länger als zwanzig Jahre bestehen.",
+      "In allen Handwerksbetrieben."
+     ],
+     "a": 0,
+     "w": "Kleinbetrieb 例外：≤10 人，但 622 条的期限仍然适用。"
+    },
+    {
+     "t": "lv",
+     "q": "Warum ist der Aufhebungsvertrag riskant?",
+     "o": [
+      "Weil er nur mündlich gültig ist.",
+      "Weil er eine Sperrzeit beim Arbeitslosengeld auslösen kann.",
+      "Weil er immer eine Abfindung kostet."
+     ],
+     "a": 1,
+     "w": "原文：bis zu zwölf Wochen Sperrzeit —— 签字前先算这笔账。"
+    },
+    {
+     "t": "rw",
+     "q": "Welcher Satz sagt dasselbe? „Diese Frist ist eine Ausschlussfrist: Wer sie verpasst, verliert den Anspruch.“",
+     "o": [
+      "Man kann die Klage später nachholen.",
+      "Nach Ablauf dieser Frist ist der Anspruch endgültig weg.",
+      "Die Frist gilt nur für den Arbeitgeber."
+     ],
+     "a": 1,
+     "w": "Ausschlussfrist = 除斥期间，过期权利消灭，不可补。"
+    },
+    {
+     "t": "rw",
+     "q": "Welcher Satz sagt dasselbe? „Für den Arbeitnehmer gilt dabei immer die kürzere Frist von vier Wochen.“",
+     "o": [
+      "Der Arbeitnehmer kann schneller raus als der Arbeitgeber ihn kündigen kann.",
+      "Der Arbeitnehmer muss länger warten als der Arbeitgeber.",
+      "Für beide gilt dieselbe Frist."
+     ],
+     "a": 0,
+     "w": "员工侧固定四周，雇主侧随工龄拉长。"
+    },
+    {
+     "t": "gc",
+     "q": "Wer die Kündigung für rechtswidrig hält, muss innerhalb von drei Wochen ___ Arbeitsgericht klagen.",
+     "o": [
+      "beim",
+      "am",
+      "zum"
+     ],
+     "a": 0,
+     "w": "klagen beim Gericht —— 固定搭配。"
+    },
+    {
+     "t": "gc",
+     "q": "Wer einen Aufhebungsvertrag unterschreibt, ___ im Regelfall eine Sperrzeit.",
+     "o": [
+      "bekommt",
+      "bekommen",
+      "bekam"
+     ],
+     "a": 0,
+     "w": "主语 Wer（单数第三人称）→ bekommt。"
+    }
+   ]
+  },
+  {
+   "code": "E2-L1-01",
+   "title": "Ein Bescheid ist kein Endurteil",
+   "topic": "E_法律与日常秩序",
+   "round": 4,
+   "rname": "Langfristige Folgen",
+   "qs": [
+    {
+     "t": "lv",
+     "q": "Warum ist ein Bescheid „nicht endgültig“?",
+     "o": [
+      "Weil man ihn mit Widerspruch und Klage angreifen kann.",
+      "Weil er nach einem Jahr automatisch verfällt.",
+      "Weil er nur mündlich erteilt wird."
+     ],
+     "a": 0,
+     "w": "原文：Er ist verbindlich, aber er ist nicht endgültig. —— 有约束力≠终局。"
+    },
+    {
+     "t": "lv",
+     "q": "Was passiert, wenn die Rechtsbehelfsbelehrung fehlt oder falsch ist?",
+     "o": [
+      "Der Bescheid ist sofort nichtig.",
+      "Die Widerspruchsfrist verlängert sich.",
+      "Man kann direkt klagen, ohne Widerspruch."
+     ],
+     "a": 1,
+     "w": "原文：Fehlt diese Belehrung oder ist sie falsch, verlängert sich die Frist."
+    },
+    {
+     "t": "lv",
+     "q": "Wer entscheidet über den Widerspruch?",
+     "o": [
+      "Das Verwaltungsgericht.",
+      "Die Behörde selbst.",
+      "Das Sozialgericht."
+     ],
+     "a": 1,
+     "w": "原文：eine interne Überprüfung durch die Behörde selbst —— 不是打官司。"
+    },
+    {
+     "t": "lv",
+     "q": "Welche Reihenfolge ist nach dem Text richtig?",
+     "o": [
+      "Klage → Widerspruch → Widerspruchsbescheid",
+      "Widerspruch → Widerspruchsbescheid → Klage",
+      "Widerspruch → Klage → Widerspruchsbescheid"
+     ],
+     "a": 1,
+     "w": "必须先走完异议，才能起诉；跳过异议通常败诉。"
+    },
+    {
+     "t": "rw",
+     "q": "Welcher Satz sagt dasselbe? „Wer den Widerspruch überspringt, verliert meist die Klage, weil das Verfahren nicht durchlaufen wurde.“",
+     "o": [
+      "Wer direkt klagt, hat gute Chancen.",
+      "Wer den Widerspruch nicht einlegt, scheitert oft vor Gericht.",
+      "Wer klagt, braucht keinen Widerspruch."
+     ],
+     "a": 1,
+     "w": "durchlaufen = 走完程序。"
+    },
+    {
+     "t": "rw",
+     "q": "Welcher Satz sagt dasselbe? „Widerspruch und Anfechtungsklage haben aufschiebende Wirkung.“",
+     "o": [
+      "Der Bescheid wird während des Verfahrens vorläufig nicht vollstreckt.",
+      "Der Bescheid ist mit dem Widerspruch sofort aufgehoben.",
+      "Der Bescheid wird beschleunigt bearbeitet."
+     ],
+     "a": 0,
+     "w": "aufschiebende Wirkung = 中止执行，不是撤销。"
+    },
+    {
+     "t": "gc",
+     "q": "Gegen die meisten Bescheide kann man innerhalb ___ Monats Widerspruch einlegen.",
+     "o": [
+      "eines",
+      "eine",
+      "einem"
+     ],
+     "a": 0,
+     "w": "innerhalb + 第二格：innerhalb eines Monats。"
+    },
+    {
+     "t": "gc",
+     "q": "Wer einen Bescheid erhält und nichts tut, ___ ihn nach Ablauf der Frist.",
+     "o": [
+      "akzeptiert",
+      "akzeptieren",
+      "akzeptierte"
+     ],
+     "a": 0,
+     "w": "主语 Wer 单数 → akzeptiert。"
+    }
+   ]
+  },
+  {
+   "code": "A1-L3-04",
+   "title": "Ein erstes Mal – und was danach bleibt",
+   "topic": "A_国家与制度",
+   "round": 4,
+   "rname": "Langfristige Folgen",
+   "qs": [
+    {
+     "t": "lv",
+     "q": "Was ist die Hauptaussage des Textes?",
+     "o": [
+      "Eine Frau als Präsidentin würde sofort viele Gesetze ändern.",
+      "Die symbolische Wirkung ist größer als die direkte politische Wirkung.",
+      "Das Amt des Präsidenten hat viel Gesetzgebungskompetenz."
+     ],
+     "a": 1,
+     "w": "原文：Die Wirkung liegt im Symbol und im Ton. —— 象征与语气，不是立法。"
+    },
+    {
+     "t": "lv",
+     "q": "Warum kann die Präsidentin keine Reform erzwingen?",
+     "o": [
+      "Weil sie keine Gesetzgebungskompetenz und kein Budget hat.",
+      "Weil sie vom Volk direkt gewählt wird.",
+      "Weil sie nur repräsentative Reden halten darf."
+     ],
+     "a": 0,
+     "w": "原文：Der Präsident hat keine Gesetzgebungskompetenz und kein Budget."
+    },
+    {
+     "t": "lv",
+     "q": "Was bedeutet „Symbol und Grenzen“ für die Amtsführung?",
+     "o": [
+      "Der Präsident kann Themen setzen, aber keine Mehrheiten organisieren.",
+      "Der Präsident kann alles durchsetzen.",
+      "Der Präsident darf keine Reden halten."
+     ],
+     "a": 0,
+     "w": "原文：Mehrheiten organisieren kann er nicht."
+    },
+    {
+     "t": "lv",
+     "q": "Welche Reden geben dem Präsidenten eine Bühne, die keine Regierung hat?",
+     "o": [
+      "Wahlkampfreden der eigenen Partei.",
+      "Reden zum 9. November oder zum Tag der Deutschen Einheit.",
+      "Haushaltsreden im Bundestag."
+     ],
+     "a": 1,
+     "w": "原文举例正是这两个纪念日。"
+    },
+    {
+     "t": "rw",
+     "q": "Welcher Satz sagt dasselbe? „Die größte Veränderung wäre nicht das Geschlecht, sondern die Normalität danach.“",
+     "o": [
+      "Das Geschlecht ist der entscheidende Punkt.",
+      "Entscheidend ist, dass eine Frau im Amt nicht mehr als Ausnahme gilt.",
+      "Nach der Wahl ändert sich nichts."
+     ],
+     "a": 1,
+     "w": "Normalität = 不再被当成例外。"
+    },
+    {
+     "t": "rw",
+     "q": "Welcher Satz sagt dasselbe? „Ein Präsident, der wie ein Parteiführer auftritt, verliert an Autorität.“",
+     "o": [
+      "Parteipolitisches Auftreten schadet dem Amt.",
+      "Der Präsident sollte Parteichef sein.",
+      "Wer Autorität hat, kann Parteiführer werden."
+     ],
+     "a": 0,
+     "w": "原文：Das Amt soll über Wahlkämpfe hinaus Bestand haben."
+    },
+    {
+     "t": "gc",
+     "q": "Sollte Ilse Aigner gewählt werden, ___ sie die erste Frau an der Spitze des Staates.",
+     "o": [
+      "wäre",
+      "war",
+      "wird"
+     ],
+     "a": 0,
+     "w": "Sollte … wäre —— 虚拟式 II（Konjunktiv II），对应语法册 068。"
+    },
+    {
+     "t": "gc",
+     "q": "Sie kann aber keine Reform ___ und keine Krise allein lösen.",
+     "o": [
+      "erzwingen",
+      "erzwingt",
+      "erzwungen"
+     ],
+     "a": 0,
+     "w": "kann + 不定式放句末：kann … erzwingen。"
+    }
+   ]
+  }
+ ],
+ "note": "Phase 1 全选择式 · 每册 8 题 · 4×三选一 + 2×选出正确改写 + 2×每空 ABC"
+}
