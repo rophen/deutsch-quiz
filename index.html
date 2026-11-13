@@ -1,0 +1,14 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Deutsch 练习台</title>
+<style>body{font:16px/1.6 -apple-system,sans-serif;background:#F4F2E8;color:#273331;margin:0;padding:24px}
+h1{font-size:20px;color:#2C6762}button{font-size:17px;padding:12px 16px;margin:6px 0;width:100%;text-align:left;background:#fff;border:1px solid #c9d3cc;border-radius:10px}
+.ok{background:#e3f2e8;border-color:#4a9} .no{background:#f8e4e4;border-color:#c66}</style>
+<h1>练习台 · 试跑</h1>
+<p>Satz: <b>Die Zahl der Pflegebedürftigen ist gestiegen, ___ mehr Menschen älter werden.</b></p>
+<div id=q></div>
+<script>
+const opts=[["weil","denn","obwohl"],["weil"]];
+const w=document.getElementById("q");
+opts[0].forEach(o=>{const b=document.createElement("button");b.textContent=o;
+ b.onclick=()=>{[...w.children].forEach(x=>x.className="");b.className=(o===opts[1][0])?"ok":"no";};w.append(b);});
+</script>
