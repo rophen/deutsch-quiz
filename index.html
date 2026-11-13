@@ -135,9 +135,11 @@ function renderHome(){
       <h2>${esc(d.split("_")[0])} · ${esc(DOM[d.split("_")[0]] || d)}</h2>
       ${byDom[d].map(c => card(c)).join("")}`).join("")}
     <button class="btn ghost sm" id="exp">导出做题记录（JSON）</button>
+    <button class="btn ghost sm" id="rep">交回电脑（复制成绩）</button>
     <p class="foot">正文里带虚线的词，点一下看德语释义。<br>
       读完点「做题」，8 道三选一，7 分算过。</p>`;
   $("#exp").onclick = exportJSON;
+  $("#rep").onclick = reportText;
 }
 
 function card(code){
@@ -161,6 +163,38 @@ function exportJSON(){
   a.download = "deutsch-lesen-" + new Date().toISOString().slice(0, 10) + ".json";
   a.click();
   setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+}
+
+/* 交回电脑：生成一段能直接粘进「输入桥/收件箱」的纯文本。
+   格式固定，inbox.py 按 `CODE 分/总` 认行，不需要 JSON。 */
+function reportText(){
+  const codes = Object.keys(ST.runs || {}).sort((a, b) => BOOKS[a].seq - BOOKS[b].seq);
+  if (!codes.length) return alert("还没做过题。先读一册，点「做题」。");
+  let pass = 0, got = 0, tot = 0;
+  const rows = codes.map(c => {
+    const r = ST.runs[c];
+    got += r.score; tot += r.total || 8;
+    if (r.score >= 7) pass++;
+    return `${c} ${r.score}/${r.total || 8} 第${r.tries || 1}次`;
+  });
+  const d = new Date(), pad = n => String(n).padStart(2, "0");
+  const stamp = `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())} ${pad(d.getHours())}:${pad(d.getMinutes())}`;
+  const text = [`# 练习成绩 ${stamp}`, "",
+                `合计：${codes.length} 册 · ${got}/${tot} · 过 7/8 的 ${pass} 册`, "",
+                ...rows].join("\n");
+  const fn = `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}-${pad(d.getHours())}${pad(d.getMinutes())}.md`;
+  const done = () => alert(`已复制。\n\n下一步：手机「文件」→ 输入桥 → 收件箱，新建文件叫 ${fn}，粘进去保存。\n\n` + text);
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(done).catch(() => fallback(text));
+  } else fallback(text);
+}
+function fallback(text){
+  const ta = document.createElement("textarea");
+  ta.value = text; ta.style.position = "fixed"; ta.style.opacity = "0";
+  document.body.appendChild(ta); ta.select();
+  try { document.execCommand("copy"); alert("已复制。\n\n" + text); }
+  catch (e) { prompt("手动复制这段：", text); }
+  document.body.removeChild(ta);
 }
 
 /* ── 阅读 ─────────────────────────────────────────── */
