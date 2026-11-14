@@ -4885,7 +4885,83 @@
     ]
    }
   ],
-  "prevCode": null,
+  "prevCode": "A1-L3-04",
   "nxtCode": "B2-L2-02"
+ },
+ "A1-L3-04": {
+  "code": "A1-L3-04",
+  "seq": 4,
+  "domain": "A_国家与制度",
+  "round": 4,
+  "rname": "Langfristige Folgen",
+  "title": "Ein erstes Mal – und was danach bleibt",
+  "zh": "第四轮看远期影响：第一位女性总统会改变什么，又改变不了什么。",
+  "meta": "A1-L3-04 · H01-4 · Runde 4 · Langfristige Folgen",
+  "src": "Quellen: Grundgesetz Art. 54–61; Bundespräsidialamt; ZDFheute, 9.11.2026.",
+  "nxt": "H02-1 · Auftragseingang: der Frühindikator, den alle zitieren",
+  "els": [
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Sollte Ilse Aigner gewählt werden, wäre sie die erste Frau und die erste CSU-Politikerin an der Spitze des Staates. Das wäre ein historischer Moment. Die Geschichte des Amtes zeigt aber, dass solche Momente selten direkte Politik erzeugen. Der Präsident hat keine Gesetzgebungskompetenz und kein Budget."
+     }
+    ]
+   },
+   {
+    "k": "h2",
+    "t": "Symbol und Grenzen"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Die Wirkung liegt im Symbol und im Ton. Eine Präsidentin kann Themen setzen, ohne Gesetze zu machen: etwa Gleichstellung, Zusammenhalt oder den Umgang mit Extremismus. Sie kann jungen Menschen zeigen, dass das höchste Amt nicht automatisch männlich ist. Sie kann aber keine Reform erzwingen und keine Krise allein lösen."
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Für die Institution ist Kontinuität wichtiger als der Bruch. Das Amt soll über Wahlkämpfe hinaus Bestand haben. Ein Präsident, der wie ein Parteiführer auftritt, verliert an Autorität. Ein Präsident, der nur neutral bleibt, wird kaum gehört. Diese Spannung bleibt auch nach dem ersten Mal bestehen."
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Ein Beispiel sind die Reden zum 9. November oder zum Tag der Deutschen Einheit. Solche Anlässe geben dem Präsidenten eine Bühne, die keine Regierung hat. Er kann dort Themen formulieren, die später in Debatten aufgenommen werden. Mehrheiten organisieren kann er nicht."
+     }
+    ]
+   },
+   {
+    "k": "h2",
+    "t": "Was langfristig zählt"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Langfristig zählt, ob die erste Präsidentin das Amt prägt, ohne es zu politisieren. Dazu gehören Reden, die über den Tag hinaus wirken, und ein Verhältnis zur Regierung, das Distanz und Respekt verbindet. Nach der Bundestagswahl 2029 wird sie den Auftrag zur Regierungsbildung erteilen. In dieser Rolle kann sie Stabilität sichern oder Blockaden sichtbar machen."
+     }
+    ]
+   },
+   {
+    "k": "h2",
+    "t": "Einordnung"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Die größte Veränderung wäre nicht das Geschlecht, sondern die Normalität danach. Wenn eine Frau im Schloss Bellevue nicht mehr als Ausnahme gilt, verändert sich die Erwartung an das Amt. Das ist keine Revolution, aber eine Verschiebung, die bleibt. Aigner wird daran gemessen werden, ob sie diese Normalität glaubwürdig verkörpert."
+     }
+    ]
+   }
+  ],
+  "prevCode": null,
+  "nxtCode": "A1-L4-05"
  }
 }
