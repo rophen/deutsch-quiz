@@ -201,7 +201,7 @@ function renderHome(){
     <button class="btn ghost sm" id="stats">进度总览</button>
     <button class="btn ghost sm" id="sync">云端同步 / 交回电脑</button>
     <p class="foot">正文里带虚线的词，点一下看德语释义。<br>
-      每册 8 道三选一（写说 4 道），答对 7 题算过。</p>`;
+      阅读 / 听力 / 语法每册 8 题，答对 7 题算过；写说每册 4 题，答对 3 题算过。</p>`;
   $("#stats").onclick = () => go("#/stats");
   $("#sync").onclick = () => go("#/sync");
   window.scrollTo(0, 0);
@@ -218,7 +218,7 @@ function renderLine(k){
   // 阅读按 seq；听力按阶梯 + 序号；语法按 code；写说 写作在前、口语在后
   const num = c => { const m = /(\d+)/.exec(c.replace(/^[A-Z]-/, "")); return m ? +m[1] : 0; };
   if (k === "listen") cs.sort((a, b) => listenRank(a) - listenRank(b));
-  else if (k === "write") cs.sort((a, b) => (a[0] === b[0] ? num(a) - num(b) : a[0] < b[0] ? -1 : 1));
+  else if (k === "write") cs.sort((a, b) => (a[0] === b[0] ? num(a) - num(b) : a[0] === "W" ? -1 : 1));
   else if (k === "grammar") cs.sort((a, b) => num(a) - num(b));
   else cs.sort((a, b) => (BOOKS[a].seq || 0) - (BOOKS[b].seq || 0));
 
@@ -253,7 +253,8 @@ function card(code, k){
     : `<span class="pill ${sc >= pass ? "done" : "warn"}">${sc}/${r.total || total}</span>`;
   const href = k === "listen" ? `#/listen/${code}` : `#/read/${code}`;
   const pct = sc === null ? 0 : Math.round(sc / (r.total || total) * 100);
-  const sub = k === "listen" ? `${b.meta || ""}` : `${b.round ? `R${b.round} ` : ""}${esc(b.rname || "")}`;
+  const sub = (k === "listen" || k === "write") ? esc(b.meta || "")
+            : `${b.round ? `R${b.round} ` : ""}${esc(b.rname || "")}`;
   return `<a class="card" href="${href}">
     <div class="t">${esc(b.title)}</div>
     <div class="m"><span>${code}</span><span>·</span><span>${sub}</span>${pill}</div>
@@ -292,7 +293,8 @@ function renderRead(code){
     return `<p>${e.seg ? renderSeg(e.seg) : esc(e.t || "")}</p>`;
   }).join("");
   const q = qset(code), r = run(code);
-  const back = lineOf(b) === "阅读" ? "#/line/read" : "#/line/grammar";
+  const ln = lineOf(b);
+  const back = ln === "阅读" ? "#/line/read" : ln === "写说" ? "#/line/write" : "#/line/grammar";
   $("#app").innerHTML = `
     <div class="top"><a class="back" href="${back}">‹ 目录</a>
       <div class="ttl">${esc(b.meta || code)}</div></div>

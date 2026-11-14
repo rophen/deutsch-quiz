@@ -1,7 +1,7 @@
 {
-  "name": "Deutsch 阅读台",
+  "name": "Deutsch 学习台",
   "short_name": "Deutsch",
-  "description": "德语阅读册在线正文 + 每册 8 题三选一，7 分算过。",
+  "description": "德语四线学习台：阅读 / 听力 / 语法 / 写说，正文 + 真人音频 + 三选一题库，做题记录可同步。",
   "lang": "de",
   "start_url": "./",
   "scope": "./",
@@ -10,8 +10,23 @@
   "background_color": "#F4F2E8",
   "theme_color": "#2C6762",
   "icons": [
-    {"src": "icon-180.png", "sizes": "180x180", "type": "image/png", "purpose": "any"},
-    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
-    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+    {
+      "src": "icon-180.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
   ]
 }
