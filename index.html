@@ -539,10 +539,13 @@ async function gistLoad(){
   try { const d = JSON.parse(txt); return {ok:true, runs:d.runs || {}, gid}; }
   catch(e){ return {ok:false, why:"云端 JSON 坏了"}; }
 }
-async function gistSave(runs){
+async function gistSave(runs, forceNew){
   const h = ghHeaders(); if (!h) return {ok:false, why:"没填 token"};
   const body = JSON.stringify({version:1, updated:new Date().toISOString(), runs}, null, 1);
   let gid = localStorage.getItem(GIDKEY);
+  // 本机还没有云端记录：默认不建新的。先让用户选「接入已有的」还是「新建一个」，
+  // 否则每换一台设备、每清一次缓存都会多出一个 gist。
+  if (!gid && !forceNew) return {ok:false, why:"no-gid"};
   const payload = {description:"Deutsch 学习台 做题记录",
                    files:{"dq_sync.json":{content:body}}, public:false};
   const r = gid
@@ -573,7 +576,10 @@ async function doSync(manual){
       const changed = JSON.stringify(merged) !== JSON.stringify(ST.runs || {});
       if (changed) { ST.runs = merged; saveST(); }
       const up = await gistSave(merged);
-      if (manual) alert(up.ok ? `已同步。云端 ${Object.keys(merged).length} 册。` : "上传失败：" + up.why);
+      if (up.ok) { if (manual) alert(`已同步。云端 ${Object.keys(merged).length} 册。`); }
+      else if (manual) alert(up.why === "no-gid"
+        ? "这台设备还没接上云端记录。自动同步先停着——到同步页选「接入已有的」或「新建一个」，之后每做一册就会自动上传。"
+        : "上传失败：" + up.why);
     } else if (manual) alert("拉取失败：" + cl.why);
   } catch (e) { if (manual) alert("同步出错：" + e.message); }
   finally { SYNCING = false; }
@@ -636,6 +642,10 @@ function renderSync(){
     <button class="btn ghost sm" id="save">保存 token 并同步</button>
     <p class="sub" style="margin-top:14px">${gid ? `云端记录：<code>${esc(gid)}</code>` : "还没建云端记录"}</p>
     <button class="btn ghost sm" id="pull">从云端拉一次</button>
+    <input class="tok" id="gidi" placeholder="已有云端记录 id（可选，换设备时填）" value="">
+    <button class="btn ghost sm" id="join">接入这个云端记录</button>
+    <button class="btn ghost sm" id="mk">${gid ? "已在用一份云端记录" : "建一份新的云端记录"}</button>
+    <p class="foot">换设备时不要新建，把第一台设备的 id 填这里接进来，两边就写同一份记录。</p>
     <h2>三、导出文件</h2>
     <button class="btn ghost sm" id="exp">导出 JSON</button>
     <p class="foot">记录只属于你。token 清空后本机不再上传。</p>
@@ -656,6 +666,28 @@ function renderSync(){
     if (!cl.ok) return alert("拉取失败：" + cl.why);
     ST.runs = mergeRuns(ST.runs || {}, cl.runs); saveST();
     alert(`合并完成，现在 ${Object.keys(ST.runs).length} 册。`);
+    renderSync();
+  };
+  $("#mk").onclick = async () => {
+    if (localStorage.getItem(GIDKEY)) return alert("这台设备已经有云端记录了，不用新建。");
+    if (!localStorage.getItem(TOKKEY)) return alert("先填 token。");
+    const up = await gistSave(ST.runs || {}, true);
+    alert(up.ok ? `已新建云端记录 ${up.gid}。以后每做一册自动上传。` : "新建失败：" + up.why);
+    renderSync();
+  };
+  $("#join").onclick = async () => {
+    const id = $("#gidi").value.trim();
+    if (!/^[0-9a-f]{6,}$/i.test(id)) return alert("这不像一个 gist id。在网址 github.com/…/gist 里，或者上一台设备的 #/sync 页上能看到。");
+    if (!localStorage.getItem(TOKKEY)) return alert("先填并保存 token。");
+    localStorage.setItem(GIDKEY, id);
+    const cl = await gistLoad();
+    if (!cl.ok) { localStorage.removeItem(GIDKEY); return alert("接不上：" + cl.why); }
+    // 本地与云端合并，再整体写回这个云端记录，保证两台设备内容一致
+    ST.runs = mergeRuns(ST.runs || {}, cl.runs); saveST();
+    const up = await gistSave(ST.runs, true);
+    alert(up.ok
+      ? `已接入 ${id}，合并后 ${Object.keys(ST.runs).length} 册，已写回云端。`
+      : `已接入并合并 ${Object.keys(ST.runs).length} 册，但写回失败：${up.why}`);
     renderSync();
   };
   window.scrollTo(0, 0);
