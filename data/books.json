@@ -4302,21 +4302,37 @@
   "code": "B2-L2-02",
   "seq": 11,
   "domain": "B_社会与民生",
-  "round": 2,
-  "rname": "Aktueller Stand",
+  "round": 1,
+  "rname": "Hintergrund",
   "title": "Wer entscheidet über den Schulalltag?",
   "zh": "一件小事要经过三层才落地：州写框架、学校写细则、市镇管房子。",
-  "meta": "B2-L2-02 · R03.01 · Runde 2 · Aktueller Stand",
-  "src": "Quellen: Quellen: Niedersächsisches Schulgesetz (NSchG), Regelungen zur Schulkonferenz und zu den Teilkonferenzen (§ 35) — https://www.mk.niedersachsen.de/download/94662. Österreich: Schulunterrichtsgesetz (SchUG), Schulforum und Schulgemeinschaftsausschuss — https://www.ris.bka.gv.at. Stand 14. November 2026.",
+  "meta": "B2-L2-02 · R03.01 · Runde 1 · Hintergrund",
+  "src": "Quellen: Niedersächsisches Schulgesetz (NSchG), Regelungen zur Schulkonferenz und zu den Teilkonferenzen (§ 35) — https://www.mk.niedersachsen.de/download/94662. Österreich: Schulunterrichtsgesetz (SchUG), Schulforum und Schulgemeinschaftsausschuss — https://www.ris.bka.gv.at. Stand 14. November 2026.",
   "nxt": "R03.02 · Was passiert, wenn Unterricht ausfällt?",
   "els": [
    {
     "k": "h2",
-    "t": "Eine Regel, die jeden Tag gilt\nOb in der Mittagspause im Gebäude geblieben werden darf, ob das Handy in der Pause erlaubt ist, ob man vor der letzten Stunde gehen darf: Solche Sätze stehen in der Hausordnung. Sie gilt das ganze Schuljahr, jeden Tag, für alle. An ihr lässt sich zeigen, wie viele Hände an einer einzigen Regel beteiligt sind."
+    "t": "Eine Regel, die jeden Tag gilt"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Ob in der Mittagspause im Gebäude geblieben werden darf, ob das Handy in der Pause erlaubt ist, ob man vor der letzten Stunde gehen darf: Solche Sätze stehen in der Hausordnung. Sie gilt das ganze Schuljahr, jeden Tag, für alle. An ihr lässt sich zeigen, wie viele Hände an einer einzigen Regel beteiligt sind."
+     }
+    ]
    },
    {
     "k": "h2",
-    "t": "Drei Ebenen, drei Zuständigkeiten\nDie erste Ebene ist das Land. Es erlässt das Schulgesetz und die Lehrpläne. Dort steht der Rahmen: dass es eine Hausordnung geben muss, wer sie beschließen darf und welche Rechte Eltern und Schüler dabei haben."
+    "t": "Drei Ebenen, drei Zuständigkeiten"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Die erste Ebene ist das Land. Es erlässt das Schulgesetz und die Lehrpläne. Dort steht der Rahmen: dass es eine Hausordnung geben muss, wer sie beschließen darf und welche Rechte Eltern und Schüler dabei haben."
+     }
+    ]
    },
    {
     "k": "p",
@@ -4350,7 +4366,11 @@
    },
    {
     "k": "h2",
-    "t": "Wo die Grenzen liegen\n> 同一件事上，州定框架、学校定细节、市镇管房子，三方各有边界，谁也不能单独决定。"
+    "t": "Wo die Grenzen liegen"
+   },
+   {
+    "k": "zh",
+    "t": "同一件事上，州定框架、学校定细节、市镇管房子，三方各有边界，谁也不能单独决定。"
    },
    {
     "k": "p",
@@ -4405,9 +4425,7 @@
      }
     ]
    }
-  ],
-  "prevCode": "A1-L4-05",
-  "nxtCode": "B2-L2-03"
+  ]
  },
  "B2-L2-03": {
   "code": "B2-L2-03",
@@ -4418,16 +4436,46 @@
   "title": "Was passiert, wenn Unterricht ausfällt?",
   "zh": "「停课」不是一个事件，而是三种：一节课取消、一整天没有课、学校临时关闭。三者对家庭的压力完全不同。",
   "meta": "B2-L2-03 · R03.02 · Runde 2 · Aktueller Stand",
-  "src": "Quellen: Quellen: Niedersächsisches Schulgesetz (NSchG), Aufsicht und Vertretung im Schulbetrieb — https://www.mk.niedersachsen.de/download/94662. Sekretariat der Kultusministerkonferenz, Lehrkräfteeinstellungsbedarf und -angebot in der Bundesrepublik Deutschland, Modellrechnung (Dok. 247) — https://www.kmk.org/fileadmin/Dateien/pdf/Statistik/Dokumentationen/Dok_247_Bericht_LEB_LEA_2025.pdf. Stand 14. November 2026.",
+  "src": "Quellen: Niedersächsisches Schulgesetz (NSchG), Aufsicht und Vertretung im Schulbetrieb — https://www.mk.niedersachsen.de/download/94662. Sekretariat der Kultusministerkonferenz, Lehrkräfteeinstellungsbedarf und -angebot in der Bundesrepublik Deutschland, Modellrechnung (Dok. 247) — https://www.kmk.org/fileadmin/Dateien/pdf/Statistik/Dokumentationen/Dok_247_Bericht_LEB_LEA_2025.pdf. Stand 14. November 2026.",
   "nxt": "R03.03 · Warum passen Lehrkräfte und Bedarf nicht immer zusammen?",
   "els": [
    {
     "k": "h2",
-    "t": "Drei verschiedene Dinge\nUnterricht fällt aus – dieser Satz beschreibt drei verschiedene Vorgänge. Erstens: eine einzelne Stunde fällt aus, weil die Lehrkraft krank ist; die Klasse wird in dieser Zeit betreut oder hat bei einer anderen Lehrkraft Unterricht. Zweitens: eine Klasse hat einen ganzen Tag ohne Unterricht, etwa wenn mehrere Lehrkräfte gleichzeitig fehlen. Drittens: die Schule schließt, zum Beispiel bei Unwetter, bei einem Rohrbruch oder bei einer behördlichen Anordnung."
+    "t": "Drei verschiedene Dinge"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Unterricht fällt aus – dieser Satz beschreibt drei verschiedene Vorgänge. Erstens: eine einzelne Stunde fällt aus, weil die Lehrkraft krank ist; die Klasse wird in dieser Zeit betreut oder hat bei einer anderen Lehrkraft Unterricht. Zweitens: eine Klasse hat einen ganzen Tag ohne Unterricht, etwa wenn mehrere Lehrkräfte gleichzeitig fehlen. Drittens: die Schule schließt, zum Beispiel bei Unwetter, bei einem Rohrbruch oder bei einer behördlichen Anordnung."
+     }
+    ]
    },
    {
     "k": "h2",
-    "t": "Wer entscheidet, und was danach gilt\nIn allen drei Fällen bleibt die Schule zuständig. Die {{Schulleitung|der oder die Verantwortliche für den laufenden Betrieb einer Schule}} erstellt den Vertretungsplan und entscheidet, welche Klasse wohin geht. Die {{Aufsichtspflicht|die gesetzliche Pflicht, Schülerinnen und Schüler vor Schaden zu bewahren}} endet nicht mit dem Klingeln: Wer in der Schule anwesend ist, muss beaufsichtigt werden."
+    "t": "Wer entscheidet, und was danach gilt"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "In allen drei Fällen bleibt die Schule zuständig. Die "
+     },
+     {
+      "g": "Schulleitung",
+      "d": "der oder die Verantwortliche für den laufenden Betrieb einer Schule"
+     },
+     {
+      "s": " erstellt den Vertretungsplan und entscheidet, welche Klasse wohin geht. Die "
+     },
+     {
+      "g": "Aufsichtspflicht",
+      "d": "die gesetzliche Pflicht, Schülerinnen und Schüler vor Schaden zu bewahren"
+     },
+     {
+      "s": " endet nicht mit dem Klingeln: Wer in der Schule anwesend ist, muss beaufsichtigt werden."
+     }
+    ]
    },
    {
     "k": "p",
@@ -4439,7 +4487,11 @@
    },
    {
     "k": "h2",
-    "t": "Was das für Familien bedeutet\n> 停课对学校是一次排班调整，对家庭是当天重排全部安排。两边的成本不对称。"
+    "t": "Was das für Familien bedeutet"
+   },
+   {
+    "k": "zh",
+    "t": "停课对学校是一次排班调整，对家庭是当天重排全部安排。两边的成本不对称。"
    },
    {
     "k": "p",
@@ -4459,7 +4511,22 @@
    },
    {
     "k": "h2",
-    "t": "Was das über die Schule sagt\nFällt Unterricht häufig aus, ist das selten ein Zeichen von Nachlässigkeit. Es ist meistens ein Zeichen dafür, dass die {{Vertretungsreserve|die eingeplante Zahl zusätzlicher Lehrkräfte, die kurzfristige Ausfälle auffangen soll}} kleiner ist als die Zahl der Ausfälle. Die einzelne Schule kann dann nur noch verteilen, was da ist."
+    "t": "Was das über die Schule sagt"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Fällt Unterricht häufig aus, ist das selten ein Zeichen von Nachlässigkeit. Es ist meistens ein Zeichen dafür, dass die "
+     },
+     {
+      "g": "Vertretungsreserve",
+      "d": "die eingeplante Zahl zusätzlicher Lehrkräfte, die kurzfristige Ausfälle auffangen soll"
+     },
+     {
+      "s": " kleiner ist als die Zahl der Ausfälle. Die einzelne Schule kann dann nur noch verteilen, was da ist."
+     }
+    ]
    },
    {
     "k": "p",
@@ -4477,9 +4544,7 @@
      }
     ]
    }
-  ],
-  "prevCode": "B2-L2-02",
-  "nxtCode": "B2-L3-04"
+  ]
  },
  "B2-L3-04": {
   "code": "B2-L3-04",
@@ -4490,16 +4555,32 @@
   "title": "Warum passen Lehrkräfte und Bedarf nicht immer zusammen?",
   "zh": "供需错配不等于「老师不够」。它是某科目、某类学校、某地区同时不够，而另一些地方够。",
   "meta": "B2-L3-04 · R03.03 · Runde 3 · Planung und Debatte",
-  "src": "Quellen: Quellen: Sekretariat der Kultusministerkonferenz, Lehrkräfteeinstellungsbedarf und -angebot in der Bundesrepublik Deutschland, Modellrechnung bis 2035 (Dok. 247) — https://www.kmk.org/fileadmin/Dateien/pdf/Statistik/Dokumentationen/Dok_247_Bericht_LEB_LEA_2025.pdf. KMK, Mitteilung zu Einstellungschancen für Lehramtsbewerberinnen und -bewerber, 11. Februar 2025 — https://www.kmk.org/en/aktuelles/pressarchiv/mitteilung/gute-einstellungschancen-fuer-lehramtsbewerberinnen-und-lehramtsbewerber-im-schulsystem.html. Stand 14. November 2026.",
+  "src": "Quellen: Sekretariat der Kultusministerkonferenz, Lehrkräfteeinstellungsbedarf und -angebot in der Bundesrepublik Deutschland, Modellrechnung bis 2035 (Dok. 247) — https://www.kmk.org/fileadmin/Dateien/pdf/Statistik/Dokumentationen/Dok_247_Bericht_LEB_LEA_2025.pdf. KMK, Mitteilung zu Einstellungschancen für Lehramtsbewerberinnen und -bewerber, 11. Februar 2025 — https://www.kmk.org/en/aktuelles/pressarchiv/mitteilung/gute-einstellungschancen-fuer-lehramtsbewerberinnen-und-lehramtsbewerber-im-schulsystem.html. Stand 14. November 2026.",
   "nxt": "R03.04 · Was wünschen sich Eltern von einer Schule?",
   "els": [
    {
     "k": "h2",
-    "t": "Die falsche Frage\nAuf die Frage, ob es genug Lehrkräfte gibt, antwortet die Politik mit einer Zahl: so und so viele fehlen. Diese Zahl ist nicht falsch, aber sie führt in die Irre. Denn eingestellt wird nicht bundesweit, sondern für eine Schule in einem Bundesland, für eine Schulform und für ein Fach."
+    "t": "Die falsche Frage"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Auf die Frage, ob es genug Lehrkräfte gibt, antwortet die Politik mit einer Zahl: so und so viele fehlen. Diese Zahl ist nicht falsch, aber sie führt in die Irre. Denn eingestellt wird nicht bundesweit, sondern für eine Schule in einem Bundesland, für eine Schulform und für ein Fach."
+     }
+    ]
    },
    {
     "k": "h2",
-    "t": "Drei Achsen\nDie erste Achse ist das Fach. Für Mathematik, Informatik und die Naturwissenschaften ist die Nachfrage seit Jahren größer als das Angebot. In Musik, Kunst oder Geschichte ist es an vielen Standorten umgekehrt. Ein Überhang im einen Fach gleicht keinen Mangel im anderen aus, weil niemand fachfremd unterrichten soll."
+    "t": "Drei Achsen"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Die erste Achse ist das Fach. Für Mathematik, Informatik und die Naturwissenschaften ist die Nachfrage seit Jahren größer als das Angebot. In Musik, Kunst oder Geschichte ist es an vielen Standorten umgekehrt. Ein Überhang im einen Fach gleicht keinen Mangel im anderen aus, weil niemand fachfremd unterrichten soll."
+     }
+    ]
    },
    {
     "k": "p",
@@ -4530,7 +4611,15 @@
    },
    {
     "k": "h2",
-    "t": "Warum die Steuerung langsam ist\nLehrkräfte werden nicht kurzfristig eingestellt. Zwischen Studienentscheidung und erster Stelle liegen mehrere Jahre Ausbildung und Vorbereitungsdienst. Wer heute merkt, dass Mathematiklehrkräfte fehlen, kann frühestens in einigen Jahren mit mehr Absolventen rechnen."
+    "t": "Warum die Steuerung langsam ist"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Lehrkräfte werden nicht kurzfristig eingestellt. Zwischen Studienentscheidung und erster Stelle liegen mehrere Jahre Ausbildung und Vorbereitungsdienst. Wer heute merkt, dass Mathematiklehrkräfte fehlen, kann frühestens in einigen Jahren mit mehr Absolventen rechnen."
+     }
+    ]
    },
    {
     "k": "p",
@@ -4549,7 +4638,15 @@
    },
    {
     "k": "h2",
-    "t": "Was ein Modell sagen kann\nDie Kultusministerkonferenz rechnet in ihrer Modellrechnung bis 2035. Der Endpunkt 2035 ist ein Prognosehorizont, kein Ergebnis. Modelle arbeiten mit Annahmen über Geburtenzahlen, Zuwanderung und Studienwahl. Ändert sich eine Annahme, ändert sich die Zahl."
+    "t": "Was ein Modell sagen kann"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Die Kultusministerkonferenz rechnet in ihrer Modellrechnung bis 2035. Der Endpunkt 2035 ist ein Prognosehorizont, kein Ergebnis. Modelle arbeiten mit Annahmen über Geburtenzahlen, Zuwanderung und Studienwahl. Ändert sich eine Annahme, ändert sich die Zahl."
+     }
+    ]
    },
    {
     "k": "p",
@@ -4559,9 +4656,7 @@
      }
     ]
    }
-  ],
-  "prevCode": "B2-L2-03",
-  "nxtCode": "B2-L4-05"
+  ]
  },
  "B2-L4-05": {
   "code": "B2-L4-05",
@@ -4572,12 +4667,27 @@
   "title": "Was wünschen sich Eltern von einer Schule?",
   "zh": "家长最先要的不是成绩，是「今天几点接、明天会不会突然放假」这种可预期性。",
   "meta": "B2-L4-05 · R03.04 · Runde 4 · Langfristige Folgen",
-  "src": "Quellen: Quellen: Niedersächsisches Schulgesetz (NSchG), Beteiligung von Eltern und Schulkonferenz — https://www.mk.niedersachsen.de/download/94662. Sekretariat der Kultusministerkonferenz, Modellrechnung zum Lehrkräftebedarf (Dok. 247) — https://www.kmk.org/fileadmin/Dateien/pdf/Statistik/Dokumentationen/Dok_247_Bericht_LEB_LEA_2025.pdf. Stand 14. November 2026.",
+  "src": "Quellen: Niedersächsisches Schulgesetz (NSchG), Beteiligung von Eltern und Schulkonferenz — https://www.mk.niedersachsen.de/download/94662. Sekretariat der Kultusministerkonferenz, Modellrechnung zum Lehrkräftebedarf (Dok. 247) — https://www.kmk.org/fileadmin/Dateien/pdf/Statistik/Dokumentationen/Dok_247_Bericht_LEB_LEA_2025.pdf. Stand 14. November 2026.",
   "nxt": "R03.05 · Was brauchen Lehrkräfte, damit Schule funktioniert?",
   "els": [
    {
     "k": "h2",
-    "t": "Was zuerst genannt wird\nFragt man Eltern, was eine gute Schule ausmacht, kommen selten zuerst die Noten. Zuerst kommt die Frage, ob der Tag planbar ist: Wann beginnt der Unterricht, wann endet er, was passiert in der {{Randstunde|die Stunde vor dem regulären Beginn oder nach dem regulären Ende, in der Betreuung angeboten wird}}, wie wird eine Krankmeldung gemeldet."
+    "t": "Was zuerst genannt wird"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Fragt man Eltern, was eine gute Schule ausmacht, kommen selten zuerst die Noten. Zuerst kommt die Frage, ob der Tag planbar ist: Wann beginnt der Unterricht, wann endet er, was passiert in der "
+     },
+     {
+      "g": "Randstunde",
+      "d": "die Stunde vor dem regulären Beginn oder nach dem regulären Ende, in der Betreuung angeboten wird"
+     },
+     {
+      "s": ", wie wird eine Krankmeldung gemeldet."
+     }
+    ]
    },
    {
     "k": "p",
@@ -4589,7 +4699,22 @@
    },
    {
     "k": "h2",
-    "t": "Chancengleichheit als zweiter Wunsch\nDer zweite Wunsch betrifft die Chancen. Eltern wollen, dass ein Kind nicht deshalb weniger erreicht, weil zu Hause niemand die Hausaufgaben begleiten kann. Die Formel lautet dann {{Bildungsgerechtigkeit|der Anspruch, dass der Bildungserfolg nicht von der Herkunft abhängen soll}}."
+    "t": "Chancengleichheit als zweiter Wunsch"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Der zweite Wunsch betrifft die Chancen. Eltern wollen, dass ein Kind nicht deshalb weniger erreicht, weil zu Hause niemand die Hausaufgaben begleiten kann. Die Formel lautet dann "
+     },
+     {
+      "g": "Bildungsgerechtigkeit",
+      "d": "der Anspruch, dass der Bildungserfolg nicht von der Herkunft abhängen soll"
+     },
+     {
+      "s": "."
+     }
+    ]
    },
    {
     "k": "p",
@@ -4601,7 +4726,22 @@
    },
    {
     "k": "h2",
-    "t": "Wo Eltern mitsprechen\nEltern haben formal Rechte. Auf Klassenebene gibt es die {{Klassenelternvertretung|die gewählten Vertreter der Eltern einer Klasse}}, auf Schulebene den Schulelternrat, und in den Konferenzen sitzen Elternvertreter mit. Das ist keine Scheinbeteiligung: Über die Hausordnung und über grundlegende Fragen entscheidet in Niedersachsen die Schulkonferenz, in der Eltern stimmberechtigt sind."
+    "t": "Wo Eltern mitsprechen"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Eltern haben formal Rechte. Auf Klassenebene gibt es die "
+     },
+     {
+      "g": "Klassenelternvertretung",
+      "d": "die gewählten Vertreter der Eltern einer Klasse"
+     },
+     {
+      "s": ", auf Schulebene den Schulelternrat, und in den Konferenzen sitzen Elternvertreter mit. Das ist keine Scheinbeteiligung: Über die Hausordnung und über grundlegende Fragen entscheidet in Niedersachsen die Schulkonferenz, in der Eltern stimmberechtigt sind."
+     }
+    ]
    },
    {
     "k": "zh",
@@ -4617,7 +4757,15 @@
    },
    {
     "k": "h2",
-    "t": "Ein Wunsch und sein Preis\nWenn Eltern eine Priorität nennen müssten, wäre es für viele die Verlässlichkeit. Sie ist auch die teuerste: Verlässlichkeit braucht Personal, das auch bei Ausfällen da ist, und Räume, die auch am Nachmittag offen sind."
+    "t": "Ein Wunsch und sein Preis"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Wenn Eltern eine Priorität nennen müssten, wäre es für viele die Verlässlichkeit. Sie ist auch die teuerste: Verlässlichkeit braucht Personal, das auch bei Ausfällen da ist, und Räume, die auch am Nachmittag offen sind."
+     }
+    ]
    },
    {
     "k": "p",
@@ -4627,9 +4775,7 @@
      }
     ]
    }
-  ],
-  "prevCode": "B2-L3-04",
-  "nxtCode": "B2-L4-06"
+  ]
  },
  "B2-L4-06": {
   "code": "B2-L4-06",
@@ -4640,12 +4786,20 @@
   "title": "Was brauchen Lehrkräfte, damit Schule funktioniert?",
   "zh": "教师的「课时」只是工作的一小半。备课、批改、家长谈话都不在表上，却决定表上那几节课能不能上。",
   "meta": "B2-L4-06 · R03.05 · Runde 4 · Langfristige Folgen",
-  "src": "Quellen: Quellen: Sekretariat der Kultusministerkonferenz, Lehrkräfteeinstellungsbedarf und -angebot, Modellrechnung (Dok. 247) — https://www.kmk.org/fileadmin/Dateien/pdf/Statistik/Dokumentationen/Dok_247_Bericht_LEB_LEA_2025.pdf. KMK, Mitteilung zu Einstellungschancen für Lehramtsbewerberinnen und -bewerber, 11. Februar 2025 — https://www.kmk.org/en/aktuelles/pressarchiv/mitteilung/gute-einstellungschancen-fuer-lehramtsbewerberinnen-und-lehramtsbewerber-im-schulsystem.html. Stand 14. November 2026.",
+  "src": "Quellen: Sekretariat der Kultusministerkonferenz, Lehrkräfteeinstellungsbedarf und -angebot, Modellrechnung (Dok. 247) — https://www.kmk.org/fileadmin/Dateien/pdf/Statistik/Dokumentationen/Dok_247_Bericht_LEB_LEA_2025.pdf. KMK, Mitteilung zu Einstellungschancen für Lehramtsbewerberinnen und -bewerber, 11. Februar 2025 — https://www.kmk.org/en/aktuelles/pressarchiv/mitteilung/gute-einstellungschancen-fuer-lehramtsbewerberinnen-und-lehramtsbewerber-im-schulsystem.html. Stand 14. November 2026.",
   "nxt": "R04.01 · Was hält einen Verein zusammen?",
   "els": [
    {
     "k": "h2",
-    "t": "Was auf dem Stundenplan steht und was nicht\nEine Lehrkraft unterrichtet eine bestimmte Zahl von Stunden pro Woche. Diese Zahl steht im Stundenplan und wird öffentlich diskutiert. Was nicht dort steht: Vorbereitung, Korrektur, Elterngespräche, Konferenzen, Aufsicht in der Pause."
+    "t": "Was auf dem Stundenplan steht und was nicht"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Eine Lehrkraft unterrichtet eine bestimmte Zahl von Stunden pro Woche. Diese Zahl steht im Stundenplan und wird öffentlich diskutiert. Was nicht dort steht: Vorbereitung, Korrektur, Elterngespräche, Konferenzen, Aufsicht in der Pause."
+     }
+    ]
    },
    {
     "k": "p",
@@ -4664,7 +4818,22 @@
    },
    {
     "k": "h2",
-    "t": "Was im Klassenzimmer fehlt\nLehrkräfte nennen selten das Gehalt zuerst. Häufiger nennen sie drei Dinge: Zeit für einzelne Kinder, Unterstützung bei {{Inklusion|der gemeinsame Unterricht von Kindern mit und ohne Förderbedarf}} und jemanden, der sich um die Fälle kümmert, die nicht unterrichtlich sind."
+    "t": "Was im Klassenzimmer fehlt"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Lehrkräfte nennen selten das Gehalt zuerst. Häufiger nennen sie drei Dinge: Zeit für einzelne Kinder, Unterstützung bei "
+     },
+     {
+      "g": "Inklusion",
+      "d": "der gemeinsame Unterricht von Kindern mit und ohne Förderbedarf"
+     },
+     {
+      "s": " und jemanden, der sich um die Fälle kümmert, die nicht unterrichtlich sind."
+     }
+    ]
    },
    {
     "k": "p",
@@ -4698,7 +4867,11 @@
    },
    {
     "k": "h2",
-    "t": "Warum das die Eltern-Seite betrifft\n> 家长在意的「稳定」，靠的是他们看不见的那些时间：备课、谈话、协调。"
+    "t": "Warum das die Eltern-Seite betrifft"
+   },
+   {
+    "k": "zh",
+    "t": "家长在意的「稳定」，靠的是他们看不见的那些时间：备课、谈话、协调。"
    },
    {
     "k": "p",
@@ -4732,20 +4905,18 @@
      }
     ]
    }
-  ],
-  "prevCode": "B2-L4-05",
-  "nxtCode": "C4-L1-01"
+  ]
  },
  "A1-L4-05": {
   "code": "A1-L4-05",
   "seq": 5,
   "domain": "A_国家与制度",
-  "round": 4,
-  "rname": "Langfristige Folgen",
+  "round": 1,
+  "rname": "Hintergrund",
   "title": "Eine Frau, die nicht mehr Kandidatin sein will",
   "zh": "她是最有希望成为第一位女联邦总统的人，却在提名之后成了最被动的一个。",
-  "meta": "A1-L4-05 · R04.01 · Runde 4 · Langfristige Folgen",
-  "src": "Quellen: Deutschlandfunk, 9.11.2026 · taz, 9.11.2026 · ZDFheute, 9.11.2026 · MDR, 7.11.2026 · SRF, 9.11.2026 · Grundgesetz Art. 54",
+  "meta": "A1-L4-05 · R04.01 · Runde 1 · Hintergrund",
+  "src": "Deutschlandfunk, 9.11.2026 · taz, 9.11.2026 · ZDFheute, 9.11.2026 · MDR, 7.11.2026 · SRF, 9.11.2026 · Grundgesetz Art. 54",
   "nxt": "R04.02 · Wie findet eine Familie Anschluss?",
   "els": [
    {
@@ -4756,7 +4927,7 @@
     "k": "p",
     "seg": [
      {
-      "s": "Am 9. November 2026 stand Ilse Aigner in Berlin vor den Kameras und sagte einen Satz, den man von einer Kandidatin selten hört: „Der Bundeskanzler hat es ja durchaus spannend gemacht, auch für mich.\""
+      "s": "Am 9. November 2026 stand Ilse Aigner in Berlin vor den Kameras und sagte einen Satz, den man von einer Kandidatin selten hört: „Der Bundeskanzler hat es ja durchaus spannend gemacht, auch für mich.“"
      }
     ]
    },
@@ -4772,7 +4943,7 @@
     "k": "p",
     "seg": [
      {
-      "s": "Überraschend war nicht der Name. Markus Söder hatte sie monatelang ins Gespräch gebracht. Überraschend war, wie lange Merz sich zurückhielt und wie offen danach über sein Verfahren gesprochen wurde: „entglitten\" sei ihm das, hieß es intern. Und Aigner selbst war die letzte, die davon erfahren zu haben schien."
+      "s": "Überraschend war nicht der Name. Markus Söder hatte sie monatelang ins Gespräch gebracht. Überraschend war, wie lange Merz sich zurückhielt und wie offen danach über sein Verfahren gesprochen wurde: „entglitten“ sei ihm das, hieß es intern. Und Aigner selbst war die letzte, die davon erfahren zu haben schien."
      }
     ]
    },
@@ -4872,7 +5043,7 @@
     "k": "p",
     "seg": [
      {
-      "s": "Wer dieses Amt will, wird deshalb nicht an Programmen gemessen, sondern daran, ob er Distanz zur Regierung hält und in Krisen hörbar wird. Aigner tritt mit einer Formel an: Sie wolle „Gräben überwinden\", ihre Sprache werde „klar und verständlich\". Zwei Versprechen, die zusammenpassen und zusammen scheitern können. Wer Gräben überwinden will, muss zu beiden Seiten sprechen. Wer klar spricht, muss etwas sagen, das beiden Seiten nicht passt."
+      "s": "Wer dieses Amt will, wird deshalb nicht an Programmen gemessen, sondern daran, ob er Distanz zur Regierung hält und in Krisen hörbar wird. Aigner tritt mit einer Formel an: Sie wolle „Gräben überwinden“, ihre Sprache werde „klar und verständlich“. Zwei Versprechen, die zusammenpassen und zusammen scheitern können. Wer Gräben überwinden will, muss zu beiden Seiten sprechen. Wer klar spricht, muss etwas sagen, das beiden Seiten nicht passt."
      }
     ]
    },
@@ -4884,9 +5055,7 @@
      }
     ]
    }
-  ],
-  "prevCode": "A1-L3-04",
-  "nxtCode": "B2-L2-02"
+  ]
  },
  "A1-L3-04": {
   "code": "A1-L3-04",
@@ -5658,5 +5827,956 @@
   ],
   "prevCode": "G-084",
   "nxtCode": null
+ },
+ "G-086": {
+  "code": "G-086",
+  "seq": 105,
+  "domain": "语法",
+  "round": 0,
+  "rname": "Grammatik-Linse B2",
+  "title": "086 · Nominalstil 名词化",
+  "zh": "",
+  "meta": "",
+  "src": null,
+  "nxt": null,
+  "els": [
+   {
+    "k": "p",
+    "seg": [
+     {
+      "b": "086 | GRAMMATIK-LINSE | B2 | NOMINALSTIL"
+     }
+    ]
+   },
+   {
+    "k": "h2",
+    "t": "„der Wandel, die Fähigkeit,"
+   },
+   {
+    "k": "h2",
+    "t": "die Beschäftigung“"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Grammatik-Lektüre · Deutschlandfunk · Strukturwandel der Industrie"
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Warum dieses Heft: Zeitungsdeutsch macht aus Verben Nomen. Statt „die Industrie verändert sich“ steht dann „der Strukturwandel“. Das spart Platz, klingt amtlich — und macht jeden Satz schwerer. Wer die Nominalisierung erkennt, kann sie im Kopf wieder in ein Verb zurückverwandeln und versteht den Satz beim ersten Lesen. Alle Nominalisierungen sind fett gedruckt, Erklärungen in Klammern. Am Ende: Mini-Quiz (8 Punkte)."
+     }
+    ]
+   },
+   {
+    "k": "h2",
+    "t": "Die Regel in 30 Sekunden"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "b": "Nominalstil = "
+     },
+     {
+      "b": "Verb wird zum Nomen."
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Aus „Die Industrie "
+     },
+     {
+      "b": "verändert sich"
+     },
+     {
+      "s": "“ wird „der "
+     },
+     {
+      "b": "Strukturwandel"
+     },
+     {
+      "s": "“. Aus „die Preise "
+     },
+     {
+      "b": "steigen"
+     },
+     {
+      "s": "“ wird „die "
+     },
+     {
+      "b": "Preissteigerung“"
+     },
+     {
+      "s": ". Das Nomen trägt dann die Information, das Verb wird schwach („es gibt“, „erfolgt“, „ist zu beobachten“)."
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "b": "Die drei Endungen: "
+     },
+     {
+      "b": "-ung"
+     },
+     {
+      "s": " (Veränderung, Förderung), "
+     },
+     {
+      "b": "-heit / -keit"
+     },
+     {
+      "s": " (Fähigkeit, Sicherheit), "
+     },
+     {
+      "b": "-tion / -ität"
+     },
+     {
+      "s": " (Investition, Wettbewerbsfähigkeit)."
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "b": "Der Genitiv ersetzt das Subjekt: "
+     },
+     {
+      "s": "nicht „die Preise steigen“, sondern „die "
+     },
+     {
+      "b": "Steigerung der Preise"
+     },
+     {
+      "s": "“. Nicht „die Industrie wandelt sich“, sondern „der "
+     },
+     {
+      "b": "Wandel der Industrie“"
+     },
+     {
+      "s": ". Das ist der häufigste Grund, warum Zeitungssätze keinen handelnden Menschen mehr haben."
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "(Merke: Wo ein Genitiv vor dem Nomen steht, war vorher ein Verb mit Subjekt. Zurückübersetzen heißt: Genitiv = Subjekt, Nomen = Verb.)"
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "b": "Achtung — "
+     },
+     {
+      "s": "nicht jede -ung ist eine Nominalisierung. „die Zeitung“, „die Wohnung“, „die Meinung“ sind normale Nomen. Nominalisierung erkennst du daran: es gibt ein Verb, das dasselbe meint (verändern → Veränderung)."
+     }
+    ]
+   },
+   {
+    "k": "h2",
+    "t": "Der Artikel: Strukturwandel — was von der Industrie bleibt"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Für die Zukunft der deutschen Industrie gibt es zwei Szenarien. Im ersten erholt sich die Nachfrage, die Zinsen sinken, und die "
+     },
+     {
+      "b": "Produktion stabilisiert sich"
+     },
+     {
+      "s": " auf niedrigerem Niveau. Im zweiten setzt sich der "
+     },
+     {
+      "b": "Strukturwandel"
+     },
+     {
+      "s": " fort: weniger Autos, weniger Zulieferer, mehr Importe."
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "(„sich stabilisieren“ → „die Stabilisierung“; „sich wandeln“ → „der Wandel“. Beide Sätze sagen dasselbe, aber der zweite hat kein handelndes Subjekt mehr.)"
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Rund ein Fünftel der industriellen "
+     },
+     {
+      "b": "Wertschöpfung"
+     },
+     {
+      "s": " hängt direkt oder indirekt am Auto. Elektroautos haben weniger Teile und brauchen weniger Zulieferer. Das verschiebt Macht und "
+     },
+     {
+      "b": "Beschäftigung"
+     },
+     {
+      "s": ". Ganze Regionen, etwa in Baden-Württemberg und Niedersachsen, sind davon abhängig."
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "(„Wert schöpfen“ → „die Wertschöpfung“; „jemanden beschäftigen“ → „die Beschäftigung“. Beide Nomen haben hier kein Subjekt — wer schöpft? Niemand wird genannt.)"
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Neue Industrien entstehen: Batterien, Wärmepumpen, Halbleiter, Verteidigung. Sie brauchen andere "
+     },
+     {
+      "b": "Qualifikationen"
+     },
+     {
+      "s": " und oft weniger Arbeitskräfte. Ein Ingenieur aus dem Verbrennungsmotor findet nicht automatisch eine Stelle in der Batteriefertigung. "
+     },
+     {
+      "b": "Weiterbildung"
+     },
+     {
+      "s": " wird damit zur zentralen Aufgabe."
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "(„sich weiterbilden“ → „die Weiterbildung“. Der Satz „Weiterbildung wird zur Aufgabe“ verschweigt, wer sie erledigen soll — das ist typisch für den Nominalstil.)"
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Hinzu kommt die Konkurrenz um Fachkräfte. Während die Industrie Stellen abbaut, suchen Handwerk, Gesundheitswesen und IT Personal. Eine "
+     },
+     {
+      "b": "Umschulung"
+     },
+     {
+      "s": " dauert Jahre und kostet Geld. Der Arbeitsmarkt kann den "
+     },
+     {
+      "b": "Wandel"
+     },
+     {
+      "s": " deshalb nicht im selben Tempo auffangen."
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Ob dieser "
+     },
+     {
+      "b": "Wandel"
+     },
+     {
+      "s": " gelingt, hängt weniger von einem Konjunkturpaket ab als von Bildung, "
+     },
+     {
+      "b": "Planungsgeschwindigkeit"
+     },
+     {
+      "s": " und der "
+     },
+     {
+      "b": "Fähigkeit"
+     },
+     {
+      "s": ", neue Märkte zu erschließen."
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "(Drei Nominalisierungen in einem Satz: „planen“ → „Planungsgeschwindigkeit“ (wie schnell geplant wird), „fähig sein“ → „die Fähigkeit“, „Märkte erschließen“ → ein Verb bleibt. Genau hier wird der Satz schwer: drei Nomen, ein Verb.)"
+     }
+    ]
+   }
+  ],
+  "prevCode": "G-085",
+  "nxtCode": "G-087"
+ },
+ "G-087": {
+  "code": "G-087",
+  "seq": 106,
+  "domain": "语法",
+  "round": 0,
+  "rname": "Grammatik-Linse B2",
+  "title": "087 · Präpositionaladverbien 代副词",
+  "zh": "",
+  "meta": "",
+  "src": null,
+  "nxt": null,
+  "els": [
+   {
+    "k": "p",
+    "seg": [
+     {
+      "b": "087 | GRAMMATIK-LINSE | B2 | PRÄPOSITIONALADVERBIEN"
+     }
+    ]
+   },
+   {
+    "k": "h2",
+    "t": "„darauf, womit, dabei“ –"
+   },
+   {
+    "k": "h2",
+    "t": "wo steckt das worin?"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Grammatik-Lektüre · Deutschlandfunk · Rechenleistung als Infrastruktur"
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Warum dieses Heft: Der Text sagt „es ist ein Hinweis darauf“ und nicht „ein Hinweis auf das“. Er sagt „womit wir beim zweiten Punkt wären“ und nicht „mit was“. Diese kurzen Wörter — darauf, womit, dabei — ersetzen eine Präposition plus Sache. Ohne sie klingt jeder Satz wie aus einem Lehrbuch; mit ihnen klingt er wie ein Sprecher. Alle Präpositionaladverbien sind fett gedruckt. Am Ende: Mini-Quiz (8 Punkte)."
+     }
+    ]
+   },
+   {
+    "k": "h2",
+    "t": "Die Regel in 30 Sekunden"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "b": "Da(r)- + Präposition = "
+     },
+     {
+      "b": "Zeigewort für eine Sache."
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Für Personen: Präposition + Pronomen. „Ich spreche "
+     },
+     {
+      "b": "mit ihm"
+     },
+     {
+      "s": "“. Für Sachen: „Ich spreche "
+     },
+     {
+      "b": "damit"
+     },
+     {
+      "s": "“. Also nie „mit es“, sondern immer „damit“."
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "b": "Die Regel lautet: "
+     },
+     {
+      "s": "eine Sache (kein Mensch) → da(r) + Präposition. Die Präposition entscheidet über den Vokal: steht sie mit Konsonant an (bei, mit, vor, zu, nach, von), kommt nur „da-“ (dabei, damit, davon). Steht sie mit Vokal an (auf, an, in, über, unter), kommt „dar-“ (darauf, daran, darin, darüber)."
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "b": "Frageform: "
+     },
+     {
+      "s": "wo(r) + Präposition. „Wo"
+     },
+     {
+      "b": "mit"
+     },
+     {
+      "s": " hast du gerechnet?“ Aber: „Mit "
+     },
+     {
+      "b": "wem"
+     },
+     {
+      "s": "?“ — für Personen bleibt die Präposition vorn."
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "(Merke: Wenn im Satz danach ein „dass“- oder „ob“-Satz oder ein Infinitiv mit „zu“ folgt, ist der Platzhalter fast immer da(r)-: „Ich rechne damit, dass es teurer wird.“ Nicht „mit dass“.)"
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "b": "Achtung — "
+     },
+     {
+      "s": "„dabei“ ist nicht einfach „da“ + „bei“. Es bedeutet drei verschiedene Dinge: (1) gleichzeitig („Dabei hört er Musik“), (2) beteiligt („Er war dabei“), (3) einräumend („Dabei ist das bekannt“). Aus dem Zusammenhang entscheidet es sich."
+     }
+    ]
+   },
+   {
+    "k": "h2",
+    "t": "Der Artikel: Wird Rechenleistung zur Infrastruktur?"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Die Frage, die alles andere überlagert, lautet: Rechnen sich die Ausgaben für Rechenzentren? Die fünf großen amerikanischen Anbieter geben 2026 etwa so viel aus wie in den vier Jahren seit dem Start von ChatGPT zusammen; für 2027 werden über 1,2 Billionen Dollar erwartet. Ein wachsender Teil "
+     },
+     {
+      "b": "davon"
+     },
+     {
+      "s": " kommt nicht aus laufenden Einnahmen, sondern aus Schulden und Aktienausgaben."
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "(„davon“ = von diesem Geld → von den 1,2 Billionen. Nicht „von es“.)"
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Gleichzeitig melden dieselben Unternehmen im dritten Quartal 2026 einen negativen freien Cashflow. Das ist kein Beweis für eine Blase, aber es ist ein Hinweis "
+     },
+     {
+      "b": "darauf"
+     },
+     {
+      "s": ", dass die Ausgaben schneller wachsen als die Einnahmen. Ob die Rechnung aufgeht, hängt "
+     },
+     {
+      "b": "daran"
+     },
+     {
+      "s": ", ob Anwendungen entstehen, für die Kunden dauerhaft zahlen."
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "(„Hinweis darauf, dass …“ und „hängt daran, ob …“ — beide Platzhalter stehen für einen ganzen Folgesatz. Das ist ihr häufigster Job im Zeitungsdeutsch.)"
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Rechenzentren brauchen Strom, und Strom lässt sich nicht so schnell bauen wie Chips. Genehmigungen, Netzkapazität und Kühlung setzen Grenzen, die kein Halbleiterhersteller aufheben kann. In mehreren Regionen der Vereinigten Staaten sind die Wartelisten für Netzanschlüsse Jahre lang. Wer Zugang zu Energie hat, wird "
+     },
+     {
+      "b": "damit"
+     },
+     {
+      "s": " langfristig wichtiger als wer den schnellsten Chip baut."
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "(„damit“ = mit dieser Tatsache → mit dem Energiezugang. Hier zeigt „damit“ eine Folge an, kein Werkzeug.)"
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Für Europa und besonders für Deutschland heißt das: Wer Rechenzentren ansiedeln will, muss zuerst Netze und Genehmigungen liefern. Die Diskussion "
+     },
+     {
+      "b": "darüber"
+     },
+     {
+      "s": " läuft seit Jahren und hat mit Chips wenig zu tun. Sie ist aber die Voraussetzung "
+     },
+     {
+      "b": "dafür"
+     },
+     {
+      "s": ", dass die eigene Wirtschaft an der Entwicklung teilhat und nicht nur zusieht."
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Drei Szenarien sind denkbar. Im ersten wird Rechenleistung zur regulierten Infrastruktur wie Strom: zugänglich für alle, preislich beaufsichtigt, technisch standardisiert. Im zweiten bleibt sie ein Produkt weniger Anbieter, weil der Software-Graben hält. Im dritten bricht die Nachfrage ein, weil die Anwendungen die Kosten nicht einspielen — und ein Teil der gebauten Kapazität wird abgeschrieben."
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Welches Szenario eintritt, entscheidet sich nicht an Chips, sondern an drei Dingen: Strom, Kapital und der Frage, ob Kunden bereit sind, für Software zu wechseln. Der Rücktritt von Jensen Huang ist in diesem Zusammenhang ein Nebenschauplatz. Er ist wichtig für eine Firma. Die Frage nach der Rechenleistung ist wichtig für alle."
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "(„in diesem Zusammenhang“ ist die feste Variante — hier steht kein „da-“, weil „Zusammenhang“ kein Verb im Hintergrund hat. Nicht jedes Präpositionalgefüge lässt sich ersetzen.)"
+     }
+    ]
+   }
+  ],
+  "prevCode": "G-086",
+  "nxtCode": null
+ },
+ "B2-L2-07": {
+  "code": "B2-L2-07",
+  "seq": 76,
+  "domain": "B_社会与民生",
+  "round": 2,
+  "rname": "Aktueller Stand",
+  "title": "Wie eine Familie Anschluss findet",
+  "zh": "融入不是性格问题，是频率问题——你多久见一次同样的人。",
+  "meta": "B2-L2-07 · R04.02 · Runde 2 · Aktueller Stand",
+  "src": "Kanton Basel-Landschaft, Infoheft Nr. 225, Dezember 2025, S. 8–9 · Nordkurier, 6.9.2023 · Nordkurier, 8.6.2026 · Berlin-Institut: Neu im Dorf, 2023, S. 25–28",
+  "nxt": "R04.03 · Warum fehlt Vereinen manchmal Nachwuchs?",
+  "els": [
+   {
+    "k": "h2",
+    "t": "Eine Frau, die fast nicht hingegangen wäre"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Nadja Pankratova kam 2021 für eine Stelle in Therwil in die Schweiz und zog bald nach Witterswil. Deutsch hatte sie in der Schule gelernt, aber zehn Jahre nicht gebraucht."
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Dann lag ein Brief der Feuerwehr im Kasten. Sie hielt ihn für Werbung. Erst als eine "
+     },
+     {
+      "g": "Mahnung",
+      "d": "eine zweite, eindringlichere Aufforderung"
+     },
+     {
+      "s": " kam und sie mit dem Kommandanten sprach, dachte sie: „Warum eigentlich nicht?“"
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Sie ist heute Mitglied der Freiwilligen Feuerwehr. „An der Feuerwehr finde ich schön, dass man ein- bis zweimal im Monat die gleichen Leute sieht und etwas Sinnvolles zusammen macht. Ich fühle mich als Teil des Dorfes, obwohl ich offensichtlich eine Ausländerin bin.“"
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Zwei Dinge stehen in diesem Satz: die "
+     },
+     {
+      "g": "Frequenz",
+      "d": "wie oft etwas stattfindet"
+     },
+     {
+      "s": " — ein- bis zweimal im Monat — und dieselben Menschen. Kein Fest, sondern ein Termin, der wiederkommt."
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Die "
+     },
+     {
+      "g": "Hürde",
+      "d": "das, was den Eintritt schwer macht"
+     },
+     {
+      "s": " war nicht die Sprache, sondern der Dialekt. „Die ersten zwei Jahre waren herausfordernd.“ Heute sagt sie: „Dank der Feuerwehr verstehe ich mittlerweile Schweizerdeutsch.“"
+     }
+    ]
+   },
+   {
+    "k": "h2",
+    "t": "Eine Mutter, die sofort ein Amt bekam"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "In Nechlin in der Uckermark lief es anders. Nicole Kuhrt kam mit ihrem elfjährigen Sohn aus Münster. Kurz nach dem Einzug wurde sie zur Vorsitzenden des Dorfvereins gewählt — zu ihrem großen Erstaunen. Was dann kam, war Arbeit: ein Benefizkonzert mit dem Heeresmusikkorps, fast 1400 Euro für die Jugendfeuerwehr."
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "„Ich finde es sehr wichtig, dass man sich ehrenamtlich fürs Gemeinwohl engagiert, gerade wenn man eine Zugezogene ist“, sagt sie."
+     }
+    ]
+   },
+   {
+    "k": "h2",
+    "t": "Zwei Mechanismen"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Beide Frauen kamen über einen Verein herein. Trotzdem sind es zwei verschiedene Wege."
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Bei Pankratova ist der Verein ein "
+     },
+     {
+      "b": "Ort mit Rhythmus"
+     },
+     {
+      "s": ": regelmäßig, klare Aufgabe, gleiche Gruppe. Die Beziehung entsteht durch Wiederholung. Bei Kuhrt ist er ein "
+     },
+     {
+      "b": "Amt, das besetzt werden musste"
+     },
+     {
+      "s": ": Der Ort brauchte jemanden, und sie war da. Das geht schneller, setzt aber mehr voraus."
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Für Familien kommt ein dritter Weg hinzu: Wer sein Kind zweimal pro Woche zum Training bringt, steht mit denselben Eltern am Rand — derselbe Mechanismus, nur über das Kind."
+     }
+    ]
+   },
+   {
+    "k": "h2",
+    "t": "Wo es nicht klappt"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Das Berlin-Institut hat für „Neu im Dorf“ mit über 100 Menschen in sechs Gemeinden gesprochen. Ein Vater, in der Studie Jörg genannt, beschreibt die andere Seite: „Aber einige Vereine haben auch einen Anflug an Spießigkeit. Wenn man da nicht so richtig mitmacht, hat man schon auch ein schlechtes Gewissen.“"
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Das ist der Punkt, an dem „freiwillig“ kippt. Je stärker betont wird, dass nichts sein muss, desto deutlicher werden die "
+     },
+     {
+      "g": "impliziten Erwartungen",
+      "d": "Erwartungen, die niemand ausspricht"
+     },
+     {
+      "s": "."
+     }
+    ]
+   },
+   {
+    "k": "zh",
+    "t": "融入的难点不是「要不要参加」，而是「参加了以后要不要接手」。"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "In einem Dorf mit 500 Einwohnern wurde 2025 ein Verein gegründet, weil die Neuzugezogenen sich noch nicht gefunden hatten — und machte zuerst ein Kinderfest. Das ist keine Romantik, sondern "
+     },
+     {
+      "g": "Infrastruktur",
+      "d": "die organisatorische Grundlage, damit etwas regelmäßig stattfinden kann"
+     },
+     {
+      "s": "."
+     }
+    ]
+   },
+   {
+    "k": "h2",
+    "t": "Was daraus folgt"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Wer neu ist, sollte nicht nach dem großen Ereignis suchen, sondern nach dem Termin, der wiederkommt. Die Frage, ob man nur mitmacht oder übernimmt, stellt sich früher, als man denkt."
+     }
+    ]
+   }
+  ]
+ },
+ "B2-L3-08": {
+  "code": "B2-L3-08",
+  "seq": 77,
+  "domain": "B_社会与民生",
+  "round": 3,
+  "rname": "Planung und Debatte",
+  "title": "Warum fehlt Vereinen manchmal Nachwuchs?",
+  "zh": "会员数在涨，愿意当理事的人却越来越少——这两件事同时是真的。",
+  "meta": "B2-L3-08 · R04.03 · Runde 3 · Planung und Debatte",
+  "src": "DOSB Bestandserhebung, Stand 1.1.2026 · ZiviZ-Survey 2023, Sonderauswertung Sportvereine (2024), S. 2 und 14 · Sechster Deutscher Freiwilligensurvey (FWS 2024), Stand November 2025, S. 4, 5, 37–38 · Hummel/Priller: Warum lösen sich Vereine auf?, Maecenata Opusculum 193, 2024",
+  "nxt": "R04.04 · Was braucht jemand, der neu dazukommt?",
+  "els": [
+   {
+    "k": "h2",
+    "t": "Ein Widerspruch, der keiner ist"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Der Deutsche Olympische Sportbund zählt zum 1. Januar 2026 rund 30,08 Millionen "
+     },
+     {
+      "g": "Mitgliedschaften",
+      "d": "Zählungen von Mitgliedschaften, nicht von Personen — wer in zwei Vereinen ist, zählt zweimal"
+     },
+     {
+      "s": ". Das ist ein Rekord. Gegenüber dem Vorjahr sind es 771.797 mehr, ein Plus von 2,63 Prozent."
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Gleichzeitig sagt in einer Befragung des ZiviZ-Surveys nur 13 Prozent der Sportvereine, es sei leicht, langfristige Freiwillige zu finden. Nur 17 Prozent sagen, für die Leitungspositionen gebe es genug Leute."
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Beides ist wahr. Vereine haben Mitglieder und keine Nachfolger."
+     }
+    ]
+   },
+   {
+    "k": "h2",
+    "t": "Was die Zahlen wirklich zeigen"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Die erste Erklärung, die man hört, lautet: Die Leute haben keine Zeit mehr. Sie stimmt nicht."
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Der Sechste Deutsche Freiwilligensurvey, dessen Feldphase von November 2023 bis Juni 2024 lief und der im November 2025 veröffentlicht wurde, zeigt das Gegenteil. Der Anteil der Engagierten, die mehr als sechs Stunden pro Woche investieren, stieg von 16 auf 19 Prozent. Der Anteil derer, die mindestens einmal pro Woche aktiv sind, von 42 auf 48 Prozent."
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Die Bereitschaft ist also gewachsen. Was gesunken ist, ist etwas anderes: der Anteil der Engagierten mit einem "
+     },
+     {
+      "g": "Vorstandsamt",
+      "d": "eine gewählte Funktion mit Verantwortung, etwa Vorsitz oder Kasse"
+     },
+     {
+      "s": ". Er liegt bei 26 Prozent und ist seit 2014 praktisch unverändert."
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Der Unterschied zwischen beiden Zahlen ist der Punkt. Man kann zwei Stunden pro Woche beim Kinderfest helfen. Ein Amt bedeutet: fester Termin, Rechenschaft, Kündigung nach zwei Jahren."
+     }
+    ]
+   },
+   {
+    "k": "h2",
+    "t": "Die zwei Mechanismen"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Der Survey nennt die Gründe, aus denen Menschen ihr Engagement aufgeben: Zeitmangel steht mit 62 Prozent vorn, dahinter Gesundheit (32), der Wunsch, keine Verpflichtung mehr zu haben (31), und Beruf (27)."
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Der Wunsch, keine "
+     },
+     {
+      "g": "Verpflichtung",
+      "d": "eine feste Bindung, aus der man nicht einfach aussteigt"
+     },
+     {
+      "s": " mehr zu haben, taucht also selbst unter denen auf, die schon engagiert waren."
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Ein zweiter Mechanismus ist die "
+     },
+     {
+      "g": "Amtsdauer",
+      "d": "wie lange man ein gewähltes Amt ausübt"
+     },
+     {
+      "s": ". Wer alle zwei Jahre zur Wiederwahl steht, trägt ein persönliches Risiko. Wer es einmal macht, macht es oft bis zum Wegzug."
+     }
+    ]
+   },
+   {
+    "k": "h2",
+    "t": "Warum gerade kleine Vereine betroffen sind"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Eine Analyse des Maecenata-Instituts hat 2024 aufgelöste Vereine untersucht. Der häufigste Grund, ein Verein, der sich auflöst: Er findet keine Mitglieder mehr (17 Prozent). Der zweitgenannte Grund ist aber schon der, um den es hier geht: Es findet sich niemand mehr für den Vorstand (14 Prozent)."
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Und es sind die kleinen. Von den aufgelösten Vereinen hatten 30 Prozent in ihrer besten Zeit weniger als zehn Mitglieder, 44 Prozent zwischen zehn und fünfzig."
+     }
+    ]
+   },
+   {
+    "k": "zh",
+    "t": "会员流失是慢慢发生的；无人接班是在某次年会上一瞬间发生的。"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Das ist der Unterschied zwischen einem Trend und einem "
+     },
+     {
+      "g": "Ereignis",
+      "d": "ein punktuelles Geschehen zu einem bestimmten Zeitpunkt"
+     },
+     {
+      "s": ". Ein Verein kann jahrelang gesund aussehen und dann an einem Abend aufhören zu existieren, weil niemand den Kassenprüfer machen will."
+     }
+    ]
+   },
+   {
+    "k": "h2",
+    "t": "Was das für das Dorf bedeutet"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Wenn ein Verein wegfällt, verschwindet nicht nur ein Angebot. Es verschwindet der Ort, an dem sich dieselben Menschen regelmäßig sehen — bei der Feuerwehr, beim Sport, im Chor."
+     }
+    ]
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Deshalb ist die Frage „Warum fehlt der Nachwuchs?“ falsch gestellt. Der Nachwuchs fehlt nicht. Es fehlt die Person, die bereit ist, für zwei Jahre ihren Namen unter etwas zu schreiben."
+     }
+    ]
+   }
+  ]
  }
 }

@@ -2038,6 +2038,103 @@
    ]
   },
   {
+   "code": "G4-L1-03",
+   "title": "Ralph Baer: Der Mann, der uns alle zu Spielern machte",
+   "topic": "G_文化与日常",
+   "round": 1,
+   "rname": "Hintergrund",
+   "qs": [
+    {
+     "t": "lv",
+     "q": "„Für diesen Besuch ist der Spieleentwickler damals über seinen und über den langen Schatten der deutschen Geschichte gesprungen.“ Was heißt „über seinen und über den langen Schatten der deutschen Geschichte gesprungen“ hier?",
+     "o": [
+      "sich überwinden und etwas tun, was man eigentlich vermeiden wollte",
+      "ohne Plan und sehr schnell handeln",
+      "einen Fehler aus der Vergangenheit wieder gutmachen"
+     ],
+     "a": 0,
+     "w": "原文 „er möchte ungern in das Land der Täter zurückkehren, solange die Täter noch leben“；他本不愿回德国，最后还是去了柏林——这就是跨过自己的影子，跟“没计划”“补救错误”无关。"
+    },
+    {
+     "t": "lv",
+     "q": "Warum nannte Baer seine Erfindung auf dem Patent auch „Training Apparatus“?",
+     "o": [
+      "Weil das Gerät tatsächlich nur der militärischen Ausbildung diente.",
+      "Weil der Firmenvorstand die Entwicklung unterstützte.",
+      "Weil der Name seriöser klingen sollte."
+     ],
+     "a": 2,
+     "w": "原文 „nicht nur Gaming Apparatus genannt …, sondern auch Training Apparatus, damit das seriöser klingt.“；选项 0 把“取个正名”误读成“真实用途”，选项 1 与 „hält die Entwicklung für Zeitverschwendung“ 矛盾。"
+    },
+    {
+     "t": "lv",
+     "q": "Was sagt der Text über die Geschichte mit der Bushaltestelle?",
+     "o": [
+      "Sie ist eine schöne Anekdote, aber die Idee Computerspiel gab es schon vorher an Unis und in Laboren.",
+      "Sie ist die einzige überlieferte Quelle für Baers Erfindung.",
+      "Sie erklärt, warum es überhaupt erst Computer gab."
+     ],
+     "a": 0,
+     "w": "原文 „… sagt die Legende. Zur Wahrheit gehört, dass die Idee nicht einfach so vom Himmel einer Dienstreise gefallen ist. Die Idee Computerspiel gab es schon an Unis, auf Großrechnern.“；公交站只是传说。"
+    },
+    {
+     "t": "lv",
+     "q": "Was machte Nolan Bushnell laut Text aus der Odyssey-Idee?",
+     "o": [
+      "Er brachte das einfache Tennisspiel als Automaten für Spielhallen heraus.",
+      "Er kaufte die Firma Magnavox und führte die Odyssey weiter.",
+      "Er baute die Brown Box für den Heimmarkt nach."
+     ],
+     "a": 0,
+     "w": "原文 „packe aber jetzt dieses viel einfachere Spiel rein, nenne den Automaten Pong und stelle den dann in die Spielerhallen.“；Pong 是街机，不是家用机，他也没买 Magnavox。"
+    },
+    {
+     "t": "rw",
+     "q": "Welcher Satz sagt dasselbe? „Der Firmenvorstand hält die Entwicklung für Zeitverschwendung. Bär macht mit ausgewählten Kollegen trotzdem weiter.“",
+     "o": [
+      "Der Vorstand stoppt das Projekt, deshalb gibt Bär auf.",
+      "Der Vorstand findet das Projekt großartig und stellt mehr Mitarbeiter ein.",
+      "Der Vorstand hält das Projekt für unnütz, doch Bär arbeitet mit einigen Kollegen weiter."
+     ],
+     "a": 2,
+     "w": "原文 für Zeitverschwendung halten = 认为是浪费时间，trotzdem = 尽管如此。选项 1 把“继续”改成“放弃”，选项 2 把“反对”改成“支持”。"
+    },
+    {
+     "t": "rw",
+     "q": "Welcher Satz sagt dasselbe? „Die waren auf der ganzen Welt quasi gleich, bis auf das Case, bis auf das Gehäuse.“",
+     "o": [
+      "Weltweit unterschieden sich die Geräte vor allem in der Technik.",
+      "Weltweit hatten die Geräte dieselbe Technik, nur das Äußere unterschied sich.",
+      "Weltweit hatten die Geräte dieselbe Technik und dasselbe Aussehen."
+     ],
+     "a": 1,
+     "w": "原文 bis auf = 除了……之外，Gehäuse = 外壳。选项 1 抹掉了这个例外，选项 2 把差别从外壳换成了技术。"
+    },
+    {
+     "t": "gc",
+     "q": "Die Maschine ließ sich ___ den eigenen Fernseher anschließen.",
+     "o": [
+      "mit",
+      "an",
+      "auf"
+     ],
+     "a": 1,
+     "w": "原文 „eine Maschine …, die man an den eigenen Fernseher anschließen konnte.“；anschließen an + Akk 是固定搭配，句中是“可以接到自家电视机上”。"
+    },
+    {
+     "t": "gc",
+     "q": "Das Spielsystem wurde am Ende von ___ Elektronikhersteller Magnavox produziert.",
+     "o": [
+      "den",
+      "dem",
+      "der"
+     ],
+     "a": 1,
+     "w": "原文 „Am Ende einer kleinen Werbe-Odyssee produziert der Elektronikhersteller Magnavox das Spielsystem.“；被动句的行为主体用 von + Dativ，der Hersteller 是阳性，故为 dem。"
+    }
+   ]
+  },
+  {
    "code": "H4-L1-01",
    "title": "Vitus Bering: Wie Asien und Amerika getrennt wurden",
    "topic": "H_历史与记忆",
@@ -3105,6 +3202,200 @@
    ]
   },
   {
+   "code": "B2-L2-07",
+   "title": "Wie eine Familie Anschluss findet",
+   "topic": "阅读",
+   "round": 2,
+   "rname": "Aktueller Stand",
+   "qs": [
+    {
+     "t": "lv",
+     "q": "Was beschreibt Pankratova als das Wirksame an der Feuerwehr?",
+     "o": [
+      "Dass sie dort ihre Deutschkenntnisse verbessern konnte.",
+      "Dass man sich regelmäßig mit denselben Leuten trifft und etwas Sinnvolles tut.",
+      "Dass der Kommandant sie persönlich eingeladen hat."
+     ],
+     "a": 1,
+     "w": "原文 „dass man ein- bis zweimal im Monat die gleichen Leute sieht und etwas Sinnvolles zusammen macht“。她强调的是频率与同一批人，不是语言课，也不是个人邀请。"
+    },
+    {
+     "t": "lv",
+     "q": "Warum war der Einstieg für Pankratova trotz Deutschkenntnissen schwer?",
+     "o": [
+      "Weil sie den Schweizer Dialekt nicht verstand.",
+      "Weil sie kein Wort Deutsch sprach.",
+      "Weil die Feuerwehr nur Einheimische aufnimmt."
+     ],
+     "a": 0,
+     "w": "原文 „Die ersten zwei Jahre waren herausfordernd“ 紧接的是 kaum Schweizerdeutsch。德语会、方言不会，这是两件事。"
+    },
+    {
+     "t": "lv",
+     "q": "Worin unterscheidet sich Kuhrts Weg von dem Pankratovas?",
+     "o": [
+      "Sie hat den Verein selbst gegründet.",
+      "Sie ist über ihre Kinder in den Verein gekommen.",
+      "Sie kam über ein Amt, das besetzt werden musste, nicht über eine regelmäßige Gruppe."
+     ],
+     "a": 2,
+     "w": "原文把两者对着写：Pankratova 是 „Ort mit Rhythmus“，Kuhrt 是 „Amt, das besetzt werden musste“。她不是创办者——协会已存在，她是被选为主席。"
+    },
+    {
+     "t": "lv",
+     "q": "Was sagt der Text über Familien als dritten Weg?",
+     "o": [
+      "Eltern müssen einen Verein gründen, damit Kinder Zugang haben.",
+      "Über das Kind entsteht derselbe Mechanismus: Man steht regelmäßig mit denselben Eltern am Rand.",
+      "Kinder sind für die Vereine eine Belastung."
+     ],
+     "a": 1,
+     "w": "原文 „Wer sein Kind zweimal pro Woche zum Training bringt, steht mit denselben Eltern am Rand — derselbe Mechanismus, nur über das Kind.“"
+    },
+    {
+     "t": "rw",
+     "q": "Welcher Satz gibt den Befund der Berlin-Institut-Studie richtig wieder?",
+     "o": [
+      "Je stärker betont wird, dass alles freiwillig ist, desto schwächer werden die Erwartungen.",
+      "Die Studie fand heraus, dass Vereine grundsätzlich unfreundlich zu Neuen sind.",
+      "Je stärker betont wird, dass nichts sein muss, desto deutlicher werden die Erwartungen."
+     ],
+     "a": 2,
+     "w": "原文 „Je stärker betont wird, dass nichts sein muss, desto deutlicher werden die impliziten Erwartungen.“ 反直觉点：越是说「不勉强」，隐性期待越强。"
+    },
+    {
+     "t": "rw",
+     "q": "Welche Formulierung entspricht dem Text?",
+     "o": [
+      "Der Verein in Hohenzieritz wurde gegründet, weil die Neuzugezogenen sich noch nicht gefunden hatten.",
+      "Der Verein in Hohenzieritz wurde gegründet, weil die Neuzugezogenen sich schon gut kannten.",
+      "Der Verein in Hohenzieritz wurde 2025 aufgelöst."
+     ],
+     "a": 0,
+     "w": "原文 „weil die Neuzugezogenen sich noch nicht gefunden hatten — und machte zuerst ein Kinderfest“。"
+    },
+    {
+     "t": "gc",
+     "q": "„Die Hürde war nicht die Sprache, ___ der Dialekt.“",
+     "o": [
+      "aber",
+      "obwohl",
+      "sondern"
+     ],
+     "a": 2,
+     "w": "nicht …, sondern … 是固定搭配，表示「不是前者，而是后者」。aber 不带这种对照结构，obwohl 表让步。"
+    },
+    {
+     "t": "gc",
+     "q": "„Sie selbst sagt, das sei zu ihrem großen Erstaunen geschehen.“ Welche Funktion hat „sei“?",
+     "o": [
+      "Es ist Konjunktiv II (Irrealis).",
+      "Es ist Konjunktiv I (indirekte Rede).",
+      "Es ist ein Tippfehler für „ist“."
+     ],
+     "a": 1,
+     "w": "Sie sagt, dass … → 转述他人说法用 Konjunktiv I: sei（= ist）。Konjunktiv II wäre „wäre“。"
+    }
+   ]
+  },
+  {
+   "code": "B2-L3-08",
+   "title": "Warum fehlt Vereinen manchmal Nachwuchs?",
+   "topic": "阅读",
+   "round": 3,
+   "rname": "Planung und Debatte",
+   "qs": [
+    {
+     "t": "lv",
+     "q": "Worin liegt der Widerspruch, den der Text am Anfang beschreibt?",
+     "o": [
+      "Die Mitgliederzahlen sinken, aber es gibt mehr Freiwillige.",
+      "Die Mitgliederzahlen sind hoch, aber nur wenige Vereine finden Leute für Leitungsposten.",
+      "Die Vereine haben zu viel Geld, aber zu wenig Mitglieder."
+     ],
+     "a": 1,
+     "w": "原文 „Beides ist wahr. Vereine haben Mitglieder und keine Nachfolger.“ 会员数创纪录（30,08 Mio），但只有 17% 说有足够的领导岗位人选。"
+    },
+    {
+     "t": "lv",
+     "q": "Warum stimmt die Erklärung „die Leute haben keine Zeit mehr“ nicht?",
+     "o": [
+      "Weil der Anteil derer, die mehr als sechs Stunden pro Woche investieren, gestiegen ist.",
+      "Weil die Menschen heute mehr Freizeit haben als früher.",
+      "Weil die Befragung nur Rentner erfasst hat."
+     ],
+     "a": 0,
+     "w": "原文 „zeigt das Gegenteil“：6 小时以上的比例从 16% 升到 19%，每周至少一次从 42% 升到 48%。投入时间反而增加。"
+    },
+    {
+     "t": "lv",
+     "q": "Was unterscheidet ein Amt von einer Mithilfe beim Kinderfest?",
+     "o": [
+      "Ein Amt wird bezahlt, Mithilfe nicht.",
+      "Ein Amt darf nur von Mitgliedern übernommen werden.",
+      "Ein Amt bedeutet festen Termin, Rechenschaft und eine Bindung über zwei Jahre."
+     ],
+     "a": 2,
+     "w": "原文 „Ein Amt bedeutet: fester Termin, Rechenschaft, Kündigung nach zwei Jahren.“ 不是钱的问题，是绑定与责任。"
+    },
+    {
+     "t": "lv",
+     "q": "Was zeigt die Maecenata-Analyse über aufgelöste Vereine?",
+     "o": [
+      "Der häufigste Grund ist Geldmangel, der zweithäufigste fehlende Mitglieder.",
+      "Der häufigste Grund sind fehlende Mitglieder, der zweithäufigste fehlende Vorstandsmitglieder.",
+      "Die meisten Vereine lösen sich wegen behördlicher Auflösung auf."
+     ],
+     "a": 1,
+     "w": "原文：找不到会员 17%，找不到人进理事会 14%。且 90% 是会员自行决议解散，不是被登记机关撤销。"
+    },
+    {
+     "t": "rw",
+     "q": "Welcher Satz gibt den Zeitbezug der Zahlen richtig wieder?",
+     "o": [
+      "DOSB zählt Mitglieder; wer in zwei Vereinen ist, zählt einmal.",
+      "DOSB zählt nur Erwachsene über 18 Jahren.",
+      "DOSB zählt Mitgliedschaften; wer in zwei Vereinen ist, zählt zweimal."
+     ],
+     "a": 2,
+     "w": "原文释义即点明 „Zählungen von Mitgliedschaften, nicht von Personen — wer in zwei Vereinen ist, zählt zweimal“。这是理解 30 Mio 的关键口径。"
+    },
+    {
+     "t": "rw",
+     "q": "Welche Aussage über den Freiwilligensurvey entspricht dem Text?",
+     "o": [
+      "FWS 2024 hatte eine Feldphase von November 2023 bis Juni 2024 und erschien im November 2025.",
+      "FWS 2024 wurde 2019 erhoben und 2020 veröffentlicht.",
+      "FWS 2024 hat nur Personen unter 30 befragt."
+     ],
+     "a": 0,
+     "w": "原文明确写出字段期与发布年份。口径不清会被当成「2026 年现状」，所以时间必须写准。"
+    },
+    {
+     "t": "gc",
+     "q": "„Es fehlt die Person, ___ bereit ist, für zwei Jahre ihren Namen unter etwas zu schreiben.“",
+     "o": [
+      "der",
+      "denen",
+      "die"
+     ],
+     "a": 2,
+     "w": "Bezugswort ist „die Person“（阴性单数），关系从句中作主语 → 一格 die。"
+    },
+    {
+     "t": "gc",
+     "q": "„Ein Verein kann jahrelang gesund aussehen ___ dann an einem Abend aufhören zu existieren.“",
+     "o": [
+      "aber",
+      "und",
+      "obwohl"
+     ],
+     "a": 1,
+     "w": "原文是并列推进：先「看着健康」，再「某个晚上突然结束」。并列用 und；aber 需要转折对立，obwohl 需要让步从句。"
+    }
+   ]
+  },
+  {
    "code": "G-070",
    "title": "070 · Konjunktiv I",
    "topic": "语法",
@@ -3493,99 +3784,196 @@
    ]
   },
   {
-   "code": "G4-L1-03",
-   "title": "Ralph Baer: Der Mann, der uns alle zu Spielern machte",
-   "topic": "G_文化与日常",
-   "round": 1,
-   "rname": "Hintergrund",
+   "code": "G-086",
+   "title": "086 · Nominalstil 名词化",
+   "topic": "语法",
+   "round": 0,
+   "rname": "Grammatik-Linse B2",
    "qs": [
     {
      "t": "lv",
-     "q": "„Für diesen Besuch ist der Spieleentwickler damals über seinen und über den langen Schatten der deutschen Geschichte gesprungen.“ Was heißt „über seinen und über den langen Schatten der deutschen Geschichte gesprungen“ hier?",
+     "q": "Welches Wort im Satz „Die Produktion stabilisiert sich auf niedrigerem Niveau“ ist die Nominalisierung?",
      "o": [
-      "sich überwinden und etwas tun, was man eigentlich vermeiden wollte",
-      "ohne Plan und sehr schnell handeln",
-      "einen Fehler aus der Vergangenheit wieder gutmachen"
+      "stabilisiert",
+      "Produktion",
+      "Niveau"
      ],
-     "a": 0,
-     "w": "原文 „er möchte ungern in das Land der Täter zurückkehren, solange die Täter noch leben“；他本不愿回德国，最后还是去了柏林——这就是跨过自己的影子，跟“没计划”“补救错误”无关。"
+     "a": 1,
+     "w": "正确答案：Produktion。对照本册「Die Regel in 30 Sekunden」这一节。"
     },
     {
      "t": "lv",
-     "q": "Warum nannte Baer seine Erfindung auf dem Patent auch „Training Apparatus“?",
+     "q": "„Die Beschäftigung bleibt stabil“ — welches Verb steckt in „Beschäftigung“?",
      "o": [
-      "Weil das Gerät tatsächlich nur der militärischen Ausbildung diente.",
-      "Weil der Firmenvorstand die Entwicklung unterstützte.",
-      "Weil der Name seriöser klingen sollte."
+      "beschäftigen",
+      "beschaffen",
+      "schaffen"
+     ],
+     "a": 0,
+     "w": "正确答案：beschäftigen。对照本册「Die Regel in 30 Sekunden」这一节。"
+    },
+    {
+     "t": "lv",
+     "q": "„die Fähigkeit, neue Märkte zu erschließen“ — welches Adjektiv steckt darin?",
+     "o": [
+      "fährt",
+      "fein",
+      "fähig"
      ],
      "a": 2,
-     "w": "原文 „nicht nur Gaming Apparatus genannt …, sondern auch Training Apparatus, damit das seriöser klingt.“；选项 0 把“取个正名”误读成“真实用途”，选项 1 与 „hält die Entwicklung für Zeitverschwendung“ 矛盾。"
+     "w": "正确答案：fähig。对照本册「Die Regel in 30 Sekunden」这一节。"
     },
     {
      "t": "lv",
-     "q": "Was sagt der Text über die Geschichte mit der Bushaltestelle?",
+     "q": "Welche Endung macht aus „investieren“ ein Nomen?",
      "o": [
-      "Sie ist eine schöne Anekdote, aber die Idee Computerspiel gab es schon vorher an Unis und in Laboren.",
-      "Sie ist die einzige überlieferte Quelle für Baers Erfindung.",
-      "Sie erklärt, warum es überhaupt erst Computer gab."
+      "-heit",
+      "-ung",
+      "-keit"
      ],
-     "a": 0,
-     "w": "原文 „… sagt die Legende. Zur Wahrheit gehört, dass die Idee nicht einfach so vom Himmel einer Dienstreise gefallen ist. Die Idee Computerspiel gab es schon an Unis, auf Großrechnern.“；公交站只是传说。"
+     "a": 1,
+     "w": "正确答案：-ung。对照本册「Die Regel in 30 Sekunden」这一节。"
     },
     {
      "t": "lv",
-     "q": "Was machte Nolan Bushnell laut Text aus der Odyssey-Idee?",
+     "q": "„Die Steigerung der Preise“ — welcher Satz entspricht dem?",
      "o": [
-      "Er brachte das einfache Tennisspiel als Automaten für Spielhallen heraus.",
-      "Er kaufte die Firma Magnavox und führte die Odyssey weiter.",
-      "Er baute die Brown Box für den Heimmarkt nach."
+      "Die Preise steigen.",
+      "Die Preise steigern etwas.",
+      "Jemand steigert die Preise nicht."
      ],
      "a": 0,
-     "w": "原文 „packe aber jetzt dieses viel einfachere Spiel rein, nenne den Automaten Pong und stelle den dann in die Spielerhallen.“；Pong 是街机，不是家用机，他也没买 Magnavox。"
+     "w": "正确答案：Die Preise steigen.。对照本册「Die Regel in 30 Sekunden」这一节。"
     },
     {
-     "t": "rw",
-     "q": "Welcher Satz sagt dasselbe? „Der Firmenvorstand hält die Entwicklung für Zeitverschwendung. Bär macht mit ausgewählten Kollegen trotzdem weiter.“",
+     "t": "lv",
+     "q": "„der Wandel der Industrie“ — wer oder was wandelt sich?",
      "o": [
-      "Der Vorstand stoppt das Projekt, deshalb gibt Bär auf.",
-      "Der Vorstand findet das Projekt großartig und stellt mehr Mitarbeiter ein.",
-      "Der Vorstand hält das Projekt für unnütz, doch Bär arbeitet mit einigen Kollegen weiter."
+      "der Wandel",
+      "niemand",
+      "die Industrie"
      ],
      "a": 2,
-     "w": "原文 für Zeitverschwendung halten = 认为是浪费时间，trotzdem = 尽管如此。选项 1 把“继续”改成“放弃”，选项 2 把“反对”改成“支持”。"
+     "w": "正确答案：die Industrie。对照本册「Die Regel in 30 Sekunden」这一节。"
     },
     {
-     "t": "rw",
-     "q": "Welcher Satz sagt dasselbe? „Die waren auf der ganzen Welt quasi gleich, bis auf das Case, bis auf das Gehäuse.“",
+     "t": "lv",
+     "q": "Ob dieser Wandel gelingt, hängt von der ___ ab, neue Märkte zu erschließen.",
      "o": [
-      "Weltweit unterschieden sich die Geräte vor allem in der Technik.",
-      "Weltweit hatten die Geräte dieselbe Technik, nur das Äußere unterschied sich.",
-      "Weltweit hatten die Geräte dieselbe Technik und dasselbe Aussehen."
+      "fähig",
+      "Fähigkeit",
+      "befähigt"
      ],
      "a": 1,
-     "w": "原文 bis auf = 除了……之外，Gehäuse = 外壳。选项 1 抹掉了这个例外，选项 2 把差别从外壳换成了技术。"
+     "w": "正确答案：Fähigkeit。对照本册「Die Regel in 30 Sekunden」这一节。"
     },
     {
-     "t": "gc",
-     "q": "Die Maschine ließ sich ___ den eigenen Fernseher anschließen.",
+     "t": "lv",
+     "q": "Ein Ingenieur findet nicht automatisch eine Stelle. Die ___ dauert Jahre.",
      "o": [
-      "mit",
-      "an",
-      "auf"
+      "umschulen",
+      "umschulbar",
+      "Umschulung"
+     ],
+     "a": 2,
+     "w": "正确答案：Umschulung。对照本册「Die Regel in 30 Sekunden」这一节。"
+    }
+   ]
+  },
+  {
+   "code": "G-087",
+   "title": "087 · Präpositionaladverbien 代副词",
+   "topic": "语法",
+   "round": 0,
+   "rname": "Grammatik-Linse B2",
+   "qs": [
+    {
+     "t": "lv",
+     "q": "„Ein Hinweis darauf, dass die Ausgaben wachsen“ — wofür steht „darauf“?",
+     "o": [
+      "für den Hinweis",
+      "für den ganzen Folgesatz",
+      "für die Ausgaben"
      ],
      "a": 1,
-     "w": "原文 „eine Maschine …, die man an den eigenen Fernseher anschließen konnte.“；anschließen an + Akk 是固定搭配，句中是“可以接到自家电视机上”。"
+     "w": "正确答案：für den ganzen Folgesatz。对照本册「Die Regel in 30 Sekunden」这一节。"
     },
     {
-     "t": "gc",
-     "q": "Das Spielsystem wurde am Ende von ___ Elektronikhersteller Magnavox produziert.",
+     "t": "lv",
+     "q": "Warum heißt es „damit“ und nicht „darmit“?",
      "o": [
-      "den",
-      "dem",
-      "der"
+      "weil „mit“ mit Konsonant beginnt",
+      "weil „mit“ mit Vokal beginnt",
+      "weil „damit“ eine Ausnahme ist"
+     ],
+     "a": 0,
+     "w": "正确答案：weil „mit“ mit Konsonant beginnt。对照本册「Die Regel in 30 Sekunden」这一节。"
+    },
+    {
+     "t": "lv",
+     "q": "Welche Form ist für eine Person richtig?",
+     "o": [
+      "Ich spreche davon.",
+      "Ich spreche von es.",
+      "Ich spreche von ihm."
+     ],
+     "a": 2,
+     "w": "正确答案：Ich spreche von ihm.。对照本册「Die Regel in 30 Sekunden」这一节。"
+    },
+    {
+     "t": "lv",
+     "q": "„Die Diskussion ___ läuft seit Jahren.“ Welches Wort passt?",
+     "o": [
+      "davon",
+      "darüber",
+      "dabei"
      ],
      "a": 1,
-     "w": "原文 „Am Ende einer kleinen Werbe-Odyssee produziert der Elektronikhersteller Magnavox das Spielsystem.“；被动句的行为主体用 von + Dativ，der Hersteller 是阳性，故为 dem。"
+     "w": "正确答案：darüber。对照本册「Die Regel in 30 Sekunden」这一节。"
+    },
+    {
+     "t": "lv",
+     "q": "„Ob die Rechnung aufgeht, hängt ___, ob Kunden dauerhaft zahlen.“",
+     "o": [
+      "darauf",
+      "davon",
+      "daran"
+     ],
+     "a": 2,
+     "w": "正确答案：daran。对照本册「Die Regel in 30 Sekunden」这一节。"
+    },
+    {
+     "t": "lv",
+     "q": "„Wer Zugang zu Energie hat, wird ___ wichtiger als wer den schnellsten Chip baut.“ — was zeigt „damit“ hier?",
+     "o": [
+      "eine Folge",
+      "ein Werkzeug",
+      "einen Ort"
+     ],
+     "a": 0,
+     "w": "正确答案：eine Folge。对照本册「Die Regel in 30 Sekunden」这一节。"
+    },
+    {
+     "t": "lv",
+     "q": "„Ich rechne mit höheren Preisen.“ Wie fragst du nach der Sache?",
+     "o": [
+      "Mit wem rechnest du?",
+      "Womit rechnest du?",
+      "Worauf rechnest du?"
+     ],
+     "a": 1,
+     "w": "正确答案：Womit rechnest du?。对照本册「Die Regel in 30 Sekunden」这一节。"
+    },
+    {
+     "t": "lv",
+     "q": "„Er war ___ beteiligt.“ Welches Wort passt?",
+     "o": [
+      "damit",
+      "davon",
+      "dabei"
+     ],
+     "a": 2,
+     "w": "正确答案：dabei。对照本册「Die Regel in 30 Sekunden」这一节。"
     }
    ]
   }
