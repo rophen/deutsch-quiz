@@ -258,7 +258,7 @@ function renderQuiz(code){
 
 function askQ(){
   const s = qset(QA.code), q = s.qs[QA.i], last = QA.i === s.qs.length - 1;
-  const label = q.t === "rw" ? "选出和原句意思相同的那句" : q.t === "gc" ? "填这一空（ABC 选一个）" : "三选一";
+  const label = q.t === "rw" ? "选出和原句意思相同的那句" : q.t === "gc" ? "填这一空（ABC 选一个）" : q.t === "rf" ? "Richtig, falsch oder steht das nicht im Text?" : "三选一";
   $("#app").innerHTML = `
     <div class="top"><a class="back" href="#/read/${QA.code}">‹ 原文</a>
       <div class="ttl">${esc(QA.code)} · ${QA.i + 1}/${s.qs.length}</div></div>
