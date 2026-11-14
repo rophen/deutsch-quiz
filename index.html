@@ -52,9 +52,11 @@ h2{font-size:15px;margin:26px 0 10px;color:var(--teal);font-weight:700}
 .gl.on{border-bottom-color:var(--teal);color:var(--teal);font-weight:600}
 .def{background:var(--warnbg);border-radius:8px;padding:9px 12px;font-size:13.5px;color:#6E5314;margin:0 0 14px}
 .def b{color:var(--warn)}
-.rd .zh{background:#EAE6D8;border-radius:8px;padding:11px 13px;font-size:14px;line-height:1.62;color:#4A5551;margin:0 0 16px}
+.rd .zh,.zh{background:#EAE6D8;border-radius:8px;padding:11px 13px;font-size:14px;line-height:1.62;color:#4A5551;margin:0 0 16px}
 .rd .src{font-size:12.5px;color:var(--muted);border-top:1px solid var(--rule);padding-top:12px;margin-top:22px}
 .rd .nxt{font-size:13px;color:var(--teal);margin-top:10px;line-height:1.5}
+.rd .ann{font-size:12.5px;line-height:1.55;color:#6E5314;background:var(--warnbg);
+  border-radius:7px;padding:7px 10px;margin:-8px 0 14px}
 /* 听力 */
 .aud{position:sticky;top:0;z-index:6;background:var(--bg);padding:8px 0 10px;margin:0 0 4px;
   border-bottom:1px solid var(--rule)}
@@ -290,34 +292,32 @@ function renderRead(code){
   const body = b.els.map(e => {
     if (e.k === "h2") return `<div class="h">${esc(e.t)}</div>`;
     if (e.k === "zh") return `<div class="zh">${esc(e.t)}</div>`;
-    return `<p>${e.seg ? renderSeg(e.seg) : esc(e.t || "")}</p>`;
+    const ann = e.ann ? e.ann.map(a => `<div class="ann">${esc(a)}</div>`).join("") : "";
+    return `<p>${e.seg ? renderSeg(e.seg) : esc(e.t || "")}</p>${ann}`;
   }).join("");
   const q = qset(code), r = run(code);
   const ln = lineOf(b);
-  const back = ln === "阅读" ? "#/line/read" : ln === "写说" ? "#/line/write" : "#/line/grammar";
+  const back = lineBack(ln), backName = lineBackName(ln);
   $("#app").innerHTML = `
-    <div class="top"><a class="back" href="${back}">‹ 目录</a>
+    <div class="top"><a class="back" href="${back}">‹ ${backName}</a>
       <div class="ttl">${esc(b.meta || code)}</div></div>
     <h1>${esc(b.title)}</h1>
+    ${b.sub ? `<p class="sub">${esc(b.sub)}</p>` : ""}
     ${b.zh ? `<div class="zh">${esc(b.zh)}</div>` : ""}
     <div class="rd">${body}
       ${b.src ? `<div class="src">${esc(b.src)}</div>` : ""}
       ${b.nxt ? `<div class="nxt">→ ${esc(b.nxt)}</div>` : ""}
     </div>
-    ${q ? `<button class="btn" id="toq">做题 · ${q.qs.length} 题${r ? `（上次 ${r.score}/${r.total || q.qs.length}）` : ""}</button>`
-        : `<p class="foot">这册还没出题。</p>`}
-    <div class="nav">
-      ${b.prevCode ? `<a class="btn ghost sm" href="#/read/${b.prevCode}">‹ ${esc(b.prevCode)}</a>` : `<span></span>`}
-      ${b.nxtCode ? `<a class="btn ghost sm" href="#/read/${b.nxtCode}">${esc(b.nxtCode)} ›</a>` : `<span></span>`}
-    </div>
-    <button class="btn ghost sm" id="home">回目录</button>`;
-  const tq = $("#toq"); if (tq) tq.onclick = () => go("#/quiz/" + code);
+    ${quizBtn(q, r)}
+    ${navRow(b, ln)}
+    <button class="btn ghost sm" id="home">回${backName}</button>`;
+  bindQuizBtn(code);
   $("#home").onclick = () => go(back);
   bindGloss();
   window.scrollTo(0, 0);
 }
 
-/* ── 听力：播放器 + 时间戳逐字稿 ───────────────────── */
+/* ── 听力：播放器 + 时间戳逐字稿（与阅读同一套外壳） ── */
 function tsSec(ts){
   if (!ts) return 0;
   const p = String(ts).split(":").map(Number);
@@ -335,12 +335,15 @@ function renderListen(code){
     <p class="sub">${esc(b.meta || "")}${b.pairRead ? ` · 配阅读 ${esc(b.pairRead)}` : ""}</p>
     <div class="aud">
       <audio id="au" controls preload="metadata" src="${esc(b.audio || "")}"></audio>
-      <div class="am"><span>点时间码跳到那一段</span></div>
+      <div class="am"><span>点时间码跳到那一段</span><span>·</span><span>${b.els.filter(e=>e.k==="p").length} 行</span></div>
     </div>
-    <div class="tr" id="tr">${b.els.filter(e => e.k === "p").map((e, i) =>
-      `<p data-i="${i}" data-s="${tsSec(e.ts)}">${e.ts ? `<span class="ts" data-s="${tsSec(e.ts)}">${esc(e.ts)}</span>` : ""}${esc(e.t)}</p>`).join("")}</div>
-    ${q ? `<button class="btn" id="toq">做题 · ${q.qs.length} 题${r ? `（上次 ${r.score}/${r.total || q.qs.length}）` : ""}</button>`
-        : `<p class="foot">这段还没出题。</p>`}
+    <div class="tr rd" id="tr">${b.els.filter(e => e.k === "p").map((e, i) =>
+      `<p data-i="${i}" data-s="${tsSec(e.ts)}">${e.ts ? `<span class="ts" data-s="${tsSec(e.ts)}">${esc(e.ts)}</span>` : ""}${esc(e.t)}</p>`).join("")}
+      ${b.src ? `<div class="src">${esc(b.src)}</div>` : ""}
+      ${b.nxt ? `<div class="nxt">→ ${esc(b.nxt)}</div>` : ""}
+    </div>
+    ${quizBtn(q, r)}
+    ${navRow(b, "听力")}
     <button class="btn ghost sm" id="home">回听力目录</button>`;
   const au = $("#au");
   $("#tr").querySelectorAll(".ts").forEach(el => {
@@ -355,9 +358,29 @@ function renderListen(code){
       ps.forEach(p => p.classList.toggle("on", p === cur));
     };
   }
-  const tq = $("#toq"); if (tq) tq.onclick = () => go("#/quiz/" + code);
+  bindQuizBtn(code);
   $("#home").onclick = () => go("#/line/listen");
   window.scrollTo(0, 0);
+}
+
+/* ── 四线共用的按钮与导航 ────────────────────────── */
+const LINE_BACK = {阅读:["#/line/read","目录"], 听力:["#/line/listen","听力"],
+                   语法:["#/line/grammar","目录"], 写说:["#/line/write","目录"]};
+function lineBack(l){ return (LINE_BACK[l] || LINE_BACK["阅读"])[0]; }
+function lineBackName(l){ return (LINE_BACK[l] || LINE_BACK["阅读"])[1]; }
+function quizBtn(q, r){
+  return q
+    ? `<button class="btn" id="toq">做题 · ${q.qs.length} 题${r ? `（上次 ${r.score}/${r.total || q.qs.length}）` : ""}</button>`
+    : `<p class="foot">这册还没出题。</p>`;
+}
+function bindQuizBtn(code){
+  const tq = $("#toq"); if (tq) tq.onclick = () => go("#/quiz/" + code);
+}
+function navRow(b, ln){
+  const pre0 = ln === "听力" ? "listen" : "read";
+  const pre = b.prevCode ? `<a class="btn ghost sm" href="#/${pre0}/${b.prevCode}">‹ ${esc(b.prevCode)}</a>` : `<span></span>`;
+  const nxt = b.nxtCode ? `<a class="btn ghost sm" href="#/${pre0}/${b.nxtCode}">${esc(b.nxtCode)} ›</a>` : `<span></span>`;
+  return `<div class="nav">${pre}${nxt}</div>`;
 }
 
 /* ── 做题 ─────────────────────────────────────────── */
