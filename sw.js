@@ -1,7 +1,7 @@
 /* Deutsch 阅读台 service worker
    HTML 与数据走 network-first：内容改了就一定拿新的，离线才回缓存。
                   以前是 cache-first，会导致 books.json 永远停在第一次装的版本。 */
-const CACHE = "dq-v8";
+const CACHE = "dq-v9";
 const CORE = ["./", "index.html", "manifest.json", "data/books.json", "data/quiz.json",
               "icon-180.png", "icon-512.png"];
 const NET_FIRST = /\/(data\/|$|index\.html)/;
