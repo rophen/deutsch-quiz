@@ -6,7 +6,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="theme-color" content="#F4F2E8">
-<title>Deutsch 阅读台</title>
+<title>Deutsch 学习台</title>
 <link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="icon-180.png">
 <style>
@@ -32,6 +32,14 @@ h2{font-size:15px;margin:26px 0 10px;color:var(--teal);font-weight:700}
 .card:active{background:#F0EEE0}
 .card .t{font-weight:700;font-size:15.5px;line-height:1.42;margin:0 0 5px}
 .card .m{font-size:12.5px;color:var(--muted);display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+/* 四条线大卡 */
+.lines{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:0 0 6px}
+.line{background:var(--card);border:1px solid var(--rule);border-radius:13px;padding:14px 14px 12px;
+  display:block;color:inherit;text-decoration:none}
+.line:active{background:#F0EEE0}
+.line .n{font-size:22px;font-weight:700;color:var(--teal);line-height:1;margin:0 0 7px}
+.line .k{font-size:14px;font-weight:700;margin:0 0 3px;line-height:1.35;overflow-wrap:anywhere}
+.line .c{font-size:12px;color:var(--muted);margin:0 0 9px}
 .pill{display:inline-block;font-size:11.5px;padding:1.5px 8px;border-radius:99px;background:#EDEAE0;color:var(--muted)}
 .pill.done{background:var(--okbg);color:var(--ok);font-weight:600}
 .pill.warn{background:var(--warnbg);color:var(--warn)}
@@ -47,6 +55,15 @@ h2{font-size:15px;margin:26px 0 10px;color:var(--teal);font-weight:700}
 .rd .zh{background:#EAE6D8;border-radius:8px;padding:11px 13px;font-size:14px;line-height:1.62;color:#4A5551;margin:0 0 16px}
 .rd .src{font-size:12.5px;color:var(--muted);border-top:1px solid var(--rule);padding-top:12px;margin-top:22px}
 .rd .nxt{font-size:13px;color:var(--teal);margin-top:10px;line-height:1.5}
+/* 听力 */
+.aud{position:sticky;top:0;z-index:6;background:var(--bg);padding:8px 0 10px;margin:0 0 4px;
+  border-bottom:1px solid var(--rule)}
+.aud audio{width:100%;display:block}
+.aud .am{font-size:12px;color:var(--muted);margin:7px 0 0;display:flex;gap:9px;flex-wrap:wrap}
+.tr p{margin:0 0 12px;text-align:left;font-size:15.5px}
+.tr p.on{background:var(--warnbg);border-radius:7px;padding:5px 8px;margin-left:-8px;margin-right:-8px;font-weight:600}
+.tr .ts{font-size:11.5px;color:var(--teal);font-variant-numeric:tabular-nums;cursor:pointer;
+  border-bottom:1px dotted var(--teal);margin-right:7px;user-select:none}
 /* 题 */
 .qn{font-size:12px;color:var(--muted);letter-spacing:.06em;margin:0 0 8px}
 .qtext{font-size:16.5px;line-height:1.55;margin:0 0 16px;font-weight:600}
@@ -87,6 +104,14 @@ h2{font-size:15px;margin:26px 0 10px;color:var(--teal);font-weight:700}
 .empty{color:var(--muted);font-size:14px;text-align:center;padding:44px 20px;line-height:1.7}
 .foot{font-size:12px;color:var(--muted);text-align:center;margin:36px 0 0;line-height:1.7}
 .tag{font-size:11px;color:var(--muted);border:1px solid var(--rule);border-radius:6px;padding:1px 6px}
+.sec{font-size:12px;color:var(--muted);margin:22px 0 8px;letter-spacing:.04em}
+table.st{width:100%;border-collapse:collapse;font-size:13.5px;margin:8px 0 0}
+table.st th,table.st td{border-bottom:1px solid var(--rule);padding:8px 4px;text-align:left}
+table.st th{color:var(--muted);font-weight:600;font-size:12px}
+table.st td.n{text-align:right;font-variant-numeric:tabular-nums}
+code{font-size:12.5px;background:#EDEAE0;border-radius:5px;padding:1px 5px}
+input.tok{width:100%;font:inherit;font-size:14px;padding:11px 12px;border:1px solid var(--rule);
+  border-radius:9px;background:var(--card);color:inherit}
 </style>
 </head>
 <body>
@@ -99,6 +124,12 @@ const esc = s => String(s == null ? "" : s).replace(/[&<>"]/g,
   c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const DOM = {A:"国家与制度",B:"社会与民生",C:"经济劳动与企业",D:"身份与人口",E:"法律与日常秩序",
              F:"环境与基础设施",G:"文化与日常",H:"历史与记忆",I:"科技科学与数字生活"};
+const LINES = [
+  {k:"read",   n:"一", name:"阅读",  de:"Lesen",          c:"域 · 层 · 阅读册",   href:"#/line/read"},
+  {k:"listen", n:"二", name:"听力",  de:"Hören",          c:"8 个阶梯 · 真人音频", href:"#/line/listen"},
+  {k:"grammar",n:"三", name:"语法",  de:"Grammatik-Linse",c:"8 个靶点 · 规则册",   href:"#/line/grammar"},
+  {k:"write",  n:"四", name:"写说",  de:"Schreiben · Sprechen", c:"12 册 · 场景任务", href:"#/line/write"},
+];
 
 let BOOKS = {}, QUIZ = {sets: []}, ST = loadST();
 
@@ -107,94 +138,127 @@ function saveST(){ try { localStorage.setItem(KEY, JSON.stringify(ST)); } catch(
 function run(code){ return (ST.runs || {})[code] || null; }
 function qset(code){ return QUIZ.sets.find(s => s.code === code) || null; }
 
+/* 一条线归属：数据里带 line 就用，否则按 code 前缀推断 */
+function lineOf(b){
+  if (b.line) return b.line;
+  if (b.domain === "语法" || /^G-/.test(b.code)) return "语法";
+  if (/^[WM]-/.test(b.code)) return "写说";
+  if (/^S\d-/.test(b.code)) return "听力";
+  return "阅读";
+}
+function passOf(s){ return s.pass || (s.qs.length >= 8 ? 7 : Math.max(1, s.qs.length - 1)); }
+function bucket(line){ return Object.keys(BOOKS).filter(c => lineOf(BOOKS[c]) === line); }
+
+/* 听力：阶梯 1–8 在前（按 tier 数字），Zeitzeichen 附加档排最后 */
+function tierNum(c){
+  const m = /^S(\d)/.exec(c);
+  return m ? +m[1] : 99;
+}
+function listenRank(c){ return tierNum(c) * 1000 + (+(/^S\d-(\d+)/.exec(c) || [0,0])[1]); }
+function listenGroup(b){
+  if (/^阶梯/.test(b.tier || "")) {
+    return `阶梯 ${(/^阶梯(\d+)/.exec(b.tier) || [0,"?"])[1]} · ${esc(b.tierName || "")}`;
+  }
+  return `附加档 · WDR Zeitzeichen（整段不切）`;
+}
+
 /* ── 路由 ─────────────────────────────────────────── */
 function go(h){ if (location.hash === h) route(); else location.hash = h; }
 window.addEventListener("hashchange", route);
 
 function route(){
   const p = (location.hash || "#/").slice(1).split("/").filter(Boolean);
-  if (p[0] === "read" && p[1]) return renderRead(p[1]);
-  if (p[0] === "quiz" && p[1]) return renderQuiz(p[1]);
+  if (p[0] === "read"   && p[1]) return renderRead(p[1]);
+  if (p[0] === "listen" && p[1]) return renderListen(p[1]);
+  if (p[0] === "quiz"   && p[1]) return renderQuiz(p[1]);
   if (p[0] === "result" && p[1]) return renderResult(p[1]);
+  if (p[0] === "line"   && p[1]) return renderLine(p[1]);
+  if (p[0] === "stats")          return renderStats();
+  if (p[0] === "sync")           return renderSync();
   return renderHome();
 }
 
-/* ── 首页 ─────────────────────────────────────────── */
+/* ── 首页：四条线 ─────────────────────────────────── */
 function renderHome(){
-  const codes = Object.keys(BOOKS).sort((a, b) => BOOKS[a].seq - BOOKS[b].seq);
-  const done = codes.filter(c => run(c));
-  const passed = codes.filter(c => run(c) && run(c).score >= 7);
-  const withQuiz = codes.filter(c => qset(c));
-  document.title = "Deutsch 阅读台";
-  const byDom = {};
-  codes.forEach(c => { (byDom[BOOKS[c].domain] = byDom[BOOKS[c].domain] || []).push(c); });
+  document.title = "Deutsch 学习台";
+  const all = Object.keys(BOOKS);
+  const cards = LINES.map(L => {
+    const cs = bucket(L.name);
+    const done = cs.filter(c => run(c));
+    const passed = cs.filter(c => run(c) && run(c).score >= passOf(qset(c) || {qs:[0,0,0,0,0,0,0,0]}));
+    const pct = cs.length ? Math.round(done.length / cs.length * 100) : 0;
+    return `<a class="line" href="${L.href}">
+      <div class="n">${L.n}</div>
+      <div class="k">${esc(L.name)} · ${esc(L.de)}</div>
+      <div class="c">${cs.length} 册 · 已做 ${done.length}</div>
+      <div class="bar"><i style="width:${pct}%"></i></div>
+    </a>`;
+  }).join("");
   $("#app").innerHTML = `
-    <h1>Deutsch 阅读台</h1>
-    <p class="sub">${codes.length} 册在线 · 可做题 ${withQuiz.length} 册 · 已做 ${done.length} · 过 7/8 的 ${passed.length} 册</p>
-    ${Object.keys(byDom).sort().map(d => `
-      <h2>${esc(d === "语法" ? "语法 · Grammatik-Linse" : d.split("_")[0] + " · " + (DOM[d.split("_")[0]] || d))}</h2>
-      ${byDom[d].map(c => card(c)).join("")}`).join("")}
-    <button class="btn ghost sm" id="exp">导出做题记录（JSON）</button>
-    <button class="btn ghost sm" id="rep">交回电脑（复制成绩）</button>
+    <h1>Deutsch 学习台</h1>
+    <p class="sub">${all.length} 册 · 四条线 · 做题记录存在这台设备上，可同步到云端</p>
+    <div class="lines">${cards}</div>
+    <button class="btn ghost sm" id="stats">进度总览</button>
+    <button class="btn ghost sm" id="sync">云端同步 / 交回电脑</button>
     <p class="foot">正文里带虚线的词，点一下看德语释义。<br>
-      读完点「做题」，8 道三选一，7 分算过。</p>`;
-  $("#exp").onclick = exportJSON;
-  $("#rep").onclick = reportText;
+      每册 8 道三选一（写说 4 道），答对 7 题算过。</p>`;
+  $("#stats").onclick = () => go("#/stats");
+  $("#sync").onclick = () => go("#/sync");
+  window.scrollTo(0, 0);
 }
 
-function card(code){
+/* ── 单条线的目录页 ───────────────────────────────── */
+const LINE_NAME = {read:"阅读", listen:"听力", grammar:"语法", write:"写说"};
+function renderLine(k){
+  const line = LINE_NAME[k];
+  if (!line) return go("#/");
+  const L = LINES.find(x => x.k === k);
+  document.title = line + " · Deutsch 学习台";
+  let cs = bucket(line);
+  // 阅读按 seq；听力按阶梯 + 序号；语法按 code；写说 写作在前、口语在后
+  const num = c => { const m = /(\d+)/.exec(c.replace(/^[A-Z]-/, "")); return m ? +m[1] : 0; };
+  if (k === "listen") cs.sort((a, b) => listenRank(a) - listenRank(b));
+  else if (k === "write") cs.sort((a, b) => (a[0] === b[0] ? num(a) - num(b) : a[0] < b[0] ? -1 : 1));
+  else if (k === "grammar") cs.sort((a, b) => num(a) - num(b));
+  else cs.sort((a, b) => (BOOKS[a].seq || 0) - (BOOKS[b].seq || 0));
+
+  const groups = {};
+  cs.forEach(c => {
+    const b = BOOKS[c];
+    const g = k === "listen" ? listenGroup(b)
+            : k === "read" ? (b.domain || "")
+            : k === "write" ? (c[0] === "W" ? "写作 · Schreiben" : "口语 · Sprechen")
+            : "语法点 · Grammatik-Linse";
+    (groups[g] = groups[g] || []).push(c);
+  });
+  $("#app").innerHTML = `
+    <div class="top"><a class="back" href="#/">‹ 四条线</a>
+      <div class="ttl">${L.n} · ${line}</div></div>
+    <h1>${line} · ${esc(L.de)}</h1>
+    <p class="sub">${cs.length} 册 · 已做 ${cs.filter(c => run(c)).length} · ${esc(L.c)}</p>
+    ${Object.keys(groups).map(g => `
+      <div class="sec">${esc(g)}</div>
+      ${groups[g].map(c => card(c, k)).join("")}`).join("")}
+    <button class="btn ghost sm" id="home">回四条线</button>`;
+  $("#home").onclick = () => go("#/");
+  window.scrollTo(0, 0);
+}
+
+function card(code, k){
   const b = BOOKS[code], r = run(code), q = qset(code);
+  const total = q ? q.qs.length : 8, pass = q ? passOf(q) : 7;
   const sc = r ? r.score : null;
   const pill = sc === null
     ? (q ? `<span class="pill">未做</span>` : `<span class="pill">暂无题</span>`)
-    : `<span class="pill ${sc >= 7 ? "done" : "warn"}">${sc}/${r.total || 8}</span>`;
-  const pct = sc === null ? 0 : Math.round(sc / (r.total || 8) * 100);
-  return `<a class="card" href="#/read/${code}">
+    : `<span class="pill ${sc >= pass ? "done" : "warn"}">${sc}/${r.total || total}</span>`;
+  const href = k === "listen" ? `#/listen/${code}` : `#/read/${code}`;
+  const pct = sc === null ? 0 : Math.round(sc / (r.total || total) * 100);
+  const sub = k === "listen" ? `${b.meta || ""}` : `${b.round ? `R${b.round} ` : ""}${esc(b.rname || "")}`;
+  return `<a class="card" href="${href}">
     <div class="t">${esc(b.title)}</div>
-    <div class="m"><span>${code}</span><span>·</span><span>${b.round ? `R${b.round} ` : ""}${esc(b.rname || "")}</span>${pill}</div>
+    <div class="m"><span>${code}</span><span>·</span><span>${sub}</span>${pill}</div>
     ${sc === null ? "" : `<div class="bar" style="margin-top:9px"><i style="width:${pct}%"></i></div>`}
   </a>`;
-}
-
-function exportJSON(){
-  const data = {exportedAt: new Date().toISOString(), runs: ST.runs || {}};
-  const a = document.createElement("a");
-  a.href = URL.createObjectURL(new Blob([JSON.stringify(data, null, 1)], {type:"application/json"}));
-  a.download = "deutsch-lesen-" + new Date().toISOString().slice(0, 10) + ".json";
-  a.click();
-  setTimeout(() => URL.revokeObjectURL(a.href), 2000);
-}
-
-/* 交回电脑：生成一段能直接粘进「输入桥/收件箱」的纯文本。
-   格式固定，inbox.py 按 `CODE 分/总` 认行，不需要 JSON。 */
-function reportText(){
-  const codes = Object.keys(ST.runs || {}).sort((a, b) => BOOKS[a].seq - BOOKS[b].seq);
-  if (!codes.length) return alert("还没做过题。先读一册，点「做题」。");
-  let pass = 0, got = 0, tot = 0;
-  const rows = codes.map(c => {
-    const r = ST.runs[c];
-    got += r.score; tot += r.total || 8;
-    if (r.score >= 7) pass++;
-    return `${c} ${r.score}/${r.total || 8} 第${r.tries || 1}次`;
-  });
-  const d = new Date(), pad = n => String(n).padStart(2, "0");
-  const stamp = `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())} ${pad(d.getHours())}:${pad(d.getMinutes())}`;
-  const text = [`# 练习成绩 ${stamp}`, "",
-                `合计：${codes.length} 册 · ${got}/${tot} · 过 7/8 的 ${pass} 册`, "",
-                ...rows].join("\n");
-  const fn = `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}-${pad(d.getHours())}${pad(d.getMinutes())}.md`;
-  const done = () => alert(`已复制。\n\n下一步：手机「文件」→ 输入桥 → 收件箱，新建文件叫 ${fn}，粘进去保存。\n\n` + text);
-  if (navigator.clipboard && navigator.clipboard.writeText) {
-    navigator.clipboard.writeText(text).then(done).catch(() => fallback(text));
-  } else fallback(text);
-}
-function fallback(text){
-  const ta = document.createElement("textarea");
-  ta.value = text; ta.style.position = "fixed"; ta.style.opacity = "0";
-  document.body.appendChild(ta); ta.select();
-  try { document.execCommand("copy"); alert("已复制。\n\n" + text); }
-  catch (e) { prompt("手动复制这段：", text); }
-  document.body.removeChild(ta);
 }
 
 /* ── 阅读 ─────────────────────────────────────────── */
@@ -203,6 +267,19 @@ function renderSeg(seg){
     ? `<span class="gl" data-d="${esc(s.d)}">${esc(s.g)}</span><span class="def" hidden><b>${esc(s.g)}</b> — ${esc(s.d)}</span>`
     : "b" in s ? `<b>${esc(s.b)}</b>`
     : esc(s.s)).join("");
+}
+
+function bindGloss(){
+  $("#app").querySelectorAll(".gl").forEach(el => {
+    el.onclick = ev => {
+      ev.preventDefault();
+      const def = el.nextElementSibling;
+      if (!def || !def.classList.contains("def")) return;
+      const on = def.hasAttribute("hidden");
+      if (on) def.removeAttribute("hidden"); else def.setAttribute("hidden", "");
+      el.classList.toggle("on", on);
+    };
+  });
 }
 
 function renderRead(code){
@@ -215,8 +292,9 @@ function renderRead(code){
     return `<p>${e.seg ? renderSeg(e.seg) : esc(e.t || "")}</p>`;
   }).join("");
   const q = qset(code), r = run(code);
+  const back = lineOf(b) === "阅读" ? "#/line/read" : "#/line/grammar";
   $("#app").innerHTML = `
-    <div class="top"><a class="back" href="#/">‹ 目录</a>
+    <div class="top"><a class="back" href="${back}">‹ 目录</a>
       <div class="ttl">${esc(b.meta || code)}</div></div>
     <h1>${esc(b.title)}</h1>
     ${b.zh ? `<div class="zh">${esc(b.zh)}</div>` : ""}
@@ -224,26 +302,59 @@ function renderRead(code){
       ${b.src ? `<div class="src">${esc(b.src)}</div>` : ""}
       ${b.nxt ? `<div class="nxt">→ ${esc(b.nxt)}</div>` : ""}
     </div>
-    ${q ? `<button class="btn" id="toq">做题 · ${q.qs.length} 题${r ? `（上次 ${r.score}/${r.total || 8}）` : ""}</button>`
+    ${q ? `<button class="btn" id="toq">做题 · ${q.qs.length} 题${r ? `（上次 ${r.score}/${r.total || q.qs.length}）` : ""}</button>`
         : `<p class="foot">这册还没出题。</p>`}
     <div class="nav">
-      ${b.prevCode ? `<a class="btn ghost sm" href="#/read/${b.prevCode}">‹ ${esc(BOOKS[b.prevCode].code)}</a>` : `<span></span>`}
-      ${b.nxtCode ? `<a class="btn ghost sm" href="#/read/${b.nxtCode}">${esc(BOOKS[b.nxtCode].code)} ›</a>` : `<span></span>`}
+      ${b.prevCode ? `<a class="btn ghost sm" href="#/read/${b.prevCode}">‹ ${esc(b.prevCode)}</a>` : `<span></span>`}
+      ${b.nxtCode ? `<a class="btn ghost sm" href="#/read/${b.nxtCode}">${esc(b.nxtCode)} ›</a>` : `<span></span>`}
     </div>
     <button class="btn ghost sm" id="home">回目录</button>`;
   const tq = $("#toq"); if (tq) tq.onclick = () => go("#/quiz/" + code);
-  $("#home").onclick = () => go("#/");
-  // 点词看释义：紧跟的 .def 展开/收起
-  $("#app").querySelectorAll(".gl").forEach(el => {
-    el.onclick = ev => {
-      ev.preventDefault();
-      const def = el.nextElementSibling;
-      if (!def || !def.classList.contains("def")) return;
-      const on = def.hasAttribute("hidden");
-      if (on) def.removeAttribute("hidden"); else def.setAttribute("hidden", "");
-      el.classList.toggle("on", on);
-    };
+  $("#home").onclick = () => go(back);
+  bindGloss();
+  window.scrollTo(0, 0);
+}
+
+/* ── 听力：播放器 + 时间戳逐字稿 ───────────────────── */
+function tsSec(ts){
+  if (!ts) return 0;
+  const p = String(ts).split(":").map(Number);
+  return p.length === 3 ? p[0]*3600 + p[1]*60 + p[2] : p[0]*60 + p[1];
+}
+function renderListen(code){
+  const b = BOOKS[code];
+  if (!b) return go("#/");
+  document.title = b.title;
+  const q = qset(code), r = run(code);
+  $("#app").innerHTML = `
+    <div class="top"><a class="back" href="#/line/listen">‹ 听力</a>
+      <div class="ttl">${esc(b.tierName || "")}</div></div>
+    <h1>${esc(b.title)}</h1>
+    <p class="sub">${esc(b.meta || "")}${b.pairRead ? ` · 配阅读 ${esc(b.pairRead)}` : ""}</p>
+    <div class="aud">
+      <audio id="au" controls preload="metadata" src="${esc(b.audio || "")}"></audio>
+      <div class="am"><span>点时间码跳到那一段</span></div>
+    </div>
+    <div class="tr" id="tr">${b.els.filter(e => e.k === "p").map((e, i) =>
+      `<p data-i="${i}" data-s="${tsSec(e.ts)}">${e.ts ? `<span class="ts" data-s="${tsSec(e.ts)}">${esc(e.ts)}</span>` : ""}${esc(e.t)}</p>`).join("")}</div>
+    ${q ? `<button class="btn" id="toq">做题 · ${q.qs.length} 题${r ? `（上次 ${r.score}/${r.total || q.qs.length}）` : ""}</button>`
+        : `<p class="foot">这段还没出题。</p>`}
+    <button class="btn ghost sm" id="home">回听力目录</button>`;
+  const au = $("#au");
+  $("#tr").querySelectorAll(".ts").forEach(el => {
+    el.onclick = () => { if (au) { au.currentTime = +el.dataset.s; au.play().catch(()=>{}); } };
   });
+  if (au) {
+    const ps = [...$("#tr").querySelectorAll("p")];
+    au.ontimeupdate = () => {
+      const t = au.currentTime;
+      let cur = null;
+      for (const p of ps) { if (+p.dataset.s <= t + 0.3) cur = p; else break; }
+      ps.forEach(p => p.classList.toggle("on", p === cur));
+    };
+  }
+  const tq = $("#toq"); if (tq) tq.onclick = () => go("#/quiz/" + code);
+  $("#home").onclick = () => go("#/line/listen");
   window.scrollTo(0, 0);
 }
 
@@ -259,9 +370,13 @@ function renderQuiz(code){
 
 function askQ(){
   const s = qset(QA.code), q = s.qs[QA.i], last = QA.i === s.qs.length - 1;
-  const label = q.t === "rw" ? "选出和原句意思相同的那句" : q.t === "gc" ? "填这一空（ABC 选一个）" : q.t === "rf" ? "Richtig, falsch oder steht das nicht im Text?" : "三选一";
+  const label = q.t === "rw" ? "选出和原句意思相同的那句"
+    : q.t === "gc" ? "填这一空（ABC 选一个）"
+    : q.t === "rf" ? "Richtig, falsch oder steht das nicht im Text?"
+    : "三选一";
+  const backHref = lineOf(BOOKS[QA.code]) === "听力" ? "#/listen/" + QA.code : "#/read/" + QA.code;
   $("#app").innerHTML = `
-    <div class="top"><a class="back" href="#/read/${QA.code}">‹ 原文</a>
+    <div class="top"><a class="back" href="${backHref}">‹ 原文</a>
       <div class="ttl">${esc(QA.code)} · ${QA.i + 1}/${s.qs.length}</div></div>
     <div class="bar" style="margin:0 0 20px"><i style="width:${QA.i / s.qs.length * 100}%"></i></div>
     <p class="qn">${label}</p>
@@ -302,21 +417,24 @@ function finish(s){
     detail: QA.detail,
   };
   saveST();
+  queueSync();
   go("#/result/" + s.code);
 }
 
 function renderResult(code){
   const s = qset(code), r = run(code);
   if (!r) return go("#/");
-  const total = r.total || 8, pass = r.score >= 7;
+  const total = r.total || (s ? s.qs.length : 8), need = s ? passOf(s) : 7;
+  const pass = r.score >= need;
   const wrongs = (r.detail || []).filter(x => !x.ok);
-  document.title = "结果 · " + s.title;
+  document.title = "结果 · " + (s ? s.title : code);
+  const backHref = lineOf(BOOKS[code] || {}) === "听力" ? "#/listen/" + code : "#/read/" + code;
   $("#app").innerHTML = `
-    <div class="top"><a class="back" href="#/">‹ 目录</a><div class="ttl">${esc(code)}</div></div>
-    <p class="qn">${esc(s.title)}</p>
+    <div class="top"><a class="back" href="#/">‹ 四条线</a><div class="ttl">${esc(code)}</div></div>
+    <p class="qn">${esc(s ? s.title : "")}</p>
     <div class="score">${r.score}<small> / ${total}</small></div>
     <div class="verdict ${pass ? "pass" : "fail"}">
-      ${pass ? (r.score === total ? "全对。" : "过了。") : `还差 ${7 - r.score} 题到 7/8。`}
+      ${pass ? (r.score === total ? "全对。" : "过了。") : `还差 ${need - r.score} 题到 ${need}/${total}。`}
       ${r.tries > 1 ? ` 第 ${r.tries} 次做，最好 ${r.best}/${total}。` : ""}
     </div>
     ${wrongs.length ? `<h2>错的 ${wrongs.length} 题</h2>
@@ -329,7 +447,185 @@ function renderResult(code){
     <button class="btn" id="again">再做一遍</button>
     <button class="btn ghost" id="back">回原文</button>`;
   $("#again").onclick = () => go("#/quiz/" + code);
-  $("#back").onclick = () => go("#/read/" + code);
+  $("#back").onclick = () => go(backHref);
+  window.scrollTo(0, 0);
+}
+
+/* ── 进度总览 ─────────────────────────────────────── */
+function renderStats(){
+  document.title = "进度总览";
+  const all = Object.keys(BOOKS);
+  const rows = LINES.map(L => {
+    const cs = bucket(L.name);
+    const done = cs.filter(c => run(c)).length;
+    const passed = cs.filter(c => { const r = run(c), q = qset(c); return r && q && r.score >= passOf(q); }).length;
+    const tried = cs.filter(c => run(c));
+    const got = tried.reduce((a, c) => a + run(c).score, 0);
+    const tot = tried.reduce((a, c) => a + (run(c).total || 8), 0);
+    return `<tr><td>${L.name}</td><td class="n">${cs.length}</td><td class="n">${done}</td>
+      <td class="n">${passed}</td><td class="n">${tot ? got + "/" + tot : "—"}</td></tr>`;
+  }).join("");
+  const recent = Object.keys(ST.runs || {}).map(c => ({c, r: ST.runs[c]}))
+    .sort((a, b) => String(b.r.at).localeCompare(String(a.r.at))).slice(0, 12);
+  $("#app").innerHTML = `
+    <div class="top"><a class="back" href="#/">‹ 四条线</a><div class="ttl">进度总览</div></div>
+    <h1>进度总览</h1>
+    <p class="sub">共 ${all.length} 册 · 做过 ${Object.keys(ST.runs || {}).length} 册</p>
+    <table class="st"><tr><th>线</th><th class="n">册</th><th class="n">做过</th><th class="n">过线</th><th class="n">得分</th></tr>
+      ${rows}</table>
+    <h2>最近做的</h2>
+    ${recent.length ? recent.map(x => {
+      const q = qset(x.c), need = q ? passOf(q) : 7, t = x.r.total || 8;
+      return `<a class="card" href="#/result/${x.c}"><div class="t">${esc(BOOKS[x.c] ? BOOKS[x.c].title : x.c)}</div>
+        <div class="m"><span>${x.c}</span><span>·</span>
+        <span class="pill ${x.r.score >= need ? "done" : "warn"}">${x.r.score}/${t}</span>
+        <span>${String(x.r.at || "").slice(0, 10)}</span></div></a>`;
+    }).join("") : `<p class="empty">还没做过题。</p>`}
+    <button class="btn ghost sm" id="home">回四条线</button>`;
+  $("#home").onclick = () => go("#/");
+  window.scrollTo(0, 0);
+}
+
+/* ── 同步与交回 ───────────────────────────────────── */
+const TOKKEY = "dq.tok", GIDKEY = "dq.gid";
+function ghHeaders(){
+  const t = localStorage.getItem(TOKKEY);
+  if (!t) return null;
+  return {"Authorization": "Bearer " + t, "Accept": "application/vnd.github+json",
+          "Content-Type": "application/json", "User-Agent": "dq-site"};
+}
+async function gistLoad(){
+  const h = ghHeaders(); if (!h) return {ok:false, why:"没填 token"};
+  const gid = localStorage.getItem(GIDKEY);
+  if (!gid) return {ok:true, runs:{}, gid:null};
+  const r = await fetch("https://api.github.com/gists/" + gid, {headers:h});
+  if (!r.ok) return {ok:false, why:"读取失败 HTTP " + r.status};
+  const j = await r.json();
+  const f = j.files && j.files["dq_sync.json"];
+  if (!f) return {ok:true, runs:{}, gid};
+  const txt = f.truncated ? await (await fetch(f.raw_url)).text() : f.content;
+  try { const d = JSON.parse(txt); return {ok:true, runs:d.runs || {}, gid}; }
+  catch(e){ return {ok:false, why:"云端 JSON 坏了"}; }
+}
+async function gistSave(runs){
+  const h = ghHeaders(); if (!h) return {ok:false, why:"没填 token"};
+  const body = JSON.stringify({version:1, updated:new Date().toISOString(), runs}, null, 1);
+  let gid = localStorage.getItem(GIDKEY);
+  const payload = {description:"Deutsch 学习台 做题记录",
+                   files:{"dq_sync.json":{content:body}}, public:false};
+  const r = gid
+    ? await fetch("https://api.github.com/gists/" + gid, {method:"PATCH", headers:h, body:JSON.stringify({files:payload.files})})
+    : await fetch("https://api.github.com/gists", {method:"POST", headers:h, body:JSON.stringify(payload)});
+  if (!r.ok) return {ok:false, why:"写入失败 HTTP " + r.status + " " + (await r.text()).slice(0,120)};
+  const j = await r.json();
+  localStorage.setItem(GIDKEY, j.id);
+  return {ok:true, gid:j.id};
+}
+function mergeRuns(a, b){
+  const out = {...a};
+  for (const [k, v] of Object.entries(b || {})) {
+    const x = out[k];
+    if (!x || String(v.at || "") > String(x.at || "")) out[k] = v;
+  }
+  return out;
+}
+let SYNCING = false;
+async function doSync(manual){
+  if (SYNCING) return;
+  if (!localStorage.getItem(TOKKEY)) { if (manual) go("#/sync"); return; }
+  SYNCING = true;
+  try {
+    const cl = await gistLoad();
+    if (cl.ok) {
+      const merged = mergeRuns(ST.runs || {}, cl.runs);
+      const changed = JSON.stringify(merged) !== JSON.stringify(ST.runs || {});
+      if (changed) { ST.runs = merged; saveST(); }
+      const up = await gistSave(merged);
+      if (manual) alert(up.ok ? `已同步。云端 ${Object.keys(merged).length} 册。` : "上传失败：" + up.why);
+    } else if (manual) alert("拉取失败：" + cl.why);
+  } catch (e) { if (manual) alert("同步出错：" + e.message); }
+  finally { SYNCING = false; }
+}
+let syncTimer = null;
+function queueSync(){ clearTimeout(syncTimer); syncTimer = setTimeout(() => doSync(false), 1500); }
+
+function reportText(){
+  const codes = Object.keys(ST.runs || {}).sort((a, b) => (BOOKS[a] ? BOOKS[a].seq || 0 : 0) - (BOOKS[b] ? BOOKS[b].seq || 0 : 0));
+  if (!codes.length) return alert("还没做过题。先读一册，点「做题」。");
+  let pass = 0, got = 0, tot = 0;
+  const rows = codes.map(c => {
+    const r = ST.runs[c], q = qset(c), need = q ? passOf(q) : 7;
+    got += r.score; tot += r.total || 8;
+    if (r.score >= need) pass++;
+    return `${c} ${r.score}/${r.total || 8} 第${r.tries || 1}次`;
+  });
+  const d = new Date(), pad = n => String(n).padStart(2, "0");
+  const stamp = `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())} ${pad(d.getHours())}:${pad(d.getMinutes())}`;
+  const text = [`# 练习成绩 ${stamp}`, "",
+                `合计：${codes.length} 册 · ${got}/${tot} · 过线的 ${pass} 册`, "",
+                ...rows].join("\n");
+  const fn = `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}-${pad(d.getHours())}${pad(d.getMinutes())}.md`;
+  const done = () => alert(`已复制。\n\n下一步：手机「文件」→ 输入桥 → 收件箱，新建文件叫 ${fn}，粘进去保存。\n\n` + text);
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(done).catch(() => fallback(text));
+  } else fallback(text);
+}
+function fallback(text){
+  const ta = document.createElement("textarea");
+  ta.value = text; ta.style.position = "fixed"; ta.style.opacity = "0";
+  document.body.appendChild(ta); ta.select();
+  try { document.execCommand("copy"); alert("已复制。\n\n" + text); }
+  catch (e) { prompt("手动复制这段：", text); }
+  document.body.removeChild(ta);
+}
+function exportJSON(){
+  const data = {exportedAt: new Date().toISOString(), runs: ST.runs || {}};
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([JSON.stringify(data, null, 1)], {type:"application/json"}));
+  a.download = "deutsch-lernen-" + new Date().toISOString().slice(0, 10) + ".json";
+  a.click();
+  setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+}
+
+function renderSync(){
+  document.title = "同步";
+  const hasTok = !!localStorage.getItem(TOKKEY);
+  const gid = localStorage.getItem(GIDKEY);
+  $("#app").innerHTML = `
+    <div class="top"><a class="back" href="#/">‹ 四条线</a><div class="ttl">同步</div></div>
+    <h1>做题记录怎么留住</h1>
+    <p class="sub">${Object.keys(ST.runs || {}).length} 册有记录 · 存在这台设备的浏览器里</p>
+    <h2>一、交回电脑（不用任何设置）</h2>
+    <p class="sub">复制一段纯文本，粘进 iCloud 的「输入桥/收件箱」，电脑端就能读到。</p>
+    <button class="btn" id="rep">复制成绩单</button>
+    <h2>二、云端同步（跨设备）</h2>
+    <p class="sub">填一个只带 <code>gist</code> 权限的 GitHub token，只存在这台设备，不会进网页。填一次，之后做题自动同步。</p>
+    <input class="tok" id="tok" type="password" placeholder="ghp_… 或 github_pat_…" value="${hasTok ? "••••••••••••••••" : ""}">
+    <button class="btn ghost sm" id="save">保存 token 并同步</button>
+    <p class="sub" style="margin-top:14px">${gid ? `云端记录：<code>${esc(gid)}</code>` : "还没建云端记录"}</p>
+    <button class="btn ghost sm" id="pull">从云端拉一次</button>
+    <h2>三、导出文件</h2>
+    <button class="btn ghost sm" id="exp">导出 JSON</button>
+    <p class="foot">记录只属于你。token 清空后本机不再上传。</p>
+    <button class="btn ghost sm" id="home">回四条线</button>`;
+  $("#rep").onclick = reportText;
+  $("#exp").onclick = exportJSON;
+  $("#home").onclick = () => go("#/");
+  $("#save").onclick = async () => {
+    const v = $("#tok").value.trim();
+    if (v && !/^•/.test(v)) localStorage.setItem(TOKKEY, v);
+    if (!localStorage.getItem(TOKKEY)) return alert("先填 token。");
+    await doSync(true);
+    renderSync();
+  };
+  $("#pull").onclick = async () => {
+    if (!localStorage.getItem(TOKKEY)) return alert("先填 token。");
+    const cl = await gistLoad();
+    if (!cl.ok) return alert("拉取失败：" + cl.why);
+    ST.runs = mergeRuns(ST.runs || {}, cl.runs); saveST();
+    alert(`合并完成，现在 ${Object.keys(ST.runs).length} 册。`);
+    renderSync();
+  };
   window.scrollTo(0, 0);
 }
 
@@ -342,6 +638,7 @@ function renderResult(code){
     ]);
     BOOKS = books; QUIZ = quiz;
     route();
+    if (localStorage.getItem(TOKKEY)) doSync(false);
   } catch (e) {
     $("#app").innerHTML = `<p class="empty">数据没加载出来。<br><br>${esc(e.message)}</p>`;
   }
