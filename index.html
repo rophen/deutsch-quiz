@@ -203,7 +203,7 @@ function renderHome(){
     <button class="btn ghost sm" id="stats">进度总览</button>
     <button class="btn ghost sm" id="sync">云端同步 / 交回电脑</button>
     <p class="foot">正文里带虚线的词，点一下看德语释义。<br>
-      阅读 / 听力 / 语法每册 8 题，答对 7 题算过；写说每册 4 题，答对 3 题算过。</p>`;
+      阅读 / 听力 8 题，语法深度册 8 题、章节册 4 题；写说 4 题。8 题答对 7 题算过，4 题答对 3 题算过。</p>`;
   $("#stats").onclick = () => go("#/stats");
   $("#sync").onclick = () => go("#/sync");
   window.scrollTo(0, 0);
@@ -221,7 +221,13 @@ function renderLine(k){
   const num = c => { const m = /(\d+)/.exec(c.replace(/^[A-Z]-/, "")); return m ? +m[1] : 0; };
   if (k === "listen") cs.sort((a, b) => listenRank(a) - listenRank(b));
   else if (k === "write") cs.sort((a, b) => (a[0] === b[0] ? num(a) - num(b) : a[0] === "W" ? -1 : 1));
-  else if (k === "grammar") cs.sort((a, b) => num(a) - num(b));
+  else if (k === "grammar") cs.sort((a, b) => {
+    const A = BOOKS[a], Bk = BOOKS[b];
+    const da = A.chap ? 1 : 0, db = Bk.chap ? 1 : 0;
+    if (da !== db) return da - db;                 // 深度册在前
+    if (A.seq !== Bk.seq) return (A.seq || 0) - (Bk.seq || 0);
+    return num(a) - num(b);
+  });
   else cs.sort((a, b) => (BOOKS[a].seq || 0) - (BOOKS[b].seq || 0));
 
   const groups = {};
@@ -230,14 +236,14 @@ function renderLine(k){
     const g = k === "listen" ? listenGroup(b)
             : k === "read" ? (b.domain || "")
             : k === "write" ? (c[0] === "W" ? "写作 · Schreiben" : "口语 · Sprechen")
-            : "语法点 · Grammatik-Linse";
+            : (b.sec || "语法点 · Grammatik-Linse");
     (groups[g] = groups[g] || []).push(c);
   });
   $("#app").innerHTML = `
     <div class="top"><a class="back" href="#/">‹ 四条线</a>
       <div class="ttl">${L.n} · ${line}</div></div>
     <h1>${line} · ${esc(L.de)}</h1>
-    <p class="sub">${cs.length} 册 · 已做 ${cs.filter(c => run(c)).length} · ${esc(L.c)}</p>
+    <p class="sub">${cs.length} 册 · 已做 ${cs.filter(c => run(c)).length} · ${esc(L.c)}${k === "grammar" ? " · 深度 " + cs.filter(c => !BOOKS[c].chap).length + " 册 / 章节 " + cs.filter(c => BOOKS[c].chap).length + " 册" : ""}</p>
     ${Object.keys(groups).map(g => `
       <div class="sec">${esc(g)}</div>
       ${groups[g].map(c => card(c, k)).join("")}`).join("")}
@@ -256,6 +262,7 @@ function card(code, k){
   const href = k === "listen" ? `#/listen/${code}` : `#/read/${code}`;
   const pct = sc === null ? 0 : Math.round(sc / (r.total || total) * 100);
   const sub = (k === "listen" || k === "write") ? esc(b.meta || "")
+            : b.chap ? esc(b.sec || "")
             : `${b.round ? `R${b.round} ` : ""}${esc(b.rname || "")}`;
   return `<a class="card" href="${href}">
     <div class="t">${esc(b.title)}</div>
