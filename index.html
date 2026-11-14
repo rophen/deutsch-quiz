@@ -132,7 +132,7 @@ function renderHome(){
     <h1>Deutsch 阅读台</h1>
     <p class="sub">${codes.length} 册在线 · 可做题 ${withQuiz.length} 册 · 已做 ${done.length} · 过 7/8 的 ${passed.length} 册</p>
     ${Object.keys(byDom).sort().map(d => `
-      <h2>${esc(d.split("_")[0])} · ${esc(DOM[d.split("_")[0]] || d)}</h2>
+      <h2>${esc(d === "语法" ? "语法 · Grammatik-Linse" : d.split("_")[0] + " · " + (DOM[d.split("_")[0]] || d))}</h2>
       ${byDom[d].map(c => card(c)).join("")}`).join("")}
     <button class="btn ghost sm" id="exp">导出做题记录（JSON）</button>
     <button class="btn ghost sm" id="rep">交回电脑（复制成绩）</button>
@@ -151,7 +151,7 @@ function card(code){
   const pct = sc === null ? 0 : Math.round(sc / (r.total || 8) * 100);
   return `<a class="card" href="#/read/${code}">
     <div class="t">${esc(b.title)}</div>
-    <div class="m"><span>${code}</span><span>·</span><span>R${b.round} ${esc(b.rname || "")}</span>${pill}</div>
+    <div class="m"><span>${code}</span><span>·</span><span>${b.round ? `R${b.round} ` : ""}${esc(b.rname || "")}</span>${pill}</div>
     ${sc === null ? "" : `<div class="bar" style="margin-top:9px"><i style="width:${pct}%"></i></div>`}
   </a>`;
 }
@@ -201,6 +201,7 @@ function fallback(text){
 function renderSeg(seg){
   return seg.map(s => "g" in s
     ? `<span class="gl" data-d="${esc(s.d)}">${esc(s.g)}</span><span class="def" hidden><b>${esc(s.g)}</b> — ${esc(s.d)}</span>`
+    : "b" in s ? `<b>${esc(s.b)}</b>`
     : esc(s.s)).join("");
 }
 

@@ -2112,7 +2112,7 @@
    }
   ],
   "prevCode": "I4-L2-08",
-  "nxtCode": null
+  "nxtCode": "G-070"
  },
  "I2-L2-06": {
   "code": "I2-L2-06",
@@ -4963,5 +4963,700 @@
   ],
   "prevCode": null,
   "nxtCode": "A1-L4-05"
+ },
+ "G-070": {
+  "code": "G-070",
+  "seq": 101,
+  "domain": "语法",
+  "round": 0,
+  "rname": "Grammatik-Linse B2",
+  "title": "070 · Konjunktiv I",
+  "zh": "间接引语：新闻里的 sei / habe / könne —— 这是谁在说？",
+  "meta": "G-070 · 070 · Grammatik-Linse B2 · Konjunktiv I",
+  "src": null,
+  "nxt": null,
+  "els": [
+   {
+    "k": "p",
+    "seg": [
+     {
+      "b": "070 | GRAMMATIK-LINSE | B2 | KONJUNKTIV I"
+     }
+    ]
+   },
+   {
+    "k": "h2",
+    "t": "„sei, habe, heißt es“ –"
+   },
+   {
+    "k": "h2",
+    "t": "Konjunktiv I"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Grammatik-Lektüre · Deutschlandfunk · Berlin/Bonn, 21.08.2026 Warum dieses Heft: Journalisten zitieren ohne Anführungszeichen - und markieren das mit Konjunktiv I: „Das ist nicht meine Behauptung, ich gebe nur wieder.“ Wer die Formen erkennt, liest Nachrichten sofort präziser: Was ist Fakt, was ist nur die Aussage eines anderen? Alle Konjunktiv-I-Formen sind fett gedruckt. Am Ende: Mini-Quiz (4 Punkte)."
+     }
+    ]
+   },
+   {
+    "k": "h2",
+    "t": "Die Regel in 30 Sekunden"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "b": "Konjunktiv I = indirekte Rede."
+     },
+     {
+      "s": " Der Journalist sagt: Jemand anderes hat das gesagt - ich selbst garantiere es nicht. "
+     },
+     {
+      "b": "Die Signal-Formen:"
+     },
+     {
+      "s": " "
+     },
+     {
+      "b": "sei"
+     },
+     {
+      "s": " (ist), "
+     },
+     {
+      "b": "habe"
+     },
+     {
+      "s": " (hat), "
+     },
+     {
+      "b": "heiße es"
+     },
+     {
+      "s": " (heißt es), "
+     },
+     {
+      "b": "könne"
+     },
+     {
+      "s": " (kann), "
+     },
+     {
+      "b": "müsse"
+     },
+     {
+      "s": " (muss), "
+     },
+     {
+      "b": "werde"
+     },
+     {
+      "s": " (wird). "
+     },
+     {
+      "b": "Vergangenheit:"
+     },
+     {
+      "s": " "
+     },
+     {
+      "b": "habe ... gemacht"
+     },
+     {
+      "s": " / "
+     },
+     {
+      "b": "sei ... gewesen"
+     },
+     {
+      "s": " / "
+     },
+     {
+      "b": "sei ... worden"
+     },
+     {
+      "s": ". "
+     },
+     {
+      "b": "Aber Achtung:"
+     },
+     {
+      "s": " In der Praxis ersetzt Konjunktiv II, wenn die KI-Form gleich wie der Indikativ aussieht (z. B. „sie hätten“ statt „sie haben“). Und oft steht ein Quellen-Label dabei: „"
+     },
+     {
+      "b": "teilte ... mit"
+     },
+     {
+      "s": ", "
+     },
+     {
+      "b": "hieß es"
+     },
+     {
+      "s": ", "
+     },
+     {
+      "b": "sagte"
+     },
+     {
+      "s": "“."
+     }
+    ]
+   },
+   {
+    "k": "h2",
+    "t": "Der Artikel: Deutschland hat"
+   },
+   {
+    "k": "h2",
+    "t": "UNESCO-Konvention nicht unterzeichnet"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Archäologen kritisieren die seit 25 Jahren ausstehende Ratifizierung der UNESCO-Konvention zum Schutz des Unterwasser-Kulturerbes. Auch wenn in den vergangenen Jahren jede Bundesregierung ihre Bereitschaft "
+     },
+     {
+      "b": "erklärt habe"
+     },
+     {
+      "s": ", "
+     },
+     {
+      "b": "sei"
+     },
+     {
+      "s": " der Schritt bislang ausgeblieben, "
+     },
+     {
+      "b": "teilte"
+     },
+     {
+      "s": " die Deutsche Gesellschaft zur Förderung der Unterwasserarchäologie dem Deutschlandfunk "
+     },
+     {
+      "b": "mit"
+     },
+     {
+      "s": ". (Drei Konjunktiv-I-Markierungen: „erklärt habe“ = Vergangenheit (hat erklärt), „sei ausgeblieben“ = Vergangenheit (ist ausgeblieben). Das „teilte ... mit“ zeigt: Quelle ist der Verband, nicht die Behauptung des Radios) Die Kulturorganisation der Vereinten Nationen hatte das Übereinkommen vor 25 Jahren verabschiedet. (Vergleich: Indikativ (hatte verabschiedet) - historischer Fakt, keine Rede) Inzwischen rief die UNESCO den 21. August zum „Internationalen Tag des Unterwasserkulturerbes“ aus, um den Blick auf versunkene Schätze und historische Stätten zu lenken. Experten zufolge sind Schiffswracks oder Ruinen im Meer massiv durch Plünderungen und industrielle Schleppnetzfischerei gefährdet. („Experten zufolge“ = eine stille Quelle. Der Satz steht im Indikativ - aber das Label warnt schon: Aussage der Experten) Zudem "
+     },
+     {
+      "b": "drohten"
+     },
+     {
+      "s": " die Erwärmung und Übersäuerung der Ozeane infolge des Klimawandels jahrhundertealte Fundstücke zu beschädigen. („drohten“ sieht aus wie Präteritum, ist aber Konjunktiv I (Plural): die Experten sagen: es droht. Indirekte Rede ohne dass/es-Signal - nur am Verb erkennbar) Die Ratifizierung verzögert sich seit Jahren aufgrund offener Rechtsfragen zwischen Bund und Ländern."
+     }
+    ]
+   }
+  ],
+  "prevCode": "I4-L3-10",
+  "nxtCode": "G-071"
+ },
+ "G-071": {
+  "code": "G-071",
+  "seq": 102,
+  "domain": "语法",
+  "round": 0,
+  "rname": "Grammatik-Linse B2",
+  "title": "071 · Partizipattribute",
+  "zh": "分词定语：把整个从句塞到名词前面。",
+  "meta": "G-071 · 071 · Grammatik-Linse B2 · Partizipattribute",
+  "src": null,
+  "nxt": null,
+  "els": [
+   {
+    "k": "p",
+    "seg": [
+     {
+      "b": "071 | GRAMMATIK-LINSE | B2 | PARTIZIPATTRIBUTE"
+     }
+    ]
+   },
+   {
+    "k": "h2",
+    "t": "„angekündigte Reformen“ –"
+   },
+   {
+    "k": "h2",
+    "t": "Partizip als Adjektiv"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Grammatik-Lektüre · Deutschlandfunk · Berlin, 21.08.2026 Warum dieses Heft: „die im Koalitionsvertrag festgehaltenen Reformvorhaben“ - solche Monster vor dem Nomen sind der Schlüssel zu langen Nachrichtensätzen. Dahinter steckt fast immer ein Relativsatz. Alle Partizip-Attribute sind fett gedruckt, graue Klammern zeigen die Entschlüsselung. Am Ende: Mini-Quiz (4 Punkte)."
+     }
+    ]
+   },
+   {
+    "k": "h2",
+    "t": "Die Regel in 30 Sekunden"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "b": "Partizip II als Adjektiv = passiv + fertig:"
+     },
+     {
+      "s": " „die "
+     },
+     {
+      "b": "angekündigten "
+     },
+     {
+      "s": "Reformen“ = „die Reformen, die angekündigt "
+     },
+     {
+      "b": "wurden"
+     },
+     {
+      "s": "“. "
+     },
+     {
+      "b": "Partizip I (ende) = aktiv + gleichzeitig:"
+     },
+     {
+      "s": " „die "
+     },
+     {
+      "b": "steigenden "
+     },
+     {
+      "s": "Kosten“ = „die Kosten, die "
+     },
+     {
+      "b": "steigen"
+     },
+     {
+      "s": "“. "
+     },
+     {
+      "b": "Das Monster-Prinzip:"
+     },
+     {
+      "s": " Zwischen Artikel und Nomen steht oft ein ganzer Satz: „die "
+     },
+     {
+      "b": "im Koalitionsvertrag festgehaltenen "
+     },
+     {
+      "s": "Reformvorhaben“ = „die Reformvorhaben, die im Koalitionsvertrag festgehalten "
+     },
+     {
+      "b": "sind"
+     },
+     {
+      "s": "“. "
+     },
+     {
+      "b": "Entschlüsselungs-Trick:"
+     },
+     {
+      "s": " Artikel merken, bis zum Nomen atmen, dann als Relativsatz rückübersetzen."
+     }
+    ]
+   },
+   {
+    "k": "h2",
+    "t": "Der Artikel: Wirtschaftsverbände drängen"
+   },
+   {
+    "k": "h2",
+    "t": "Bundesregierung zu Reformen"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Wirtschaftsverbände und Großkonzerne haben die Bundesregierung in einem gemeinsamen Schreiben zu schnellen Reformen aufgefordert. "
+     },
+     {
+      "b": "Angekündigte"
+     },
+     {
+      "s": " oder "
+     },
+     {
+      "b": "im Koalitionsvertrag festgehaltene"
+     },
+     {
+      "s": " Reformvorhaben müssten schleunigst und ohne Abstriche umgesetzt werden, "
+     },
+     {
+      "b": "heißt es "
+     },
+     {
+      "s": "in dem Brief von Verbänden und Unternehmen aus Bayern und Baden-Württemberg. (Das Monster: „Angekündigte oder im Koalitionsvertrag festgehaltene Reformvorhaben“ = „Reformvorhaben, die angekündigt oder im Koalitionsvertrag festgehalten wurden“. Und: „müssten ... umgesetzt werden, heißt es“ - Konjunktiv I, dein Hefte 070!) Wegen hoher Energiekosten und "
+     },
+     {
+      "b": "sich wandelnder "
+     },
+     {
+      "s": "wirtschaftlicher Rahmenbedingungen "
+     },
+     {
+      "b": "stünden"
+     },
+     {
+      "s": " Unternehmen in Deutschland unter erheblichen Druck. (Partizip I aktiv: „sich wandelnde Rahmenbedingungen“ = „Rahmenbedingungen, die sich wandeln“. Beachte: kein Artikel - Genitiv. Plus Konjunktiv I „stünden“) In dieser Lage "
+     },
+     {
+      "b": "entscheide"
+     },
+     {
+      "s": " die Ausgestaltung sozial- und wirtschaftspolitischer Rahmenbedingungen darüber, ob Unternehmen wettbewerbsfähig bleiben und Arbeitsplätze erhalten werden "
+     },
+     {
+      "b": "könnten"
+     },
+     {
+      "s": ". (Wieder Konjunktiv I: entscheide, könnten die gesamte Aussage kommt aus dem Brief) Unter anderem "
+     },
+     {
+      "b": "wird gefordert"
+     },
+     {
+      "s": ", die Beitragsbelastung in der Sozialversicherung nachhaltig zu reduzieren. Diese "
+     },
+     {
+      "b": "liege"
+     },
+     {
+      "s": " mit über 42 Prozent derzeit auf einem Höchststand. (Passiv (wird gefordert - dein Hefte 069!) + Konjunktiv I (liege). Drei Hefte, ein Satz) Zu den Unterzeichnern gehören die Konzerne Audi, BMW, Mercedes-Benz, Siemens und ZF. (Indikativ - reine Faktenliste, keine Redewiedergabe)"
+     }
+    ]
+   }
+  ],
+  "prevCode": "G-070",
+  "nxtCode": "G-084"
+ },
+ "G-084": {
+  "code": "G-084",
+  "seq": 103,
+  "domain": "语法",
+  "round": 0,
+  "rname": "Grammatik-Linse B1",
+  "title": "084 · Konnektoren",
+  "zh": "逻辑连接词：obwohl / trotzdem / trotz 是同一件事的三种说法。",
+  "meta": "G-084 · 084 · Grammatik-Linse B1 · Konnektoren",
+  "src": null,
+  "nxt": null,
+  "els": [
+   {
+    "k": "p",
+    "seg": [
+     {
+      "b": "084 | GRAMMATIK-LINSE | B1 | KONNEKTOREN"
+     }
+    ]
+   },
+   {
+    "k": "h2",
+    "t": "Konnektoren: die Logik-Chips"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Grammatik-Lektüre · DW Top-Thema 18.08.2026 · „Ehrenamtliche Bürgermeister am Limit“ · Audio im Ordner 09 Warum dieses Heft: Der Sprung von B1 auf B2 besteht fast nur aus Konnektoren - den Logik-Chips zwischen Sätzen. Dieser Text über ehrenamtliche Bürgermeister ist voll davon: obwohl, sodass, trotzdem, dafür, sonst. Alle Instanzen fett, Erklärungen in Klammern. Am Ende: Quiz mit Schreibaufgaben."
+     }
+    ]
+   },
+   {
+    "k": "h2",
+    "t": "Die 6 Logik-Familien (30 Sekunden)"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "b": "Konnektoren = Logik-Chips."
+     },
+     {
+      "s": " Sie zeigen dem Leser: hier ein ABER, hier ein DESHALB, hier ein TROTZDEM. "
+     },
+     {
+      "b": "Konzessiv („trotz Hindernis“) - drei Geschwister:"
+     },
+     {
+      "s": " obwohl + Satz (Verb ans Ende) · trotzdem + Satz (trotzdem belegt Platz 1, Verb dahinter) · "
+     },
+     {
+      "b": "trotz + Nomen"
+     },
+     {
+      "s": " (Trotz der Probleme) "
+     },
+     {
+      "b": "Konsekutiv (Folge):"
+     },
+     {
+      "s": " sodass - „..., sodass weniger berichtet wird.“ "
+     },
+     {
+      "b": "Konditional-Warnung:"
+     },
+     {
+      "s": " sonst = „wenn nichts geschieht“ - „Sonst könnte es schwieriger werden.“ "
+     },
+     {
+      "b": "Adversativ-Gegenzug:"
+     },
+     {
+      "s": " dafür = „im Gegenzug“ - „Dafür wünschen sie sich Anerkennung.“ "
+     },
+     {
+      "b": "Additiv:"
+     },
+     {
+      "s": " außerdem · „Hinzu kommt:“ · deswegen (kausal, „deshalb“)"
+     }
+    ]
+   },
+   {
+    "k": "h2",
+    "t": "Der Text - Konnektoren fett"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Bürgermeister im Ehrenamt haben es schwer: Sie arbeiten viel und erfahren immer wieder Anfeindungen. "
+     },
+     {
+      "b": "Obwohl"
+     },
+     {
+      "s": " ihr Amt für die Demokratie eine wichtige Rolle spielt, "
+     },
+     {
+      "b": "mangelt"
+     },
+     {
+      "s": " es in vielen Kommunen an Unterstützung und Geld. [(Konzessiv: das Hindernis (wichtige Rolle) steht vor dem Ergebnis (kein Geld); Verb „spielt“ am Satzende)] In über 6000 Gemeinden in Deutschland würde ohne sie vieles nicht richtig funktionieren: Ehrenamtliche Bürgermeisterinnen und Bürgermeister kümmern sich zusammen mit Gemeinderäten und Verwaltungen um Straßen, Schulen, Kitas oder die Müllabfuhr - und das neben ihrem eigentlichen Beruf. In einer Umfrage, "
+     },
+     {
+      "b": "die"
+     },
+     {
+      "s": " im Auftrag der Körber-Stiftung durchgeführt wurde, wurde die Situation genauer unter die Lupe genommen. [(Bonus: „die ... durchgeführt wurde“ ist ein Relativsatz - das Thema deines nächsten Heftes)] Etwa 70 Prozent der 1700 Befragten geben an, "
+     },
+     {
+      "b": "dass"
+     },
+     {
+      "s": " die finanzielle Situation in ihrer Gemeinde schlecht oder sehr schlecht ist. [(dass-Satz packt eine Aussage als Info ein; Verb „ist“ ganz am Ende - dein Heft 067)] Nur noch ein Drittel ist mit den Gestaltungsmöglichkeiten vor Ort zufrieden - 2024 war es noch die Hälfte. Fast 40 Prozent sagen "
+     },
+     {
+      "b": "außerdem"
+     },
+     {
+      "s": ", "
+     },
+     {
+      "b": "dass"
+     },
+     {
+      "s": " sie oder Familienmitglieder schon einmal wegen ihres Amtes beleidigt oder bedroht wurden. Manche haben "
+     },
+     {
+      "b": "deswegen "
+     },
+     {
+      "s": "bereits darüber nachgedacht, ihr Amt niederzulegen. [(deswegen = kausal: „wegen der Anfeindungen“)] "
+     },
+     {
+      "b": "Hinzu kommt:"
+     },
+     {
+      "s": " Über ein Fünftel der Befragten findet, "
+     },
+     {
+      "b": "dass "
+     },
+     {
+      "s": "demokratiefeindliche Tendenzen zugenommen haben. In Deutschland gibt es immer weniger Lokalzeitungen, "
+     },
+     {
+      "b": "sodass "
+     },
+     {
+      "s": "weniger über die politische Arbeit in den Kommunen berichtet wird. [(Konsekutiv: das Sterben der Lokalzeitungen hat die Folge: weniger Berichterstattung)] "
+     },
+     {
+      "b": "Sonst"
+     },
+     {
+      "s": " könnte es schwieriger werden, Menschen für ein Amt in der Kommunalpolitik zu begeistern. [(Konditional-Warnung: „wenn das Ehrenamt keine Unterstützung bekommt“)] Die Hälfte der ehrenamtlichen Bürgermeisterinnen und Bürgermeister arbeitet wöchentlich mindestens 20 Stunden für ihr Amt. "
+     },
+     {
+      "b": "Dafür"
+     },
+     {
+      "s": " wünschen sich die meisten mehr Anerkennung von den Regierungen ihres Bundeslands. [(Adversativ-Gegenzug: 20 Stunden unbezahlt - im Gegenzug: Anerkennung)] "
+     },
+     {
+      "b": "Trotz"
+     },
+     {
+      "s": " der vielen Probleme gibt es auch positive Zeichen: 92 Prozent der Befragten sind überzeugt, "
+     },
+     {
+      "b": "dass"
+     },
+     {
+      "s": " die meisten Bürgerinnen und Bürger ihnen vertrauen. [(trotz + Nomen: gleiche Logik wie obwohl, aber nominal statt verbali)]"
+     }
+    ]
+   }
+  ],
+  "prevCode": "G-071",
+  "nxtCode": "G-085"
+ },
+ "G-085": {
+  "code": "G-085",
+  "seq": 104,
+  "domain": "语法",
+  "round": 0,
+  "rname": "Grammatik-Linse B1",
+  "title": "085 · Relativsätze",
+  "zh": "关系从句：基础包 + 介词前置 + 二格 dessen/deren。",
+  "meta": "G-085 · 085 · Grammatik-Linse B1 · Relativsätze",
+  "src": null,
+  "nxt": null,
+  "els": [
+   {
+    "k": "p",
+    "seg": [
+     {
+      "b": "085 | GRAMMATIK-LINSE | B1 | RELATIVSÄTZE"
+     }
+    ]
+   },
+   {
+    "k": "h2",
+    "t": "Relativsätze: Info-Pakete am"
+   },
+   {
+    "k": "h2",
+    "t": "Nomen"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Grammatik-Lektüre · Swissinfo.ch 23.08.2026 · „Wenn sich die Schweiz nicht gut anfühlt: Das Klima als Auswanderungsgrund“ Warum dieses Heft: In Heft 084 war versprochen, was jetzt kommt: Relativsätze mit Präposition und Genitiv. Dieser Schweizer Text über Menschen, die wegen des Klimas auswandern, steckt voller Relativsätze alle fett, Erklärungen in Klammern. Am Ende: Quiz im neuen Goethe-B1-Format (ab 085: 8 Punkte)."
+     }
+    ]
+   },
+   {
+    "k": "h2",
+    "t": "Die zwei Stufen (30 Sekunden)"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Stufe 1 - das Basis-Paket: Ein Relativsatz hängt an einem Nomen und verpackt zusätzliche Information. Das Relativpronomen sieht aus wie der bestimmte Artikel: der, die, das - im Plural immer „die“. Wichtigste Regel: Das Verb steht am Satzende. „Menschen, die ein milderes Klima suchten, wanderten aus.“ Stufe 2 - die Spezial-Pakete (dein B1→B2-Schritt): Nach einem Nomen mit Präposition wandert die Präposition vor das Relativpronomen: „die Länder, in denen man gut lebt“ · „die Hitze, an die man sich gewöhnt hat“. Und im Genitiv: dessen/deren - „eine Auswanderin, deren Kinder in der Schweiz leben“."
+     }
+    ]
+   },
+   {
+    "k": "h2",
+    "t": "Der Text - Relativsätze fett"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Lange Zeit entsprach das typische Profil der Schweizer «Klima-Auswanderer» Menschen, "
+     },
+     {
+      "b": "die"
+     },
+     {
+      "s": " die langen Winter und die Feuchtigkeit des Mittellands satthatten (nicht mehr ertragen konnten) und ein milderes Klima suchten. [(Relativsatz: „die“ = die Menschen; beide Verben „satthatten“ und „suchten“ am Satzende)] Marianne Shintaku, "
+     },
+     {
+      "b": "die"
+     },
+     {
+      "s": " ebenfalls in Südkalifornien lebt, verliess die Schweiz ursprünglich nicht wegen des Klimas. [(Nach einem Frauennamen: „die“; der Relativsatz schiebt sich mitten zwischen Subjekt und Verb)] Heute sei das Klima einer der wichtigsten Gründe für ihren Verbleib (dass sie bleibt). Ähnlich sieht es Pascal Leutwyler, "
+     },
+     {
+      "b": "der"
+     },
+     {
+      "s": " heute im kanadischen Ontario lebt: «Den Nebel und den winterlichen Matsch des Aargauer Mittellands vermisse ich nicht.» [(Nach einem Mann: „der“)] In Costa Rica freut sich Agnès Vetsch über ihre vor 20 Jahren getroffene Entscheidung: «Mir ist nie mehr kalt.» Der Wunsch, dem trüben Schweizer Winter zu entkommen, könnte künftig an Bedeutung verlieren. Die Schweiz gehört zu den Ländern, "
+     },
+     {
+      "b": "die"
+     },
+     {
+      "s": " sich besonders stark erwärmen. [(Plural: Länder → „die“; das Reflexivpronomen „sich“ bleibt)] Damit könnte die zunehmende Sommerhitze zu einem wichtigen Auswanderungsmotiv werden. Für Norbert Roth ist das bereits Realität: «Die Hitze, die vielen Gewitter, die starken Hagelstürme...» Heute lebt er an der Nordsee. Auch Andrea Wildi zog Konsequenzen: Weil sie die Sommerhitze nicht mehr ertrug, wanderte sie nach Irland aus. Paradoxerweise berichten manche Auslandschweizerinnen und Auslandschweizer, "
+     },
+     {
+      "b": "die"
+     },
+     {
+      "s": " in deutlich heisseren Regionen leben, dass sie dort weniger unter hohen Temperaturen leiden als in der Schweiz. [(Der Relativsatz unterbricht Subjekt und Verb - sehr typisch für Nachrichten)] Ein Grund: die besser angepasste Infrastruktur (Gebäude, Klimaanlagen). Auch Monique Staehli, "
+     },
+     {
+      "b": "die"
+     },
+     {
+      "s": " auf Sizilien lebt, denkt nicht ans Wegziehen. Von den rund 840‘000 Auslandschweizerinnen und Auslandschweizern leben fast zwei Drittel in Europa, einem Kontinent, "
+     },
+     {
+      "b": "der"
+     },
+     {
+      "s": " besonders stark von der Klimaerwärmung betroffen ist. [(Komma + Nomen noch einmal + Relativsatz - Nachrichten-Stil)] So attraktiv ein angenehmes Klima auch sein mag: Für viele wiegen familiäre Bindungen schwerer. «Je älter ich werde, desto mehr vermisse ich meine Geschwister», berichtet Verena Edmondson-Siegenthaler."
+     }
+    ]
+   },
+   {
+    "k": "h2",
+    "t": "Stufe 2 im Detail: Präposition + Genitiv"
+   },
+   {
+    "k": "p",
+    "seg": [
+     {
+      "s": "Aus dem Thema lassen sich die Spezial-Pakete bauen: «Die Sommerhitze, "
+     },
+     {
+      "b": "unter der"
+     },
+     {
+      "s": " viele leiden, nimmt zu.» (Präposition + Relativpronomen) «Die Sommer, "
+     },
+     {
+      "b": "an die"
+     },
+     {
+      "s": " man sich gewöhnt hat, werden heisser.» «Ein Auswanderer, "
+     },
+     {
+      "b": "dessen"
+     },
+     {
+      "s": " Familie in der Schweiz bleibt, fliegt oft zurück.» (Genitiv männlich) «Eine Auswanderin, "
+     },
+     {
+      "b": "deren"
+     },
+     {
+      "s": " Kinder im Ausland geboren sind, ...» (Genitiv weiblich) Merkregel: Nomen mit Präposition? Dann Präposition + Relativpronomen (in dem, an die, unter der). Gehört etwas jemandem? dessen/deren."
+     }
+    ]
+   }
+  ],
+  "prevCode": "G-084",
+  "nxtCode": null
  }
 }

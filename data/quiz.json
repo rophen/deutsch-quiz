@@ -2038,103 +2038,6 @@
    ]
   },
   {
-   "code": "G4-L1-03",
-   "title": "Ralph Baer: Der Mann, der uns alle zu Spielern machte",
-   "topic": "G_文化与日常",
-   "round": 1,
-   "rname": "Hintergrund",
-   "qs": [
-    {
-     "t": "lv",
-     "q": "„Für diesen Besuch ist der Spieleentwickler damals über seinen und über den langen Schatten der deutschen Geschichte gesprungen.“ Was heißt „über seinen und über den langen Schatten der deutschen Geschichte gesprungen“ hier?",
-     "o": [
-      "sich überwinden und etwas tun, was man eigentlich vermeiden wollte",
-      "ohne Plan und sehr schnell handeln",
-      "einen Fehler aus der Vergangenheit wieder gutmachen"
-     ],
-     "a": 0,
-     "w": "原文 „er möchte ungern in das Land der Täter zurückkehren, solange die Täter noch leben“；他本不愿回德国，最后还是去了柏林——这就是跨过自己的影子，跟“没计划”“补救错误”无关。"
-    },
-    {
-     "t": "lv",
-     "q": "Warum nannte Baer seine Erfindung auf dem Patent auch „Training Apparatus“?",
-     "o": [
-      "Weil das Gerät tatsächlich nur der militärischen Ausbildung diente.",
-      "Weil der Firmenvorstand die Entwicklung unterstützte.",
-      "Weil der Name seriöser klingen sollte."
-     ],
-     "a": 2,
-     "w": "原文 „nicht nur Gaming Apparatus genannt …, sondern auch Training Apparatus, damit das seriöser klingt.“；选项 0 把“取个正名”误读成“真实用途”，选项 1 与 „hält die Entwicklung für Zeitverschwendung“ 矛盾。"
-    },
-    {
-     "t": "lv",
-     "q": "Was sagt der Text über die Geschichte mit der Bushaltestelle?",
-     "o": [
-      "Sie ist eine schöne Anekdote, aber die Idee Computerspiel gab es schon vorher an Unis und in Laboren.",
-      "Sie ist die einzige überlieferte Quelle für Baers Erfindung.",
-      "Sie erklärt, warum es überhaupt erst Computer gab."
-     ],
-     "a": 0,
-     "w": "原文 „… sagt die Legende. Zur Wahrheit gehört, dass die Idee nicht einfach so vom Himmel einer Dienstreise gefallen ist. Die Idee Computerspiel gab es schon an Unis, auf Großrechnern.“；公交站只是传说。"
-    },
-    {
-     "t": "lv",
-     "q": "Was machte Nolan Bushnell laut Text aus der Odyssey-Idee?",
-     "o": [
-      "Er brachte das einfache Tennisspiel als Automaten für Spielhallen heraus.",
-      "Er kaufte die Firma Magnavox und führte die Odyssey weiter.",
-      "Er baute die Brown Box für den Heimmarkt nach."
-     ],
-     "a": 0,
-     "w": "原文 „packe aber jetzt dieses viel einfachere Spiel rein, nenne den Automaten Pong und stelle den dann in die Spielerhallen.“；Pong 是街机，不是家用机，他也没买 Magnavox。"
-    },
-    {
-     "t": "rw",
-     "q": "Welcher Satz sagt dasselbe? „Der Firmenvorstand hält die Entwicklung für Zeitverschwendung. Bär macht mit ausgewählten Kollegen trotzdem weiter.“",
-     "o": [
-      "Der Vorstand stoppt das Projekt, deshalb gibt Bär auf.",
-      "Der Vorstand findet das Projekt großartig und stellt mehr Mitarbeiter ein.",
-      "Der Vorstand hält das Projekt für unnütz, doch Bär arbeitet mit einigen Kollegen weiter."
-     ],
-     "a": 2,
-     "w": "原文 für Zeitverschwendung halten = 认为是浪费时间，trotzdem = 尽管如此。选项 1 把“继续”改成“放弃”，选项 2 把“反对”改成“支持”。"
-    },
-    {
-     "t": "rw",
-     "q": "Welcher Satz sagt dasselbe? „Die waren auf der ganzen Welt quasi gleich, bis auf das Case, bis auf das Gehäuse.“",
-     "o": [
-      "Weltweit unterschieden sich die Geräte vor allem in der Technik.",
-      "Weltweit hatten die Geräte dieselbe Technik, nur das Äußere unterschied sich.",
-      "Weltweit hatten die Geräte dieselbe Technik und dasselbe Aussehen."
-     ],
-     "a": 1,
-     "w": "原文 bis auf = 除了……之外，Gehäuse = 外壳。选项 1 抹掉了这个例外，选项 2 把差别从外壳换成了技术。"
-    },
-    {
-     "t": "gc",
-     "q": "Die Maschine ließ sich ___ den eigenen Fernseher anschließen.",
-     "o": [
-      "mit",
-      "an",
-      "auf"
-     ],
-     "a": 1,
-     "w": "原文 „eine Maschine …, die man an den eigenen Fernseher anschließen konnte.“；anschließen an + Akk 是固定搭配，句中是“可以接到自家电视机上”。"
-    },
-    {
-     "t": "gc",
-     "q": "Das Spielsystem wurde am Ende von ___ Elektronikhersteller Magnavox produziert.",
-     "o": [
-      "den",
-      "dem",
-      "der"
-     ],
-     "a": 1,
-     "w": "原文 „Am Ende einer kleinen Werbe-Odyssee produziert der Elektronikhersteller Magnavox das Spielsystem.“；被动句的行为主体用 von + Dativ，der Hersteller 是阳性，故为 dem。"
-    }
-   ]
-  },
-  {
    "code": "H4-L1-01",
    "title": "Vitus Bering: Wie Asien und Amerika getrennt wurden",
    "topic": "H_历史与记忆",
@@ -3200,7 +3103,492 @@
      "w": "„Die Kapazität für 2026 gilt als vollständig verkauft“；gelten als + 形容词/分词 是固定搭配，不能用 wie 或 für。"
     }
    ]
+  },
+  {
+   "code": "G-070",
+   "title": "070 · Konjunktiv I",
+   "topic": "语法",
+   "round": 0,
+   "rname": "Grammatik-Linse B2",
+   "qs": [
+    {
+     "t": "lv",
+     "q": "Wozu benutzt eine Nachricht den Konjunktiv I?",
+     "o": [
+      "Um zu zeigen: das ist die Aussage einer Quelle, nicht die des Reporters.",
+      "Um auszudrücken, dass etwas in der Vergangenheit liegt.",
+      "Um höflicher zu klingen."
+     ],
+     "a": 0,
+     "w": "原文 „Das ist nicht meine Behauptung, ich gebe nur wieder.“ —— Konjunktiv I 是「转述」，不是时态标记。"
+    },
+    {
+     "t": "lv",
+     "q": "Welche Form ist Konjunktiv I?",
+     "o": [
+      "er hat erklärt",
+      "er habe erklärt",
+      "er hatte erklärt"
+     ],
+     "a": 1,
+     "w": "habe erklärt 是 Konjunktiv I 的完成时；hat/hatte 是直陈式。原文 „erklärt habe“ 即此形。"
+    },
+    {
+     "t": "lv",
+     "q": "„sei der Schritt bislang ausgeblieben“ – welcher Indikativ steckt dahinter?",
+     "o": [
+      "ist ausgeblieben",
+      "war ausgeblieben",
+      "wird ausbleiben"
+     ],
+     "a": 0,
+     "w": "sei + 过去分词 = Konjunktiv I 的完成时，还原为 Indikativ 是 ist ausgeblieben（现在完成）。"
+    },
+    {
+     "t": "lv",
+     "q": "Warum steht im Text manchmal Konjunktiv II statt Konjunktiv I?",
+     "o": [
+      "Weil Konjunktiv II immer die höflichere Form ist.",
+      "Weil die Konjunktiv-I-Form sonst wie der Indikativ aussähe.",
+      "Weil Konjunktiv II die Vergangenheit markiert."
+     ],
+     "a": 1,
+     "w": "原文 „In der Praxis ersetzt Konjunktiv II, wenn die KI-Form gleich wie der Indikativ aussieht (z. B. „sie hätten“ statt „sie haben“).“"
+    },
+    {
+     "t": "rw",
+     "q": "Welcher Satz gibt denselben Inhalt als indirekte Rede wieder? „Die Bundesregierung erklärt ihre Bereitschaft.“",
+     "o": [
+      "Die Bundesregierung erklärt, sie habe ihre Bereitschaft erklärt.",
+      "Die Bundesregierung erklärte ihre Bereitschaft.",
+      "Die Bundesregierung hat ihre Bereitschaft erklärt."
+     ],
+     "a": 0,
+     "w": "只有 A 把原话转成 Konjunktiv I（habe）；B、C 都是直陈式，等于记者自己担保内容为真。"
+    },
+    {
+     "t": "rw",
+     "q": "Welche Umschreibung trifft „Zudem drohten die Erwärmung und Übersäuerung der Ozeane, Fundstücke zu beschädigen“ am besten?",
+     "o": [
+      "Der Reporter behauptet, die Ozeane seien eine Gefahr.",
+      "Experten zufolge drohen Erwärmung und Übersäuerung, Fundstücke zu beschädigen.",
+      "Die Ozeane drohten in der Vergangenheit, aber jetzt nicht mehr."
+     ],
+     "a": 1,
+     "w": "原文接着解释 „drohten“ 是 Konjunktiv I 复数，出处是 „Experten zufolge“；B 补回了这层归属。"
+    },
+    {
+     "t": "gc",
+     "q": "In den vergangenen Jahren ___ jede Bundesregierung ihre Bereitschaft erklärt, so der Verband.",
+     "o": [
+      "habe",
+      "hat",
+      "hatte"
+     ],
+     "a": 0,
+     "w": "从句转述他人说法，用 Konjunktiv I：habe erklärt。hat/hatte 是直陈式。"
+    },
+    {
+     "t": "gc",
+     "q": "Der Verband teilt mit, der Schritt ___ bislang ausgeblieben.",
+     "o": [
+      "sei",
+      "ist",
+      "war"
+     ],
+     "a": 0,
+     "w": "sein 的 Konjunktiv I 是 sei；ist/war 会把转述变成记者自己的断言。"
+    }
+   ]
+  },
+  {
+   "code": "G-071",
+   "title": "071 · Partizipattribute",
+   "topic": "语法",
+   "round": 0,
+   "rname": "Grammatik-Linse B2",
+   "qs": [
+    {
+     "t": "lv",
+     "q": "Welcher Relativsatz entspricht „angekündigte Reformvorhaben“?",
+     "o": [
+      "Reformvorhaben, die man ankündigt",
+      "Reformvorhaben, die angekündigt wurden",
+      "Reformvorhaben, die angekündigt haben"
+     ],
+     "a": 1,
+     "w": "Partizip II = passiv + 已完成：die angekündigten Reformen = die Reformen, die angekündigt wurden。"
+    },
+    {
+     "t": "lv",
+     "q": "Was bedeutet „sich wandelnde Rahmenbedingungen“?",
+     "o": [
+      "Rahmenbedingungen, die sich wandeln",
+      "Rahmenbedingungen, die gewandelt wurden",
+      "Rahmenbedingungen, die man wandelt"
+     ],
+     "a": 0,
+     "w": "Partizip I（wandelnd）= aktiv + 同时进行，还原为 die sich wandeln；B 是 Partizip II 的被动义。"
+    },
+    {
+     "t": "lv",
+     "q": "Welches ist ein Partizip I (aktiv, gleichzeitig)?",
+     "o": [
+      "die 80 Kilometer lange Wasserstraße",
+      "das natürlich auftretende Klimaphänomen",
+      "die angekündigten Reformen"
+     ],
+     "a": 1,
+     "w": "auftretende 含 -end-，表示正在发生（Partizip I）；A 只是长形容词，C 是 Partizip II。"
+    },
+    {
+     "t": "lv",
+     "q": "Warum schreiben Journalisten „die festgehaltenen Reformvorhaben“ statt eines Relativsatzes?",
+     "o": [
+      "Weil es eine Grammatikpflicht ist.",
+      "Weil es kürzer ist und Information vor das Nomen packt.",
+      "Weil es höflicher klingt."
+     ],
+     "a": 1,
+     "w": "原文的「Monster-Prinzip」：把一个完整从句压进冠词与名词之间，句子更紧凑。"
+    },
+    {
+     "t": "rw",
+     "q": "Welcher Satz sagt dasselbe? „Die im Koalitionsvertrag festgehaltenen Reformvorhaben müssten umgesetzt werden.“",
+     "o": [
+      "Die Reformvorhaben, die im Koalitionsvertrag festgehalten sind, müssten umgesetzt werden.",
+      "Die Reformvorhaben müssten im Koalitionsvertrag festgehalten werden.",
+      "Der Koalitionsvertrag müsste die Reformvorhaben umsetzen."
+     ],
+     "a": 0,
+     "w": "B 把「已写进合同」和「要落实」两件事的主语关系颠倒了；C 主语完全错（合同不会落实改革）。"
+    },
+    {
+     "t": "rw",
+     "q": "Welche Umschreibung trifft „Wegen hoher Energiekosten und sich wandelnder wirtschaftlicher Rahmenbedingungen stünden Unternehmen unter Druck“ am besten?",
+     "o": [
+      "Unternehmen stehen wegen hoher Kosten unter Druck – das ist die Aussage des Briefes.",
+      "Die Unternehmen wandeln selbst die Rahmenbedingungen.",
+      "Der Reporter findet, die Unternehmen hätten keine Probleme."
+     ],
+     "a": 0,
+     "w": "sich wandelnde 修饰 Rahmenbedingungen（框架条件在变），不是企业自己在变；stünden 说明整句是转述。"
+    },
+    {
+     "t": "gc",
+     "q": "Das sind die im Brief ___ Reformvorhaben.",
+     "o": [
+      "angekündigten",
+      "angekündigte",
+      "ankündigenden"
+     ],
+     "a": 0,
+     "w": "复数 + 定冠词 die → 弱变化 -en：die angekündigten Reformvorhaben。"
+    },
+    {
+     "t": "gc",
+     "q": "Die Kosten, die steigen, nennt man die ___ Kosten.",
+     "o": [
+      "steigenden",
+      "gestiegenen",
+      "steigende"
+     ],
+     "a": 0,
+     "w": "正在上涨（Partizip I）+ 复数弱变化 → die steigenden Kosten；gestiegenen 是「已涨完」。"
+    }
+   ]
+  },
+  {
+   "code": "G-084",
+   "title": "084 · Konnektoren",
+   "topic": "语法",
+   "round": 0,
+   "rname": "Grammatik-Linse B1",
+   "qs": [
+    {
+     "t": "lv",
+     "q": "Wo steht das Verb in einem obwohl-Satz?",
+     "o": [
+      "direkt nach „obwohl“",
+      "am Satzende",
+      "auf Position 2"
+     ],
+     "a": 1,
+     "w": "原文 „obwohl + Satz (Verb ans Ende)“。例：Obwohl ihr Amt eine wichtige Rolle spielt …"
+    },
+    {
+     "t": "lv",
+     "q": "„___ der vielen Probleme gibt es positive Zeichen.“",
+     "o": [
+      "Trotzdem",
+      "Trotz",
+      "Obwohl"
+     ],
+     "a": 1,
+     "w": "后面是名词短语 der vielen Probleme（无动词）→ 只能用 trotz + 二格；trotzdem/obwohl 都要接句子。"
+    },
+    {
+     "t": "lv",
+     "q": "Was zeigt „dafür“ im Satz „Dafür wünschen sie sich mehr Anerkennung“?",
+     "o": [
+      "eine Folge",
+      "einen Gegenzug",
+      "einen Grund"
+     ],
+     "a": 1,
+     "w": "原文 „Adversativ-Gegenzug: dafür = im Gegenzug“ —— 付出 20 小时，作为交换想要认可。"
+    },
+    {
+     "t": "lv",
+     "q": "Welche Funktion hat „sonst“ im Text?",
+     "o": [
+      "Es nennt einen Grund.",
+      "Es warnt: wenn nichts geschieht, wird es schwieriger.",
+      "Es zählt Beispiele auf."
+     ],
+     "a": 1,
+     "w": "原文 „Konditional-Warnung: sonst = wenn nichts geschieht“。sonst 句常带 Konjunktiv II（könnte）。"
+    },
+    {
+     "t": "rw",
+     "q": "Welcher Satz sagt dasselbe? „Obwohl ihr Amt wichtig ist, mangelt es an Geld.“",
+     "o": [
+      "Ihr Amt ist wichtig, trotzdem mangelt es an Geld.",
+      "Ihr Amt ist wichtig, weil es an Geld mangelt.",
+      "Ihr Amt ist wichtig, sodass es an Geld mangelt."
+     ],
+     "a": 0,
+     "w": "obwohl（从句）与 trotzdem（主句副词）是同一让步逻辑的两种写法；weil 表原因，sodass 表结果，都反了。"
+    },
+    {
+     "t": "rw",
+     "q": "Welcher Satz sagt dasselbe? „Es gibt immer weniger Lokalzeitungen, sodass weniger berichtet wird.“",
+     "o": [
+      "Es gibt immer weniger Lokalzeitungen, obwohl weniger berichtet wird.",
+      "Weniger Lokalzeitungen führen dazu, dass weniger berichtet wird.",
+      "Weniger Berichte führen dazu, dass es weniger Lokalzeitungen gibt."
+     ],
+     "a": 1,
+     "w": "sodass 表后果：报纸减少 → 报道减少。C 把因果方向倒过来了。"
+    },
+    {
+     "t": "gc",
+     "q": "Es gibt immer weniger Lokalzeitungen, ___ weniger über Kommunalpolitik berichtet wird.",
+     "o": [
+      "sodass",
+      "obwohl",
+      "trotzdem"
+     ],
+     "a": 0,
+     "w": "前句是原因、后句是结果 → konsekutiv sodass。obwohl 是让步，trotzdem 不能引导从句（它是副词）。"
+    },
+    {
+     "t": "gc",
+     "q": "___ die finanzielle Lage schlecht ist, arbeiten viele weiter im Ehrenamt.",
+     "o": [
+      "Obwohl",
+      "Trotzdem",
+      "Deswegen"
+     ],
+     "a": 0,
+     "w": "让步从句用 obwohl 引导（动词到句末 ist）；trotzdem 占主句第一位，deswegen 表原因。"
+    }
+   ]
+  },
+  {
+   "code": "G-085",
+   "title": "085 · Relativsätze",
+   "topic": "语法",
+   "round": 0,
+   "rname": "Grammatik-Linse B1",
+   "qs": [
+    {
+     "t": "lv",
+     "q": "Was ist der NEUE Auswanderungsgrund für Schweizerinnen und Schweizer?",
+     "o": [
+      "der graue Winter",
+      "die Sommerhitze",
+      "die Sprache"
+     ],
+     "a": 1,
+     "w": "原文 „Damit könnte die zunehmende Sommerhitze zu einem wichtigen Auswanderungsmotiv werden.“ —— 过去是长冬阴湿，现在多了一条：暑热。"
+    },
+    {
+     "t": "lv",
+     "q": "Warum leiden manche Auslandschweizer in heißen Ländern weniger unter Hitze?",
+     "o": [
+      "Sie sind körperlich stärker.",
+      "Die Infrastruktur ist besser angepasst.",
+      "Dort gibt es keine Hitze."
+     ],
+     "a": 1,
+     "w": "原文 „Ein Grund: die besser angepasste Infrastruktur (Gebäude, Klimaanlagen).“"
+    },
+    {
+     "t": "lv",
+     "q": "Was wiegt für viele am Ende schwerer als das Klima?",
+     "o": [
+      "familiäre Bindungen",
+      "Geld",
+      "die Arbeit"
+     ],
+     "a": 0,
+     "w": "原文 „Für viele wiegen familiäre Bindungen schwerer.“ 紧接着引了 „Je älter ich werde, desto mehr vermisse ich meine Geschwister“。"
+    },
+    {
+     "t": "lv",
+     "q": "Welches Relativpronomen steht nach „die Länder“?",
+     "o": [
+      "der",
+      "die",
+      "denen"
+     ],
+     "a": 1,
+     "w": "Plural → 关系代词始终用 die。原文 „die Länder, die sich besonders stark erwärmen“。"
+    },
+    {
+     "t": "rw",
+     "q": "Welcher Satz verbindet richtig? „Pascal Leutwyler lebt heute in Ontario. Er vermisst den Nebel nicht.“",
+     "o": [
+      "Pascal Leutwyler, der heute in Ontario lebt, vermisst den Nebel nicht.",
+      "Pascal Leutwyler, den heute in Ontario lebt, vermisst den Nebel nicht.",
+      "Pascal Leutwyler, dem heute in Ontario lebt, vermisst den Nebel nicht."
+     ],
+     "a": 0,
+     "w": "关系从句里作主语 → 一格 der；den 是四格，dem 是三格。"
+    },
+    {
+     "t": "rw",
+     "q": "Welcher Satz verbindet richtig? „Die Schweiz gehört zu den Ländern. Diese Länder erwärmen sich besonders stark.“",
+     "o": [
+      "Die Schweiz gehört zu den Ländern, die sich besonders stark erwärmen.",
+      "Die Schweiz gehört zu den Ländern, denen sich besonders stark erwärmen.",
+      "Die Schweiz gehört zu den Ländern, deren sich besonders stark erwärmen."
+     ],
+     "a": 0,
+     "w": "复数主语用 die；关系从句里反身代词 sich 保留。denen/deren 在这里格与功能都不对。"
+    },
+    {
+     "t": "gc",
+     "q": "Europa ist ein Kontinent, ___ besonders stark von der Klimaerwärmung betroffen ist.",
+     "o": [
+      "der",
+      "den",
+      "dem"
+     ],
+     "a": 0,
+     "w": "der Kontinent 阳性单数，从句中作主语 → 一格 der。原文即 „einem Kontinent, der …“。"
+    },
+    {
+     "t": "gc",
+     "q": "Die Sommerhitze, ___ viele leiden, nimmt zu.",
+     "o": [
+      "unter der",
+      "unter die",
+      "deren"
+     ],
+     "a": 0,
+     "w": "leiden unter + 三格；阴性单数三格 → unter der。原文 „Die Sommerhitze, unter der viele leiden, nimmt zu.“"
+    }
+   ]
+  },
+  {
+   "code": "G4-L1-03",
+   "title": "Ralph Baer: Der Mann, der uns alle zu Spielern machte",
+   "topic": "G_文化与日常",
+   "round": 1,
+   "rname": "Hintergrund",
+   "qs": [
+    {
+     "t": "lv",
+     "q": "„Für diesen Besuch ist der Spieleentwickler damals über seinen und über den langen Schatten der deutschen Geschichte gesprungen.“ Was heißt „über seinen und über den langen Schatten der deutschen Geschichte gesprungen“ hier?",
+     "o": [
+      "sich überwinden und etwas tun, was man eigentlich vermeiden wollte",
+      "ohne Plan und sehr schnell handeln",
+      "einen Fehler aus der Vergangenheit wieder gutmachen"
+     ],
+     "a": 0,
+     "w": "原文 „er möchte ungern in das Land der Täter zurückkehren, solange die Täter noch leben“；他本不愿回德国，最后还是去了柏林——这就是跨过自己的影子，跟“没计划”“补救错误”无关。"
+    },
+    {
+     "t": "lv",
+     "q": "Warum nannte Baer seine Erfindung auf dem Patent auch „Training Apparatus“?",
+     "o": [
+      "Weil das Gerät tatsächlich nur der militärischen Ausbildung diente.",
+      "Weil der Firmenvorstand die Entwicklung unterstützte.",
+      "Weil der Name seriöser klingen sollte."
+     ],
+     "a": 2,
+     "w": "原文 „nicht nur Gaming Apparatus genannt …, sondern auch Training Apparatus, damit das seriöser klingt.“；选项 0 把“取个正名”误读成“真实用途”，选项 1 与 „hält die Entwicklung für Zeitverschwendung“ 矛盾。"
+    },
+    {
+     "t": "lv",
+     "q": "Was sagt der Text über die Geschichte mit der Bushaltestelle?",
+     "o": [
+      "Sie ist eine schöne Anekdote, aber die Idee Computerspiel gab es schon vorher an Unis und in Laboren.",
+      "Sie ist die einzige überlieferte Quelle für Baers Erfindung.",
+      "Sie erklärt, warum es überhaupt erst Computer gab."
+     ],
+     "a": 0,
+     "w": "原文 „… sagt die Legende. Zur Wahrheit gehört, dass die Idee nicht einfach so vom Himmel einer Dienstreise gefallen ist. Die Idee Computerspiel gab es schon an Unis, auf Großrechnern.“；公交站只是传说。"
+    },
+    {
+     "t": "lv",
+     "q": "Was machte Nolan Bushnell laut Text aus der Odyssey-Idee?",
+     "o": [
+      "Er brachte das einfache Tennisspiel als Automaten für Spielhallen heraus.",
+      "Er kaufte die Firma Magnavox und führte die Odyssey weiter.",
+      "Er baute die Brown Box für den Heimmarkt nach."
+     ],
+     "a": 0,
+     "w": "原文 „packe aber jetzt dieses viel einfachere Spiel rein, nenne den Automaten Pong und stelle den dann in die Spielerhallen.“；Pong 是街机，不是家用机，他也没买 Magnavox。"
+    },
+    {
+     "t": "rw",
+     "q": "Welcher Satz sagt dasselbe? „Der Firmenvorstand hält die Entwicklung für Zeitverschwendung. Bär macht mit ausgewählten Kollegen trotzdem weiter.“",
+     "o": [
+      "Der Vorstand stoppt das Projekt, deshalb gibt Bär auf.",
+      "Der Vorstand findet das Projekt großartig und stellt mehr Mitarbeiter ein.",
+      "Der Vorstand hält das Projekt für unnütz, doch Bär arbeitet mit einigen Kollegen weiter."
+     ],
+     "a": 2,
+     "w": "原文 für Zeitverschwendung halten = 认为是浪费时间，trotzdem = 尽管如此。选项 1 把“继续”改成“放弃”，选项 2 把“反对”改成“支持”。"
+    },
+    {
+     "t": "rw",
+     "q": "Welcher Satz sagt dasselbe? „Die waren auf der ganzen Welt quasi gleich, bis auf das Case, bis auf das Gehäuse.“",
+     "o": [
+      "Weltweit unterschieden sich die Geräte vor allem in der Technik.",
+      "Weltweit hatten die Geräte dieselbe Technik, nur das Äußere unterschied sich.",
+      "Weltweit hatten die Geräte dieselbe Technik und dasselbe Aussehen."
+     ],
+     "a": 1,
+     "w": "原文 bis auf = 除了……之外，Gehäuse = 外壳。选项 1 抹掉了这个例外，选项 2 把差别从外壳换成了技术。"
+    },
+    {
+     "t": "gc",
+     "q": "Die Maschine ließ sich ___ den eigenen Fernseher anschließen.",
+     "o": [
+      "mit",
+      "an",
+      "auf"
+     ],
+     "a": 1,
+     "w": "原文 „eine Maschine …, die man an den eigenen Fernseher anschließen konnte.“；anschließen an + Akk 是固定搭配，句中是“可以接到自家电视机上”。"
+    },
+    {
+     "t": "gc",
+     "q": "Das Spielsystem wurde am Ende von ___ Elektronikhersteller Magnavox produziert.",
+     "o": [
+      "den",
+      "dem",
+      "der"
+     ],
+     "a": 1,
+     "w": "原文 „Am Ende einer kleinen Werbe-Odyssee produziert der Elektronikhersteller Magnavox das Spielsystem.“；被动句的行为主体用 von + Dativ，der Hersteller 是阳性，故为 dem。"
+    }
+   ]
   }
  ],
- "note": "Phase 1 全选择式 · 每册 8 题 · 4×三选一 + 2×选出正确改写 + 2×每空 ABC"
+ "note": "Phase 1 全选择式 · 阅读/听力册每册 8 题（4×三选一 + 2×选正确改写 + 2×每空 ABC）· 语法册维持原题型"
 }
