@@ -43,6 +43,12 @@ h2{font-size:15px;margin:26px 0 10px;color:var(--teal);font-weight:700}
 .pill{display:inline-block;font-size:11.5px;padding:1.5px 8px;border-radius:99px;background:#EDEAE0;color:var(--muted)}
 .pill.done{background:var(--okbg);color:var(--ok);font-weight:600}
 .pill.warn{background:var(--warnbg);color:var(--warn)}
+/* 章节册 ⇄ 阶梯册 */
+.xrefs{background:#F2EFE4;border-radius:10px;padding:10px 12px;margin:10px 0 14px;font-size:14px;line-height:1.9}
+.xrefs .xlab{display:inline-block;color:#6B6B5E;font-size:12px;margin-right:6px}
+.xrefs a.xref{display:inline-block;margin:2px 6px 2px 0;padding:2px 8px;border-radius:6px;
+  background:#fff;border:1px solid #D9D3BE;color:#1F5E52;text-decoration:none}
+.xrefs a.xref:hover{border-color:#1F5E52}
 /* 练习册题库的分层徽章 */
 .lvltag{display:inline-block;font-size:11px;font-weight:600;padding:2px 7px;border-radius:4px;
   margin-right:7px;vertical-align:middle}
@@ -234,7 +240,7 @@ function renderLine(k){
   else if (k === "grammar") cs.sort((a, b) => {
     const A = BOOKS[a], Bk = BOOKS[b];
     // 顺序：阶梯册（按级别 A2→C1）→ 专项册 → 深度册 → 章节册
-    const rank = x => x.ladder ? 0 : x.focus ? 1 : x.chap ? 3 : 2;
+    const rank = x => x.ladder ? 0 : x.chap ? 2 : 1;
     const ra = rank(A), rb = rank(Bk);
     if (ra !== rb) return ra - rb;
     if (A.ladder && Bk.ladder) return A.ladder - Bk.ladder;
@@ -259,7 +265,7 @@ function renderLine(k){
     <div class="top"><a class="back" href="#/">‹ 四条线</a>
       <div class="ttl">${L.n} · ${line}</div></div>
     <h1>${line} · ${esc(L.de)}</h1>
-    <p class="sub">${cs.length} 册 · 已做 ${cs.filter(c => run(c)).length} · ${esc(L.c)}${k === "grammar" ? " · 阶梯 " + cs.filter(c => BOOKS[c].ladder).length + " 册 / 专项 " + cs.filter(c => BOOKS[c].focus).length + " 册 / 深度 " + cs.filter(c => !BOOKS[c].chap && !BOOKS[c].focus && !BOOKS[c].ladder).length + " 册 / 章节 " + cs.filter(c => BOOKS[c].chap).length + " 册" : ""}</p>
+    <p class="sub">${cs.length} 册 · 已做 ${cs.filter(c => run(c)).length} · ${esc(L.c)}${k === "grammar" ? " · 阶梯 " + cs.filter(c => BOOKS[c].ladder).length + " 册（含专项 " + cs.filter(c => BOOKS[c].focusN).length + "）/ 深度 " + cs.filter(c => !BOOKS[c].chap && !BOOKS[c].focus && !BOOKS[c].ladder).length + " 册 / 章节 " + cs.filter(c => BOOKS[c].chap).length + " 册" : ""}</p>
     ${Object.keys(groups).map(g => `
       <div class="sec">${esc(g)}</div>
       ${groups[g].map(c => card(c, k)).join("")}`).join("")}
@@ -281,12 +287,30 @@ function card(code, k){
             : b.ladder ? esc(b.rname || "")
             : b.chap ? esc(b.sec || "")
             : `${b.round ? `R${b.round} ` : ""}${esc(b.rname || "")}`;
-  const foc = b.focus ? ` <span class="foctag">${b.focusN}·${esc(b.focus)}</span>` : "";
+  const foc = b.focus ? ` <span class="foctag">${b.focusN}·${esc(b.focus)}</span>`
+            : b.focusN ? ` <span class="foctag">专项 · 你错过</span>` : "";
   return `<a class="card${b.focus ? " focus" : ""}" href="${href}">
     <div class="t">${esc(b.title)}${foc}</div>
     <div class="m"><span>${code}</span><span>·</span><span>${sub}</span>${total !== 4 && total !== 8 ? `<span class="pill qn2">${total} 题</span>` : ""}${pill}</div>
     ${sc === null ? "" : `<div class="bar" style="margin-top:9px"><i style="width:${pct}%"></i></div>`}
   </a>`;
+}
+
+/* 章节册 ⇄ 阶梯册 互指 */
+function xrefRow(b){
+  const L = b.ladderRefs || [], C = b.chapterRefs || [];
+  if (!L.length && !C.length) return "";
+  const one = (code, lab) => {
+    const t = BOOKS[code];
+    if (!t) return "";
+    return `<a class="xref" href="#/read/${code}">${lab}${esc(t.title)}</a>`;
+  };
+  const parts = [];
+  if (L.length) parts.push(`<span class="xlab">练透用阶梯</span>` +
+    L.map(r => one(r.code, "")).join(""));
+  if (C.length) parts.push(`<span class="xlab">教材章节</span>` +
+    C.slice(0, 4).map(code => one(code, "")).join(""));
+  return `<div class="xrefs">${parts.join("<br>")}</div>`;
 }
 
 /* ── 阅读 ─────────────────────────────────────────── */
@@ -329,6 +353,7 @@ function renderRead(code){
     <h1>${esc(b.title)}</h1>
     ${b.sub ? `<p class="sub">${esc(b.sub)}</p>` : ""}
     ${b.zh ? `<div class="zh">${esc(b.zh)}</div>` : ""}
+    ${xrefRow(b)}
     <div class="rd">${body}
       ${b.src ? `<div class="src">${esc(b.src)}</div>` : ""}
       ${b.nxt ? `<div class="nxt">→ ${esc(b.nxt)}</div>` : ""}
