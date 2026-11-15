@@ -43,6 +43,12 @@ h2{font-size:15px;margin:26px 0 10px;color:var(--teal);font-weight:700}
 .pill{display:inline-block;font-size:11.5px;padding:1.5px 8px;border-radius:99px;background:#EDEAE0;color:var(--muted)}
 .pill.done{background:var(--okbg);color:var(--ok);font-weight:600}
 .pill.warn{background:var(--warnbg);color:var(--warn)}
+/* 练习册题库的分层徽章 */
+.lvltag{display:inline-block;font-size:11px;font-weight:600;padding:2px 7px;border-radius:4px;
+  margin-right:7px;vertical-align:middle}
+.lvltag.lvlA{background:#DCEBE6;color:#1F5E52}
+.lvltag.lvlB{background:#F4E6CC;color:#7A5510}
+.lvltag.lvlC{background:#EBDCE4;color:#6E2A4A}
 /* 专项训练标记 */
 .card.focus{border-color:#C9A227;box-shadow:0 0 0 1px #C9A227 inset}
 .foctag{display:inline-block;font-size:10.5px;font-weight:600;padding:1px 6px;border-radius:4px;
@@ -275,7 +281,7 @@ function card(code, k){
   const foc = b.focus ? ` <span class="foctag">${b.focusN}·${esc(b.focus)}</span>` : "";
   return `<a class="card${b.focus ? " focus" : ""}" href="${href}">
     <div class="t">${esc(b.title)}${foc}</div>
-    <div class="m"><span>${code}</span><span>·</span><span>${sub}</span>${pill}</div>
+    <div class="m"><span>${code}</span><span>·</span><span>${sub}</span>${total !== 4 && total !== 8 ? `<span class="pill qn2">${total} 题</span>` : ""}${pill}</div>
     ${sc === null ? "" : `<div class="bar" style="margin-top:9px"><i style="width:${pct}%"></i></div>`}
   </a>`;
 }
@@ -411,6 +417,8 @@ function renderQuiz(code){
 
 function askQ(){
   const s = qset(QA.code), q = s.qs[QA.i], last = QA.i === s.qs.length - 1;
+  const LVL = {A: "第 1 层 · 认形", B: "第 2 层 · 条件句", C: "第 3 层 · 语感"};
+  const lvlTag = q.lvl ? `<span class="lvltag lvl${q.lvl}">${LVL[q.lvl] || q.lvl}</span>` : "";
   const label = q.t === "rw" ? "选出和原句意思相同的那句"
     : q.t === "gc" ? "填这一空（ABC 选一个）"
     : q.t === "rf" ? "Richtig, falsch oder steht das nicht im Text?"
@@ -420,7 +428,7 @@ function askQ(){
     <div class="top"><a class="back" href="${backHref}">‹ 原文</a>
       <div class="ttl">${esc(QA.code)} · ${QA.i + 1}/${s.qs.length}</div></div>
     <div class="bar" style="margin:0 0 20px"><i style="width:${QA.i / s.qs.length * 100}%"></i></div>
-    <p class="qn">${label}</p>
+    <p class="qn">${lvlTag}${label}</p>
     <p class="qtext">${esc(q.q)}</p>
     <div id="opts">${q.o.map((o, j) =>
       `<button class="opt" data-j="${j}">${String.fromCharCode(65 + j)} · ${esc(o)}</button>`).join("")}</div>
