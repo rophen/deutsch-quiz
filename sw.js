@@ -1,5 +1,5 @@
 /* Deutsch 学习台 service worker */
-const CACHE = "dq-v20";
+const CACHE = "dq-v21";
 const CORE = [
   "./", "index.html", "manifest.json",
   "data/books.json", "data/quiz.json",
