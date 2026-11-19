@@ -1,40 +1,29 @@
-/* Deutsch 学习台 service worker */
-const CACHE = "dq-v29";
-const CORE = [
-  "./", "index.html", "manifest.json",
-  "data/books.json", "data/quiz.json",
-  "icon-180.png", "icon-512.png",
-];
+/* 自毁 worker：老用户浏览器里装着旧版 PWA 的 Service Worker，
+   它会从缓存里直接返回旧页面，跳转页永远看不到。
+   这个文件一被拉取就会安装 → 清空全部缓存 → 注销自己 → 让页面走网络（从而命中 index.html 的跳转）。 */
 
-self.addEventListener("install", e => {
-  e.waitUntil(caches.open(CACHE).then(c => c.addAll(CORE)).then(() => self.skipWaiting()));
+self.addEventListener("install", (e) => {
+  self.skipWaiting();
 });
-self.addEventListener("activate", e => {
-  e.waitUntil(caches.keys()
-    .then(ks => Promise.all(ks.filter(k => k !== CACHE).map(k => caches.delete(k))))
-    .then(() => self.clients.claim()));
+
+self.addEventListener("activate", (e) => {
+  e.waitUntil((async () => {
+    // 1) 清掉旧版本缓存的所有资源
+    try {
+      const keys = await caches.keys();
+      await Promise.all(keys.map((k) => caches.delete(k)));
+    } catch (_) {}
+
+    // 2) 注销自己，让后续请求完全走网络
+    try { await self.registration.unregister(); } catch (_) {}
+
+    // 3) 已打开的页面立刻刷一次，好让它们落到跳转页
+    try {
+      const cs = await self.clients.matchAll({ type: "window" });
+      cs.forEach((c) => { try { c.navigate(c.url); } catch (_) {} });
+    } catch (_) {}
+  })());
 });
-self.addEventListener("fetch", e => {
-  const url = new URL(e.request.url);
-  if (e.request.method !== "GET" || url.origin !== location.origin) return;
-  // 音频：只缓存，不预取；命中缓存就离线播
-  if (/\/audio\/.*\.m4a$/.test(url.pathname)) {
-    e.respondWith(caches.match(e.request).then(hit => hit || fetch(e.request).then(r => {
-      const cp = r.clone();
-      caches.open(CACHE).then(c => c.put(e.request, cp)).catch(() => {});
-      return r;
-    })));
-    return;
-  }
-  // HTML 与数据：network-first，断网回缓存
-  if (url.pathname.endsWith("/") || url.pathname.endsWith(".html") ||
-      url.pathname.endsWith(".json") || url.pathname.endsWith("sw.js")) {
-    e.respondWith(fetch(e.request).then(r => {
-      const cp = r.clone();
-      caches.open(CACHE).then(c => c.put(e.request, cp)).catch(() => {});
-      return r;
-    }).catch(() => caches.match(e.request).then(hit => hit || caches.match("index.html"))));
-    return;
-  }
-  e.respondWith(caches.match(e.request).then(hit => hit || fetch(e.request)));
-});
+
+// 不做任何离线缓存：一律走网络
+self.addEventListener("fetch", () => {});
